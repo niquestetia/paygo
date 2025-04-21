@@ -1,0 +1,1186 @@
+<!-- User Management Overview -->
+<div class="wireframe user-management-overview">
+  <!-- Header -->
+  <div class="header">
+    <div class="logo-container">
+      <img src="images/burn-logo-small.png" alt="BURN Logo" />
+      <h1>PayGo Admin</h1>
+    </div>
+    <div class="header-actions">
+      <div class="search-bar">
+        <i class="search-icon"></i>
+        <input type="text" placeholder="Search..." />
+      </div>
+      <button class="notification-button">
+        <i class="notification-icon"></i>
+        <span class="badge">5</span>
+      </button>
+      <div class="admin-profile">
+        <img src="images/admin-avatar.png" alt="Admin Avatar" />
+        <span>Admin</span>
+        <i class="dropdown-icon"></i>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Sidebar Navigation -->
+  <div class="sidebar">
+    <!-- Sidebar navigation content (same as main dashboard) -->
+  </div>
+  
+  <!-- Main Content -->
+  <div class="main-content">
+    <div class="page-header">
+      <h2>User Management</h2>
+      <div class="header-actions">
+        <button class="add-button">
+          <i class="add-icon"></i>
+          <span>Add User</span>
+        </button>
+        <button class="export-button">
+          <i class="export-icon"></i>
+          <span>Export</span>
+        </button>
+      </div>
+    </div>
+    
+    <div class="user-stats">
+      <div class="stat-card">
+        <div class="stat-icon customers">
+          <i class="customers-icon"></i>
+        </div>
+        <div class="stat-data">
+          <h3>Customers</h3>
+          <div class="stat-value">
+            <span class="value">12,458</span>
+            <span class="trend positive">+215</span>
+          </div>
+          <div class="stat-meta">
+            <span>Active: 10,875</span>
+            <span>Inactive: 1,583</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="stat-card">
+        <div class="stat-icon agents">
+          <i class="agents-icon"></i>
+        </div>
+        <div class="stat-data">
+          <h3>Field Agents</h3>
+          <div class="stat-value">
+            <span class="value">245</span>
+            <span class="trend positive">+12</span>
+          </div>
+          <div class="stat-meta">
+            <span>Active: 228</span>
+            <span>Inactive: 17</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="stat-card">
+        <div class="stat-icon admins">
+          <i class="admins-icon"></i>
+        </div>
+        <div class="stat-data">
+          <h3>Administrators</h3>
+          <div class="stat-value">
+            <span class="value">18</span>
+            <span class="trend neutral">+0</span>
+          </div>
+          <div class="stat-meta">
+            <span>Active: 18</span>
+            <span>Inactive: 0</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="stat-card">
+        <div class="stat-icon growth">
+          <i class="growth-icon"></i>
+        </div>
+        <div class="stat-data">
+          <h3>User Growth</h3>
+          <div class="stat-value">
+            <span class="value">+1.8%</span>
+            <span class="trend positive">+0.3%</span>
+          </div>
+          <div class="stat-meta">
+            <span>Monthly Target: 2.0%</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="user-tabs">
+      <button class="tab-button active">All Users</button>
+      <button class="tab-button">Customers</button>
+      <button class="tab-button">Field Agents</button>
+      <button class="tab-button">Administrators</button>
+    </div>
+    
+    <div class="user-filters">
+      <div class="search-bar">
+        <i class="search-icon"></i>
+        <input type="text" placeholder="Search users..." />
+      </div>
+      <div class="filter-controls">
+        <select class="filter-select">
+          <option>All Status</option>
+          <option>Active</option>
+          <option>Inactive</option>
+          <option>Pending</option>
+          <option>Suspended</option>
+        </select>
+        <select class="filter-select">
+          <option>All Roles</option>
+          <option>Customer</option>
+          <option>Field Agent</option>
+          <option>Administrator</option>
+        </select>
+        <select class="filter-select">
+          <option>All Regions</option>
+          <option>Nairobi</option>
+          <option>Mombasa</option>
+          <option>Kisumu</option>
+          <option>Other</option>
+        </select>
+        <button class="filter-button">
+          <i class="filter-icon"></i>
+          <span>More Filters</span>
+        </button>
+      </div>
+    </div>
+    
+    <div class="users-table">
+      <div class="table-header">
+        <div class="header-cell">
+          <input type="checkbox" />
+        </div>
+        <div class="header-cell">Name</div>
+        <div class="header-cell">User ID</div>
+        <div class="header-cell">Role</div>
+        <div class="header-cell">Status</div>
+        <div class="header-cell">Region</div>
+        <div class="header-cell">Devices</div>
+        <div class="header-cell">Last Active</div>
+        <div class="header-cell">Actions</div>
+      </div>
+      
+      <div class="table-row">
+        <div class="cell">
+          <input type="checkbox" />
+        </div>
+        <div class="cell user-cell">
+          <div class="user-avatar">
+            <img src="images/customer-avatar-1.png" alt="User Avatar" />
+          </div>
+          <div class="user-info">
+            <h4>Sarah Kamau</h4>
+            <p>+254 712 345 678</p>
+          </div>
+        </div>
+        <div class="cell">CUS-12458</div>
+        <div class="cell">
+          <span class="role-badge customer">Customer</span>
+        </div>
+        <div class="cell">
+          <span class="status-badge active">Active</span>
+        </div>
+        <div class="cell">Nairobi</div>
+        <div class="cell">1</div>
+        <div class="cell">Apr 21, 2025</div>
+        <div class="cell actions-cell">
+          <button class="action-button small">
+            <i class="view-icon"></i>
+          </button>
+          <button class="action-button small">
+            <i class="edit-icon"></i>
+          </button>
+          <button class="action-button small">
+            <i class="more-icon"></i>
+          </button>
+        </div>
+      </div>
+      
+      <div class="table-row">
+        <div class="cell">
+          <input type="checkbox" />
+        </div>
+        <div class="cell user-cell">
+          <div class="user-avatar">
+            <img src="images/agent-avatar.png" alt="User Avatar" />
+          </div>
+          <div class="user-info">
+            <h4>John Doe</h4>
+            <p>+254 723 456 789</p>
+          </div>
+        </div>
+        <div class="cell">AGT-00245</div>
+        <div class="cell">
+          <span class="role-badge agent">Field Agent</span>
+        </div>
+        <div class="cell">
+          <span class="status-badge active">Active</span>
+        </div>
+        <div class="cell">Nairobi</div>
+        <div class="cell">8</div>
+        <div class="cell">Apr 21, 2025</div>
+        <div class="cell actions-cell">
+          <button class="action-button small">
+            <i class="view-icon"></i>
+          </button>
+          <button class="action-button small">
+            <i class="edit-icon"></i>
+          </button>
+          <button class="action-button small">
+            <i class="more-icon"></i>
+          </button>
+        </div>
+      </div>
+      
+      <div class="table-row">
+        <div class="cell">
+          <input type="checkbox" />
+        </div>
+        <div class="cell user-cell">
+          <div class="user-avatar">
+            <img src="images/customer-avatar-3.png" alt="User Avatar" />
+          </div>
+          <div class="user-info">
+            <h4>Mary Wanjiku</h4>
+            <p>+254 734 567 890</p>
+          </div>
+        </div>
+        <div class="cell">CUS-12457</div>
+        <div class="cell">
+          <span class="role-badge customer">Customer</span>
+        </div>
+        <div class="cell">
+          <span class="status-badge active">Active</span>
+        </div>
+        <div class="cell">Nairobi</div>
+        <div class="cell">1</div>
+        <div class="cell">Apr 21, 2025</div>
+        <div class="cell actions-cell">
+          <button class="action-button small">
+            <i class="view-icon"></i>
+          </button>
+          <button class="action-button small">
+            <i class="edit-icon"></i>
+          </button>
+          <button class="action-button small">
+            <i class="more-icon"></i>
+          </button>
+        </div>
+      </div>
+      
+      <div class="table-row">
+        <div class="cell">
+          <input type="checkbox" />
+        </div>
+        <div class="cell user-cell">
+          <div class="user-avatar">
+            <img src="images/admin-avatar.png" alt="User Avatar" />
+          </div>
+          <div class="user-info">
+            <h4>James Mwangi</h4>
+            <p>+254 745 678 901</p>
+          </div>
+        </div>
+        <div class="cell">ADM-00018</div>
+        <div class="cell">
+          <span class="role-badge admin">Administrator</span>
+        </div>
+        <div class="cell">
+          <span class="status-badge active">Active</span>
+        </div>
+        <div class="cell">Nairobi</div>
+        <div class="cell">0</div>
+        <div class="cell">Apr 21, 2025</div>
+        <div class="cell actions-cell">
+          <button class="action-button small">
+            <i class="view-icon"></i>
+          </button>
+          <button class="action-button small">
+            <i class="edit-icon"></i>
+          </button>
+          <button class="action-button small">
+            <i class="more-icon"></i>
+          </button>
+        </div>
+      </div>
+      
+      <div class="table-row">
+        <div class="cell">
+          <input type="checkbox" />
+        </div>
+        <div class="cell user-cell">
+          <div class="user-avatar">
+            <img src="images/customer-avatar-2.png" alt="User Avatar" />
+          </div>
+          <div class="user-info">
+            <h4>John Omondi</h4>
+            <p>+254 756 789 012</p>
+          </div>
+        </div>
+        <div class="cell">CUS-12456</div>
+        <div class="cell">
+          <span class="role-badge customer">Customer</span>
+        </div>
+        <div class="cell">
+          <span class="status-badge inactive">Inactive</span>
+        </div>
+        <div class="cell">Kisumu</div>
+        <div class="cell">1</div>
+        <div class="cell">Apr 15, 2025</div>
+        <div class="cell actions-cell">
+          <button class="action-button small">
+            <i class="view-icon"></i>
+          </button>
+          <button class="action-button small">
+            <i class="edit-icon"></i>
+          </button>
+          <button class="action-button small">
+            <i class="more-icon"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    
+    <div class="pagination">
+      <button class="page-button">
+        <i class="prev-icon"></i>
+      </button>
+      <button class="page-button">1</button>
+      <button class="page-button active">2</button>
+      <button class="page-button">3</button>
+      <span class="page-ellipsis">...</span>
+      <button class="page-button">50</button>
+      <button class="page-button">
+        <i class="next-icon"></i>
+      </button>
+      <div class="page-size">
+        <span>Show:</span>
+        <select>
+          <option>10</option>
+          <option selected>20</option>
+          <option>50</option>
+          <option>100</option>
+        </select>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Customer Management -->
+<div class="wireframe customer-management">
+  <!-- Header -->
+  <div class="header">
+    <div class="logo-container">
+      <img src="images/burn-logo-small.png" alt="BURN Logo" />
+      <h1>PayGo Admin</h1>
+    </div>
+    <div class="header-actions">
+      <div class="search-bar">
+        <i class="search-icon"></i>
+        <input type="text" placeholder="Search..." />
+      </div>
+      <button class="notification-button">
+        <i class="notification-icon"></i>
+        <span class="badge">5</span>
+      </button>
+      <div class="admin-profile">
+        <img src="images/admin-avatar.png" alt="Admin Avatar" />
+        <span>Admin</span>
+        <i class="dropdown-icon"></i>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Sidebar Navigation -->
+  <div class="sidebar">
+    <!-- Sidebar navigation content (same as main dashboard) -->
+  </div>
+  
+  <!-- Main Content -->
+  <div class="main-content">
+    <div class="page-header">
+      <div class="breadcrumb">
+        <a href="#">User Management</a>
+        <i class="separator-icon"></i>
+        <span>Customer Management</span>
+      </div>
+      <div class="header-actions">
+        <button class="add-button">
+          <i class="add-icon"></i>
+          <span>Add Customer</span>
+        </button>
+        <button class="import-button">
+          <i class="import-icon"></i>
+          <span>Import</span>
+        </button>
+        <button class="export-button">
+          <i class="export-icon"></i>
+          <span>Export</span>
+        </button>
+      </div>
+    </div>
+    
+    <div class="customer-stats">
+      <div class="stat-card">
+        <div class="stat-icon total">
+          <i class="customers-icon"></i>
+        </div>
+        <div class="stat-data">
+          <h3>Total Customers</h3>
+          <div class="stat-value">
+            <span class="value">12,458</span>
+            <span class="trend positive">+215</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="stat-card">
+        <div class="stat-icon active">
+          <i class="active-icon"></i>
+        </div>
+        <div class="stat-data">
+          <h3>Active Customers</h3>
+          <div class="stat-value">
+            <span class="value">10,875</span>
+            <span class="percentage">87.3%</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="stat-card">
+        <div class="stat-icon inactive">
+          <i class="inactive-icon"></i>
+        </div>
+        <div class="stat-data">
+          <h3>Inactive Customers</h3>
+          <div class="stat-value">
+            <span class="value">1,583</span>
+            <span class="percentage">12.7%</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="stat-card">
+        <div class="stat-icon new">
+          <i class="new-icon"></i>
+        </div>
+        <div class="stat-data">
+          <h3>New This Month</h3>
+          <div class="stat-value">
+            <span class="value">458</span>
+            <span class="trend positive">+12%</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="customer-filters">
+      <div class="search-bar">
+        <i class="search-icon"></i>
+        <input type="text" placeholder="Search customers..." />
+      </div>
+      <div class="filter-controls">
+        <select class="filter-select">
+          <option>All Status</option>
+          <option>Active</option>
+          <option>Inactive</option>
+          <option>Pending</option>
+          <option>Suspended</option>
+        </select>
+        <select class="filter-select">
+          <option>All Regions</option>
+          <option>Nairobi</option>
+          <option>Mombasa</option>
+          <option>Kisumu</option>
+          <option>Other</option>
+        </select>
+        <select class="filter-select">
+          <option>All Devices</option>
+          <option>IC-2000</option>
+          <option>IC-1500</option>
+          <option>ES-1000</option>
+          <option>LPG-500</option>
+        </select>
+        <button class="filter-button">
+          <i class="filter-icon"></i>
+          <span>More Filters</span>
+        </button>
+      </div>
+    </div>
+    
+    <div class="customers-table">
+      <div class="table-header">
+        <div class="header-cell">
+          <input type="checkbox" />
+        </div>
+        <div class="header-cell">Customer</div>
+        <div class="header-cell">ID</div>
+        <div class="header-cell">Status</div>
+        <div class="header-cell">Region</div>
+        <div class="header-cell">Device</div>
+        <div class="header-cell">Balance</div>
+        <div class="header-cell">Last Payment</div>
+        <div class="header-cell">Actions</div>
+      </div>
+      
+      <div class="table-row">
+        <div class="cell">
+          <input type="checkbox" />
+        </div>
+        <div class="cell customer-cell">
+          <div class="customer-avatar">
+            <img src="images/customer-avatar-1.png" alt="Customer Avatar" />
+          </div>
+          <div class="customer-info">
+            <h4>Sarah Kamau</h4>
+            <p>+254 712 345 678</p>
+          </div>
+        </div>
+        <div class="cell">CUS-12458</div>
+        <div class="cell">
+          <span class="status-badge active">Active</span>
+        </div>
+        <div class="cell">Nairobi</div>
+        <div class="cell">IC-2000</div>
+        <div class="cell">
+          <span class="balance positive">KSh 1,350</span>
+        </div>
+        <div class="cell">Apr 21, 2025</div>
+        <div class="cell actions-cell">
+          <button class="action-button small">
+            <i class="view-icon"></i>
+          </button>
+          <button class="action-button small">
+            <i class="edit-icon"></i>
+          </button>
+          <button class="action-button small">
+            <i class="more-icon"></i>
+          </button>
+        </div>
+      </div>
+      
+      <div class="table-row">
+        <div class="cell">
+          <input type="checkbox" />
+        </div>
+        <div class="cell customer-cell">
+          <div class="customer-avatar">
+            <img src="images/customer-avatar-3.png" alt="Customer Avatar" />
+          </div>
+          <div class="customer-info">
+            <h4>Mary Wanjiku</h4>
+            <p>+254 734 567 890</p>
+          </div>
+        </div>
+        <div class="cell">CUS-12457</div>
+        <div class="cell">
+          <span class="status-badge active">Active</span>
+        </div>
+        <div class="cell">Nairobi</div>
+        <div class="cell">IC-1500</div>
+        <div class="cell">
+          <span class="balance positive">KSh 2,500</span>
+        </div>
+        <div class="cell">Apr 20, 2025</div>
+        <div class="cell actions-cell">
+          <button class="action-button small">
+            <i class="view-icon"></i>
+          </button>
+          <button class="action-button small">
+            <i class="edit-icon"></i>
+          </button>
+          <button class="action-button small">
+            <i class="more-icon"></i>
+          </button>
+        </div>
+      </div>
+      
+      <div class="table-row">
+        <div class="cell">
+          <input type="checkbox" />
+        </div>
+        <div class="cell customer-cell">
+          <div class="customer-avatar">
+            <img src="images/customer-avatar-2.png" alt="Customer Avatar" />
+          </div>
+          <div class="customer-info">
+            <h4>John Omondi</h4>
+            <p>+254 756 789 012</p>
+          </div>
+        </div>
+        <div class="cell">CUS-12456</div>
+        <div class="cell">
+          <span class="status-badge inactive">Inactive</span>
+        </div>
+        <div class="cell">Kisumu</div>
+        <div class="cell">ES-1000</div>
+        <div class="cell">
+          <span class="balance negative">KSh -250</span>
+        </div>
+        <div class="cell">Apr 10, 2025</div>
+        <div class="cell actions-cell">
+          <button class="action-button small">
+            <i class="view-icon"></i>
+          </button>
+          <button class="action-button small">
+            <i class="edit-icon"></i>
+          </button>
+          <button class="action-button small">
+            <i class="more-icon"></i>
+          </button>
+        </div>
+      </div>
+      
+      <div class="table-row">
+        <div class="cell">
+          <input type="checkbox" />
+        </div>
+        <div class="cell customer-cell">
+          <div class="customer-avatar">
+            <img src="images/customer-avatar-4.png" alt="Customer Avatar" />
+          </div>
+          <div class="customer-info">
+            <h4>Peter Njoroge</h4>
+            <p>+254 767 890 123</p>
+          </div>
+        </div>
+        <div class="cell">CUS-12455</div>
+        <div class="cell">
+          <span class="status-badge active">Active</span>
+        </div>
+        <div class="cell">Mombasa</div>
+        <div class="cell">LPG-500</div>
+        <div class="cell">
+          <span class="balance warning">KSh 150</span>
+        </div>
+        <div class="cell">Apr 18, 2025</div>
+        <div class="cell actions-cell">
+          <button class="action-button small">
+            <i class="view-icon"></i>
+          </button>
+          <button class="action-button small">
+            <i class="edit-icon"></i>
+          </button>
+          <button class="action-button small">
+            <i class="more-icon"></i>
+          </button>
+        </div>
+      </div>
+      
+      <div class="table-row">
+        <div class="cell">
+          <input type="checkbox" />
+        </div>
+        <div class="cell customer-cell">
+          <div class="customer-avatar">
+            <img src="images/customer-avatar-5.png" alt="Customer Avatar" />
+          </div>
+          <div class="customer-info">
+            <h4>Grace Achieng</h4>
+            <p>+254 778 901 234</p>
+          </div>
+        </div>
+        <div class="cell">CUS-12454</div>
+        <div class="cell">
+          <span class="status-badge pending">Pending</span>
+        </div>
+        <div class="cell">Kisumu</div>
+        <div class="cell">IC-2000</div>
+        <div class="cell">
+          <span class="balance positive">KSh 5,000</span>
+        </div>
+        <div class="cell">Apr 21, 2025</div>
+        <div class="cell actions-cell">
+          <button class="action-button small">
+            <i class="view-icon"></i>
+          </button>
+          <button class="action-button small">
+            <i class="edit-icon"></i>
+          </button>
+          <button class="action-button small">
+            <i class="more-icon"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    
+    <div class="pagination">
+      <button class="page-button">
+        <i class="prev-icon"></i>
+      </button>
+      <button class="page-button active">1</button>
+      <button class="page-button">2</button>
+      <button class="page-button">3</button>
+      <span class="page-ellipsis">...</span>
+      <button class="page-button">50</button>
+      <button class="page-button">
+        <i class="next-icon"></i>
+      </button>
+      <div class="page-size">
+        <span>Show:</span>
+        <select>
+          <option>10</option>
+          <option selected>20</option>
+          <option>50</option>
+          <option>100</option>
+        </select>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Role and Permission Settings -->
+<div class="wireframe role-permissions">
+  <!-- Header -->
+  <div class="header">
+    <div class="logo-container">
+      <img src="images/burn-logo-small.png" alt="BURN Logo" />
+      <h1>PayGo Admin</h1>
+    </div>
+    <div class="header-actions">
+      <div class="search-bar">
+        <i class="search-icon"></i>
+        <input type="text" placeholder="Search..." />
+      </div>
+      <button class="notification-button">
+        <i class="notification-icon"></i>
+        <span class="badge">5</span>
+      </button>
+      <div class="admin-profile">
+        <img src="images/admin-avatar.png" alt="Admin Avatar" />
+        <span>Admin</span>
+        <i class="dropdown-icon"></i>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Sidebar Navigation -->
+  <div class="sidebar">
+    <!-- Sidebar navigation content (same as main dashboard) -->
+  </div>
+  
+  <!-- Main Content -->
+  <div class="main-content">
+    <div class="page-header">
+      <div class="breadcrumb">
+        <a href="#">User Management</a>
+        <i class="separator-icon"></i>
+        <span>Role & Permission Settings</span>
+      </div>
+      <div class="header-actions">
+        <button class="add-button">
+          <i class="add-icon"></i>
+          <span>Create Role</span>
+        </button>
+      </div>
+    </div>
+    
+    <div class="roles-list">
+      <div class="role-card active">
+        <div class="role-header">
+          <div class="role-icon admin">
+            <i class="admin-icon"></i>
+          </div>
+          <div class="role-info">
+            <h3>System Administrator</h3>
+            <p>Full system access and control</p>
+          </div>
+        </div>
+        <div class="role-meta">
+          <span class="user-count">5 users</span>
+          <button class="edit-button">
+            <i class="edit-icon"></i>
+          </button>
+        </div>
+      </div>
+      
+      <div class="role-card">
+        <div class="role-header">
+          <div class="role-icon manager">
+            <i class="manager-icon"></i>
+          </div>
+          <div class="role-info">
+            <h3>Operations Manager</h3>
+            <p>Manage operations and field agents</p>
+          </div>
+        </div>
+        <div class="role-meta">
+          <span class="user-count">8 users</span>
+          <button class="edit-button">
+            <i class="edit-icon"></i>
+          </button>
+        </div>
+      </div>
+      
+      <div class="role-card">
+        <div class="role-header">
+          <div class="role-icon finance">
+            <i class="finance-icon"></i>
+          </div>
+          <div class="role-info">
+            <h3>Finance Administrator</h3>
+            <p>Manage financial operations</p>
+          </div>
+        </div>
+        <div class="role-meta">
+          <span class="user-count">3 users</span>
+          <button class="edit-button">
+            <i class="edit-icon"></i>
+          </button>
+        </div>
+      </div>
+      
+      <div class="role-card">
+        <div class="role-header">
+          <div class="role-icon support">
+            <i class="support-icon"></i>
+          </div>
+          <div class="role-info">
+            <h3>Customer Support</h3>
+            <p>Handle customer inquiries and issues</p>
+          </div>
+        </div>
+        <div class="role-meta">
+          <span class="user-count">12 users</span>
+          <button class="edit-button">
+            <i class="edit-icon"></i>
+          </button>
+        </div>
+      </div>
+      
+      <div class="role-card">
+        <div class="role-header">
+          <div class="role-icon agent">
+            <i class="agent-icon"></i>
+          </div>
+          <div class="role-info">
+            <h3>Field Agent</h3>
+            <p>Register customers and manage devices</p>
+          </div>
+        </div>
+        <div class="role-meta">
+          <span class="user-count">245 users</span>
+          <button class="edit-button">
+            <i class="edit-icon"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    
+    <div class="permissions-section">
+      <div class="section-header">
+        <h3>System Administrator Permissions</h3>
+        <button class="save-button">
+          <i class="save-icon"></i>
+          <span>Save Changes</span>
+        </button>
+      </div>
+      
+      <div class="permissions-grid">
+        <div class="permission-category">
+          <div class="category-header">
+            <h4>Dashboard & Reports</h4>
+            <div class="category-toggle">
+              <input type="checkbox" checked />
+              <span>All</span>
+            </div>
+          </div>
+          <div class="permission-list">
+            <div class="permission-item">
+              <div class="permission-name">
+                <span>View Dashboard</span>
+              </div>
+              <div class="permission-toggle">
+                <input type="checkbox" checked />
+              </div>
+            </div>
+            <div class="permission-item">
+              <div class="permission-name">
+                <span>Generate Reports</span>
+              </div>
+              <div class="permission-toggle">
+                <input type="checkbox" checked />
+              </div>
+            </div>
+            <div class="permission-item">
+              <div class="permission-name">
+                <span>Export Data</span>
+              </div>
+              <div class="permission-toggle">
+                <input type="checkbox" checked />
+              </div>
+            </div>
+            <div class="permission-item">
+              <div class="permission-name">
+                <span>View System Health</span>
+              </div>
+              <div class="permission-toggle">
+                <input type="checkbox" checked />
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="permission-category">
+          <div class="category-header">
+            <h4>User Management</h4>
+            <div class="category-toggle">
+              <input type="checkbox" checked />
+              <span>All</span>
+            </div>
+          </div>
+          <div class="permission-list">
+            <div class="permission-item">
+              <div class="permission-name">
+                <span>View Users</span>
+              </div>
+              <div class="permission-toggle">
+                <input type="checkbox" checked />
+              </div>
+            </div>
+            <div class="permission-item">
+              <div class="permission-name">
+                <span>Create Users</span>
+              </div>
+              <div class="permission-toggle">
+                <input type="checkbox" checked />
+              </div>
+            </div>
+            <div class="permission-item">
+              <div class="permission-name">
+                <span>Edit Users</span>
+              </div>
+              <div class="permission-toggle">
+                <input type="checkbox" checked />
+              </div>
+            </div>
+            <div class="permission-item">
+              <div class="permission-name">
+                <span>Delete Users</span>
+              </div>
+              <div class="permission-toggle">
+                <input type="checkbox" checked />
+              </div>
+            </div>
+            <div class="permission-item">
+              <div class="permission-name">
+                <span>Manage Roles</span>
+              </div>
+              <div class="permission-toggle">
+                <input type="checkbox" checked />
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="permission-category">
+          <div class="category-header">
+            <h4>Device Management</h4>
+            <div class="category-toggle">
+              <input type="checkbox" checked />
+              <span>All</span>
+            </div>
+          </div>
+          <div class="permission-list">
+            <div class="permission-item">
+              <div class="permission-name">
+                <span>View Devices</span>
+              </div>
+              <div class="permission-toggle">
+                <input type="checkbox" checked />
+              </div>
+            </div>
+            <div class="permission-item">
+              <div class="permission-name">
+                <span>Register Devices</span>
+              </div>
+              <div class="permission-toggle">
+                <input type="checkbox" checked />
+              </div>
+            </div>
+            <div class="permission-item">
+              <div class="permission-name">
+                <span>Assign Devices</span>
+              </div>
+              <div class="permission-toggle">
+                <input type="checkbox" checked />
+              </div>
+            </div>
+            <div class="permission-item">
+              <div class="permission-name">
+                <span>Manage Firmware</span>
+              </div>
+              <div class="permission-toggle">
+                <input type="checkbox" checked />
+              </div>
+            </div>
+            <div class="permission-item">
+              <div class="permission-name">
+                <span>Remote Control</span>
+              </div>
+              <div class="permission-toggle">
+                <input type="checkbox" checked />
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="permission-category">
+          <div class="category-header">
+            <h4>Financial Management</h4>
+            <div class="category-toggle">
+              <input type="checkbox" checked />
+              <span>All</span>
+            </div>
+          </div>
+          <div class="permission-list">
+            <div class="permission-item">
+              <div class="permission-name">
+                <span>View Transactions</span>
+              </div>
+              <div class="permission-toggle">
+                <input type="checkbox" checked />
+              </div>
+            </div>
+            <div class="permission-item">
+              <div class="permission-name">
+                <span>Process Payments</span>
+              </div>
+              <div class="permission-toggle">
+                <input type="checkbox" checked />
+              </div>
+            </div>
+            <div class="permission-item">
+              <div class="permission-name">
+                <span>Issue Refunds</span>
+              </div>
+              <div class="permission-toggle">
+                <input type="checkbox" checked />
+              </div>
+            </div>
+            <div class="permission-item">
+              <div class="permission-name">
+                <span>Manage Pricing</span>
+              </div>
+              <div class="permission-toggle">
+                <input type="checkbox" checked />
+              </div>
+            </div>
+            <div class="permission-item">
+              <div class="permission-name">
+                <span>Financial Reports</span>
+              </div>
+              <div class="permission-toggle">
+                <input type="checkbox" checked />
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="permission-category">
+          <div class="category-header">
+            <h4>Carbon Credits</h4>
+            <div class="category-toggle">
+              <input type="checkbox" checked />
+              <span>All</span>
+            </div>
+          </div>
+          <div class="permission-list">
+            <div class="permission-item">
+              <div class="permission-name">
+                <span>View Carbon Data</span>
+              </div>
+              <div class="permission-toggle">
+                <input type="checkbox" checked />
+              </div>
+            </div>
+            <div class="permission-item">
+              <div class="permission-name">
+                <span>Manage Verification</span>
+              </div>
+              <div class="permission-toggle">
+                <input type="checkbox" checked />
+              </div>
+            </div>
+            <div class="permission-item">
+              <div class="permission-name">
+                <span>Carbon Reports</span>
+              </div>
+              <div class="permission-toggle">
+                <input type="checkbox" checked />
+              </div>
+            </div>
+            <div class="permission-item">
+              <div class="permission-name">
+                <span>Monetization</span>
+              </div>
+              <div class="permission-toggle">
+                <input type="checkbox" checked />
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="permission-category">
+          <div class="category-header">
+            <h4>System Settings</h4>
+            <div class="category-toggle">
+              <input type="checkbox" checked />
+              <span>All</span>
+            </div>
+          </div>
+          <div class="permission-list">
+            <div class="permission-item">
+              <div class="permission-name">
+                <span>General Settings</span>
+              </div>
+              <div class="permission-toggle">
+                <input type="checkbox" checked />
+              </div>
+            </div>
+            <div class="permission-item">
+              <div class="permission-name">
+                <span>Integration Management</span>
+              </div>
+              <div class="permission-toggle">
+                <input type="checkbox" checked />
+              </div>
+            </div>
+            <div class="permission-item">
+              <div class="permission-name">
+                <span>Notification Templates</span>
+              </div>
+              <div class="permission-toggle">
+                <input type="checkbox" checked />
+              </div>
+            </div>
+            <div class="permission-item">
+              <div class="permission-name">
+                <span>Security Settings</span>
+              </div>
+              <div class="permission-toggle">
+                <input type="checkbox" checked />
+              </div>
+            </div>
+            <div class="permission-item">
+              <div class="permission-name">
+                <span>System Backup</span>
+              </div>
+              <div class="permission-toggle">
+                <input type="checkbox" checked />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

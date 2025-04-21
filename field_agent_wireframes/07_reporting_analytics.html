@@ -1,0 +1,687 @@
+<!-- Performance Metrics Screen -->
+<div class="wireframe performance-metrics">
+  <!-- Header -->
+  <div class="header">
+    <div class="menu-toggle">
+      <i class="menu-icon"></i>
+    </div>
+    <div class="page-title">
+      <h1>Performance Metrics</h1>
+    </div>
+    <div class="header-actions">
+      <button class="sync-button">
+        <i class="sync-icon"></i>
+        <span>Last sync: 10:45 AM</span>
+      </button>
+      <button class="notification-button">
+        <i class="notification-icon"></i>
+        <span class="badge">3</span>
+      </button>
+      <div class="agent-profile">
+        <img src="images/agent-avatar.png" alt="Agent Avatar" />
+        <span>John D.</span>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Main Content -->
+  <div class="main-content">
+    <div class="time-period-selector">
+      <button class="period-button">Day</button>
+      <button class="period-button active">Week</button>
+      <button class="period-button">Month</button>
+      <button class="period-button">Quarter</button>
+    </div>
+    
+    <div class="date-range">
+      <span>Apr 15 - Apr 21, 2025</span>
+      <div class="range-controls">
+        <button class="range-nav">
+          <i class="prev-icon"></i>
+        </button>
+        <button class="range-nav">
+          <i class="next-icon"></i>
+        </button>
+      </div>
+    </div>
+    
+    <div class="performance-summary">
+      <div class="summary-card">
+        <div class="card-header">
+          <h3>Overall Performance</h3>
+        </div>
+        <div class="performance-score">
+          <div class="score-circle">
+            <svg viewBox="0 0 36 36">
+              <path class="circle-bg"
+                d="M18 2.0845
+                  a 15.9155 15.9155 0 0 1 0 31.831
+                  a 15.9155 15.9155 0 0 1 0 -31.831"
+              />
+              <path class="circle-progress"
+                stroke-dasharray="85, 100"
+                d="M18 2.0845
+                  a 15.9155 15.9155 0 0 1 0 31.831
+                  a 15.9155 15.9155 0 0 1 0 -31.831"
+              />
+              <text x="18" y="20.35" class="score-text">85%</text>
+            </svg>
+          </div>
+          <div class="score-comparison">
+            <span class="trend positive">+5% from last week</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="metrics-grid">
+        <div class="metric-card">
+          <div class="metric-icon customers">
+            <i class="customers-icon"></i>
+          </div>
+          <div class="metric-data">
+            <h3>New Customers</h3>
+            <div class="metric-value">
+              <span class="value">28</span>
+              <span class="trend positive">+4</span>
+            </div>
+            <p>Weekly Target: 30</p>
+            <div class="progress-bar">
+              <div class="progress" style="width: 93.3%"></div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="metric-card">
+          <div class="metric-icon payments">
+            <i class="payments-icon"></i>
+          </div>
+          <div class="metric-data">
+            <h3>Payments Collected</h3>
+            <div class="metric-value">
+              <span class="value">KSh 85,000</span>
+              <span class="trend positive">+12,500</span>
+            </div>
+            <p>Weekly Target: KSh 75,000</p>
+            <div class="progress-bar">
+              <div class="progress" style="width: 113.3%"></div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="metric-card">
+          <div class="metric-icon devices">
+            <i class="devices-icon"></i>
+          </div>
+          <div class="metric-data">
+            <h3>Devices Registered</h3>
+            <div class="metric-value">
+              <span class="value">22</span>
+              <span class="trend negative">-3</span>
+            </div>
+            <p>Weekly Target: 25</p>
+            <div class="progress-bar">
+              <div class="progress" style="width: 88%"></div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="metric-card">
+          <div class="metric-icon visits">
+            <i class="visits-icon"></i>
+          </div>
+          <div class="metric-data">
+            <h3>Customer Visits</h3>
+            <div class="metric-value">
+              <span class="value">52</span>
+              <span class="trend positive">+7</span>
+            </div>
+            <p>Weekly Target: 50</p>
+            <div class="progress-bar">
+              <div class="progress" style="width: 104%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="performance-charts">
+      <div class="chart-container">
+        <div class="chart-header">
+          <h3>Daily Performance</h3>
+          <div class="chart-legend">
+            <div class="legend-item">
+              <span class="color-indicator customers"></span>
+              <span>Customers</span>
+            </div>
+            <div class="legend-item">
+              <span class="color-indicator payments"></span>
+              <span>Payments</span>
+            </div>
+            <div class="legend-item">
+              <span class="color-indicator devices"></span>
+              <span>Devices</span>
+            </div>
+          </div>
+        </div>
+        <div class="chart">
+          <img src="images/daily-performance-chart.png" alt="Daily Performance Chart" />
+        </div>
+      </div>
+      
+      <div class="chart-container">
+        <div class="chart-header">
+          <h3>Performance Trends</h3>
+          <div class="chart-controls">
+            <select>
+              <option>New Customers</option>
+              <option>Payments Collected</option>
+              <option>Devices Registered</option>
+              <option>Customer Visits</option>
+            </select>
+          </div>
+        </div>
+        <div class="chart">
+          <img src="images/performance-trends-chart.png" alt="Performance Trends Chart" />
+        </div>
+      </div>
+    </div>
+    
+    <div class="efficiency-metrics">
+      <h2>Efficiency Metrics</h2>
+      <div class="metrics-list">
+        <div class="metric-item">
+          <div class="metric-info">
+            <h3>Average Registration Time</h3>
+            <p>Time to complete customer registration</p>
+          </div>
+          <div class="metric-value">
+            <span class="value">8m 12s</span>
+            <span class="trend positive">-45s</span>
+          </div>
+        </div>
+        
+        <div class="metric-item">
+          <div class="metric-info">
+            <h3>Average Visit Duration</h3>
+            <p>Time spent per customer visit</p>
+          </div>
+          <div class="metric-value">
+            <span class="value">32m 18s</span>
+            <span class="trend negative">+2m 10s</span>
+          </div>
+        </div>
+        
+        <div class="metric-item">
+          <div class="metric-info">
+            <h3>Payment Processing Time</h3>
+            <p>Time to process and confirm payment</p>
+          </div>
+          <div class="metric-value">
+            <span class="value">3m 45s</span>
+            <span class="trend positive">-20s</span>
+          </div>
+        </div>
+        
+        <div class="metric-item">
+          <div class="metric-info">
+            <h3>Device Setup Time</h3>
+            <p>Time to set up and activate device</p>
+          </div>
+          <div class="metric-value">
+            <span class="value">12m 30s</span>
+            <span class="trend neutral">0s</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Sales Tracking Screen -->
+<div class="wireframe sales-tracking">
+  <!-- Header -->
+  <div class="header">
+    <div class="menu-toggle">
+      <i class="menu-icon"></i>
+    </div>
+    <div class="page-title">
+      <h1>Sales Tracking</h1>
+    </div>
+    <div class="header-actions">
+      <button class="sync-button">
+        <i class="sync-icon"></i>
+        <span>Last sync: 10:45 AM</span>
+      </button>
+      <button class="notification-button">
+        <i class="notification-icon"></i>
+        <span class="badge">3</span>
+      </button>
+      <div class="agent-profile">
+        <img src="images/agent-avatar.png" alt="Agent Avatar" />
+        <span>John D.</span>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Main Content -->
+  <div class="main-content">
+    <div class="time-period-selector">
+      <button class="period-button">Day</button>
+      <button class="period-button">Week</button>
+      <button class="period-button active">Month</button>
+      <button class="period-button">Quarter</button>
+    </div>
+    
+    <div class="date-range">
+      <span>April 2025</span>
+      <div class="range-controls">
+        <button class="range-nav">
+          <i class="prev-icon"></i>
+        </button>
+        <button class="range-nav">
+          <i class="next-icon"></i>
+        </button>
+      </div>
+    </div>
+    
+    <div class="sales-summary">
+      <div class="summary-card">
+        <div class="card-header">
+          <h3>Total Sales</h3>
+        </div>
+        <div class="sales-amount">
+          <span class="amount">KSh 325,000</span>
+          <span class="trend positive">+12% from last month</span>
+        </div>
+        <div class="progress-container">
+          <div class="progress-info">
+            <span>Monthly Target: KSh 400,000</span>
+            <span>81.25%</span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress" style="width: 81.25%"></div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="sales-breakdown">
+        <div class="breakdown-header">
+          <h3>Sales Breakdown</h3>
+          <button class="view-details">View Details</button>
+        </div>
+        <div class="breakdown-chart">
+          <img src="images/sales-breakdown-chart.png" alt="Sales Breakdown Chart" />
+        </div>
+        <div class="breakdown-legend">
+          <div class="legend-item">
+            <span class="color-indicator ic2000"></span>
+            <span>IC-2000: 45%</span>
+          </div>
+          <div class="legend-item">
+            <span class="color-indicator ic1500"></span>
+            <span>IC-1500: 30%</span>
+          </div>
+          <div class="legend-item">
+            <span class="color-indicator es1000"></span>
+            <span>ES-1000: 15%</span>
+          </div>
+          <div class="legend-item">
+            <span class="color-indicator lpg500"></span>
+            <span>LPG-500: 10%</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="sales-trends">
+      <div class="trends-header">
+        <h3>Sales Trends</h3>
+        <div class="trends-controls">
+          <select>
+            <option>All Products</option>
+            <option>IC-2000</option>
+            <option>IC-1500</option>
+            <option>ES-1000</option>
+            <option>LPG-500</option>
+          </select>
+        </div>
+      </div>
+      <div class="trends-chart">
+        <img src="images/sales-trends-chart.png" alt="Sales Trends Chart" />
+      </div>
+    </div>
+    
+    <div class="top-performers">
+      <div class="section-header">
+        <h3>Top Selling Products</h3>
+        <button class="view-all">View All</button>
+      </div>
+      <div class="product-list">
+        <div class="product-item">
+          <div class="product-rank">1</div>
+          <div class="product-image">
+            <img src="images/stove-device.png" alt="Stove Device" />
+          </div>
+          <div class="product-info">
+            <h4>BURN Induction Cooker IC-2000</h4>
+            <p>Premium model</p>
+          </div>
+          <div class="product-stats">
+            <div class="stat-item">
+              <span class="label">Units</span>
+              <span class="value">45</span>
+            </div>
+            <div class="stat-item">
+              <span class="label">Revenue</span>
+              <span class="value">KSh 675,000</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="product-item">
+          <div class="product-rank">2</div>
+          <div class="product-image">
+            <img src="images/stove-device.png" alt="Stove Device" />
+          </div>
+          <div class="product-info">
+            <h4>BURN Induction Cooker IC-1500</h4>
+            <p>Standard model</p>
+          </div>
+          <div class="product-stats">
+            <div class="stat-item">
+              <span class="label">Units</span>
+              <span class="value">32</span>
+            </div>
+            <div class="stat-item">
+              <span class="label">Revenue</span>
+              <span class="value">KSh 384,000</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="product-item">
+          <div class="product-rank">3</div>
+          <div class="product-image">
+            <img src="images/stove-device.png" alt="Stove Device" />
+          </div>
+          <div class="product-info">
+            <h4>BURN Electric Stove ES-1000</h4>
+            <p>Basic model</p>
+          </div>
+          <div class="product-stats">
+            <div class="stat-item">
+              <span class="label">Units</span>
+              <span class="value">18</span>
+            </div>
+            <div class="stat-item">
+              <span class="label">Revenue</span>
+              <span class="value">KSh 144,000</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="sales-opportunities">
+      <div class="section-header">
+        <h3>Sales Opportunities</h3>
+      </div>
+      <div class="opportunities-list">
+        <div class="opportunity-item">
+          <div class="opportunity-icon">
+            <i class="upgrade-icon"></i>
+          </div>
+          <div class="opportunity-info">
+            <h4>Upgrade Opportunities</h4>
+            <p>15 customers eligible for device upgrades</p>
+          </div>
+          <button class="action-button small">
+            <span>View</span>
+          </button>
+        </div>
+        
+        <div class="opportunity-item">
+          <div class="opportunity-icon">
+            <i class="referral-icon"></i>
+          </div>
+          <div class="opportunity-info">
+            <h4>Referral Program</h4>
+            <p>8 customers have referred friends</p>
+          </div>
+          <button class="action-button small">
+            <span>View</span>
+          </button>
+        </div>
+        
+        <div class="opportunity-item">
+          <div class="opportunity-icon">
+            <i class="accessory-icon"></i>
+          </div>
+          <div class="opportunity-info">
+            <h4>Accessory Sales</h4>
+            <p>28 customers without cooking accessories</p>
+          </div>
+          <button class="action-button small">
+            <span>View</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Commission Calculations Screen -->
+<div class="wireframe commission-calculations">
+  <!-- Header -->
+  <div class="header">
+    <div class="menu-toggle">
+      <i class="menu-icon"></i>
+    </div>
+    <div class="page-title">
+      <h1>Commission Calculator</h1>
+    </div>
+    <div class="header-actions">
+      <button class="sync-button">
+        <i class="sync-icon"></i>
+        <span>Last sync: 10:45 AM</span>
+      </button>
+      <button class="notification-button">
+        <i class="notification-icon"></i>
+        <span class="badge">3</span>
+      </button>
+      <div class="agent-profile">
+        <img src="images/agent-avatar.png" alt="Agent Avatar" />
+        <span>John D.</span>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Main Content -->
+  <div class="main-content">
+    <div class="time-period-selector">
+      <button class="period-button">Current</button>
+      <button class="period-button active">Month to Date</button>
+      <button class="period-button">Previous Month</button>
+      <button class="period-button">Custom</button>
+    </div>
+    
+    <div class="date-range">
+      <span>Apr 1 - Apr 21, 2025</span>
+    </div>
+    
+    <div class="commission-summary">
+      <div class="summary-card">
+        <div class="card-header">
+          <h3>Estimated Commission</h3>
+        </div>
+        <div class="commission-amount">
+          <span class="amount">KSh 32,500</span>
+          <span class="trend positive">+15% from last month</span>
+        </div>
+        <div class="progress-container">
+          <div class="progress-info">
+            <span>Monthly Target: KSh 40,000</span>
+            <span>81.25%</span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress" style="width: 81.25%"></div>
+          </div>
+        </div>
+        <div class="payout-date">
+          <span>Next Payout: May 5, 2025</span>
+        </div>
+      </div>
+    </div>
+    
+    <div class="commission-breakdown">
+      <div class="breakdown-header">
+        <h3>Commission Breakdown</h3>
+      </div>
+      <div class="breakdown-table">
+        <div class="table-header">
+          <div class="header-cell">Category</div>
+          <div class="header-cell">Units</div>
+          <div class="header-cell">Rate</div>
+          <div class="header-cell">Amount</div>
+        </div>
+        
+        <div class="table-row">
+          <div class="cell">New Customer Registration</div>
+          <div class="cell">28</div>
+          <div class="cell">KSh 300</div>
+          <div class="cell">KSh 8,400</div>
+        </div>
+        
+        <div class="table-row">
+          <div class="cell">Device Sales - Premium</div>
+          <div class="cell">12</div>
+          <div class="cell">KSh 750</div>
+          <div class="cell">KSh 9,000</div>
+        </div>
+        
+        <div class="table-row">
+          <div class="cell">Device Sales - Standard</div>
+          <div class="cell">10</div>
+          <div class="cell">KSh 500</div>
+          <div class="cell">KSh 5,000</div>
+        </div>
+        
+        <div class="table-row">
+          <div class="cell">Payment Collections</div>
+          <div class="cell">KSh 85,000</div>
+          <div class="cell">5%</div>
+          <div class="cell">KSh 4,250</div>
+        </div>
+        
+        <div class="table-row">
+          <div class="cell">Accessory Sales</div>
+          <div class="cell">15</div>
+          <div class="cell">KSh 150</div>
+          <div class="cell">KSh 2,250</div>
+        </div>
+        
+        <div class="table-row">
+          <div class="cell">Customer Retention Bonus</div>
+          <div class="cell">95%</div>
+          <div class="cell">KSh 3,600</div>
+          <div class="cell">KSh 3,600</div>
+        </div>
+        
+        <div class="table-row total">
+          <div class="cell">Total Commission</div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+          <div class="cell">KSh 32,500</div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="commission-tiers">
+      <div class="tiers-header">
+        <h3>Commission Tiers</h3>
+      </div>
+      <div class="tiers-table">
+        <div class="table-header">
+          <div class="header-cell">Category</div>
+          <div class="header-cell">Tier 1</div>
+          <div class="header-cell">Tier 2</div>
+          <div class="header-cell">Tier 3</div>
+          <div class="header-cell">Your Tier</div>
+        </div>
+        
+        <div class="table-row">
+          <div class="cell">New Customers</div>
+          <div class="cell">1-15</div>
+          <div class="cell">16-30</div>
+          <div class="cell">31+</div>
+          <div class="cell tier-2">Tier 2</div>
+        </div>
+        
+        <div class="table-row">
+          <div class="cell">Device Sales</div>
+          <div class="cell">1-10</div>
+          <div class="cell">11-25</div>
+          <div class="cell">26+</div>
+          <div class="cell tier-2">Tier 2</div>
+        </div>
+        
+        <div class="table-row">
+          <div class="cell">Payment Collections</div>
+          <div class="cell">< KSh 50,000</div>
+          <div class="cell">KSh 50,000-100,000</div>
+          <div class="cell">> KSh 100,000</div>
+          <div class="cell tier-2">Tier 2</div>
+        </div>
+        
+        <div class="table-row">
+          <div class="cell">Customer Retention</div>
+          <div class="cell">< 85%</div>
+          <div class="cell">85-95%</div>
+          <div class="cell">> 95%</div>
+          <div class="cell tier-2">Tier 2</div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="commission-history">
+      <div class="history-header">
+        <h3>Commission History</h3>
+        <button class="view-all">View All</button>
+      </div>
+      <div class="history-chart">
+        <img src="images/commission-history-chart.png" alt="Commission History Chart" />
+      </div>
+      <div class="history-table">
+        <div class="table-header">
+          <div class="header-cell">Month</div>
+          <div class="header-cell">Commission</div>
+          <div class="header-cell">Status</div>
+        </div>
+        
+        <div class="table-row">
+          <div class="cell">March 2025</div>
+          <div class="cell">KSh 28,200</div>
+          <div class="cell">
+            <span class="status-badge paid">Paid</span>
+          </div>
+        </div>
+        
+        <div class="table-row">
+          <div class="cell">February 2025</div>
+          <div class="cell">KSh 31,500</div>
+          <div class="cell">
+            <span class="status-badge paid">Paid</span>
+          </div>
+        </div>
+        
+        <div class="table-row">
+          <div class="cell">January 2025</div>
+          <div class="cell">KSh 25,800</div>
+          <div class="cell">
+            <span class="status-badge paid">Paid</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

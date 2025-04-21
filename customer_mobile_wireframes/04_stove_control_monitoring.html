@@ -1,0 +1,329 @@
+<!-- Stove Control Screen -->
+<div class="wireframe stove-control">
+  <div class="header">
+    <button class="back-button">
+      <i class="back-icon"></i>
+    </button>
+    <h1>Stove Control</h1>
+    <button class="icon-button">
+      <i class="help-icon"></i>
+    </button>
+  </div>
+  
+  <div class="main-content">
+    <div class="stove-status-card">
+      <div class="status-header">
+        <h2>BURN Induction Cooker</h2>
+        <span class="status-badge active">Active</span>
+      </div>
+      
+      <div class="stove-image">
+        <img src="images/stove-control.png" alt="Stove Control" />
+      </div>
+      
+      <div class="power-control">
+        <button class="power-button">
+          <i class="power-icon"></i>
+        </button>
+        <span class="power-status">ON</span>
+      </div>
+    </div>
+    
+    <div class="control-panel">
+      <div class="temperature-control">
+        <h3>Temperature</h3>
+        <div class="temperature-slider">
+          <input type="range" min="1" max="5" value="3" class="slider" />
+          <div class="slider-labels">
+            <span>Low</span>
+            <span>Medium</span>
+            <span>High</span>
+          </div>
+        </div>
+        <div class="temperature-presets">
+          <button class="preset-button">
+            <i class="simmer-icon"></i>
+            <span>Simmer</span>
+          </button>
+          <button class="preset-button active">
+            <i class="cook-icon"></i>
+            <span>Cook</span>
+          </button>
+          <button class="preset-button">
+            <i class="boil-icon"></i>
+            <span>Boil</span>
+          </button>
+        </div>
+      </div>
+      
+      <div class="timer-control">
+        <h3>Timer</h3>
+        <div class="timer-display">
+          <span class="timer-value">00:45:00</span>
+          <div class="timer-buttons">
+            <button class="timer-button">
+              <i class="minus-icon"></i>
+            </button>
+            <button class="timer-button">
+              <i class="plus-icon"></i>
+            </button>
+          </div>
+        </div>
+        <div class="timer-presets">
+          <button class="time-preset">15m</button>
+          <button class="time-preset">30m</button>
+          <button class="time-preset active">45m</button>
+          <button class="time-preset">1h</button>
+        </div>
+        <button class="secondary-button">
+          <i class="timer-icon"></i>
+          <span>Start Timer</span>
+        </button>
+      </div>
+    </div>
+    
+    <div class="energy-monitor">
+      <h3>Energy Monitor</h3>
+      <div class="energy-stats">
+        <div class="stat-item">
+          <i class="power-usage-icon"></i>
+          <div>
+            <p>Current Power</p>
+            <p class="stat">850 W</p>
+          </div>
+        </div>
+        <div class="stat-item">
+          <i class="energy-icon"></i>
+          <div>
+            <p>Session Energy</p>
+            <p class="stat">0.4 kWh</p>
+          </div>
+        </div>
+        <div class="stat-item">
+          <i class="cost-icon"></i>
+          <div>
+            <p>Estimated Cost</p>
+            <p class="stat">KSh 22</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="action-buttons">
+    <button class="primary-button">Save Settings</button>
+  </div>
+</div>
+
+<!-- Usage Statistics Screen -->
+<div class="wireframe usage-statistics">
+  <div class="header">
+    <button class="back-button">
+      <i class="back-icon"></i>
+    </button>
+    <h1>Usage Statistics</h1>
+    <button class="icon-button">
+      <i class="download-icon"></i>
+    </button>
+  </div>
+  
+  <div class="main-content">
+    <div class="time-period-selector">
+      <button class="period-button">Day</button>
+      <button class="period-button active">Week</button>
+      <button class="period-button">Month</button>
+      <button class="period-button">Year</button>
+    </div>
+    
+    <div class="usage-chart">
+      <h3>Cooking Time (hours)</h3>
+      <div class="chart-container">
+        <img src="images/cooking-time-chart.png" alt="Cooking Time Chart" />
+      </div>
+    </div>
+    
+    <div class="usage-chart">
+      <h3>Energy Consumption (kWh)</h3>
+      <div class="chart-container">
+        <img src="images/energy-consumption-chart.png" alt="Energy Consumption Chart" />
+      </div>
+    </div>
+    
+    <div class="usage-summary">
+      <h3>Weekly Summary</h3>
+      <div class="summary-stats">
+        <div class="summary-item">
+          <span class="label">Total Cooking Time</span>
+          <span class="value">12h 30m</span>
+        </div>
+        <div class="summary-item">
+          <span class="label">Total Energy Used</span>
+          <span class="value">5.2 kWh</span>
+        </div>
+        <div class="summary-item">
+          <span class="label">Average Daily Usage</span>
+          <span class="value">1h 47m</span>
+        </div>
+        <div class="summary-item">
+          <span class="label">Peak Usage Day</span>
+          <span class="value">Wednesday (2h 15m)</span>
+        </div>
+        <div class="summary-item">
+          <span class="label">Total Cost</span>
+          <span class="value">KSh 260</span>
+        </div>
+        <div class="summary-item">
+          <span class="label">Carbon Saved</span>
+          <span class="value">3.8 kg CO₂</span>
+        </div>
+      </div>
+    </div>
+    
+    <div class="cooking-patterns">
+      <h3>Cooking Patterns</h3>
+      <div class="pattern-chart">
+        <img src="images/cooking-patterns-chart.png" alt="Cooking Patterns Chart" />
+      </div>
+      <div class="pattern-insights">
+        <div class="insight-item">
+          <i class="insight-icon"></i>
+          <p>You cook most frequently between 6-8 PM</p>
+        </div>
+        <div class="insight-item">
+          <i class="insight-icon"></i>
+          <p>Your longest cooking sessions are on Sundays</p>
+        </div>
+        <div class="insight-item">
+          <i class="tip-icon"></i>
+          <p>Tip: Using the lid while cooking can reduce energy consumption by up to 20%</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Device Diagnostics Screen -->
+<div class="wireframe device-diagnostics">
+  <div class="header">
+    <button class="back-button">
+      <i class="back-icon"></i>
+    </button>
+    <h1>Device Diagnostics</h1>
+  </div>
+  
+  <div class="main-content">
+    <div class="device-info">
+      <h2>Device Information</h2>
+      <div class="info-item">
+        <span class="label">Model</span>
+        <span class="value">BURN Induction Cooker IC-2000</span>
+      </div>
+      <div class="info-item">
+        <span class="label">Serial Number</span>
+        <span class="value">BRN12345678</span>
+      </div>
+      <div class="info-item">
+        <span class="label">Firmware Version</span>
+        <span class="value">v2.3.5</span>
+      </div>
+      <div class="info-item">
+        <span class="label">Last Connected</span>
+        <span class="value">Today, 11:45 AM</span>
+      </div>
+      <div class="info-item">
+        <span class="label">Activation Date</span>
+        <span class="value">10 Mar 2025</span>
+      </div>
+    </div>
+    
+    <div class="system-status">
+      <h2>System Status</h2>
+      <div class="status-item">
+        <div class="status-icon healthy">
+          <i class="check-icon"></i>
+        </div>
+        <div class="status-info">
+          <h3>Heating Element</h3>
+          <p>Working normally</p>
+        </div>
+      </div>
+      <div class="status-item">
+        <div class="status-icon healthy">
+          <i class="check-icon"></i>
+        </div>
+        <div class="status-info">
+          <h3>Control Board</h3>
+          <p>Working normally</p>
+        </div>
+      </div>
+      <div class="status-item">
+        <div class="status-icon healthy">
+          <i class="check-icon"></i>
+        </div>
+        <div class="status-info">
+          <h3>Temperature Sensor</h3>
+          <p>Working normally</p>
+        </div>
+      </div>
+      <div class="status-item">
+        <div class="status-icon warning">
+          <i class="warning-icon"></i>
+        </div>
+        <div class="status-info">
+          <h3>Connectivity</h3>
+          <p>Signal strength low</p>
+        </div>
+      </div>
+      <div class="status-item">
+        <div class="status-icon healthy">
+          <i class="check-icon"></i>
+        </div>
+        <div class="status-info">
+          <h3>Power Supply</h3>
+          <p>Working normally</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="diagnostic-actions">
+      <button class="secondary-button">
+        <i class="refresh-icon"></i>
+        <span>Run Diagnostics</span>
+      </button>
+      <button class="secondary-button">
+        <i class="update-icon"></i>
+        <span>Check for Updates</span>
+      </button>
+    </div>
+    
+    <div class="troubleshooting">
+      <h2>Troubleshooting</h2>
+      <div class="troubleshooting-items">
+        <button class="troubleshooting-item">
+          <i class="guide-icon"></i>
+          <span>Stove Not Heating</span>
+          <i class="arrow-icon"></i>
+        </button>
+        <button class="troubleshooting-item">
+          <i class="guide-icon"></i>
+          <span>Error Codes</span>
+          <i class="arrow-icon"></i>
+        </button>
+        <button class="troubleshooting-item">
+          <i class="guide-icon"></i>
+          <span>Connectivity Issues</span>
+          <i class="arrow-icon"></i>
+        </button>
+        <button class="troubleshooting-item">
+          <i class="guide-icon"></i>
+          <span>Payment Problems</span>
+          <i class="arrow-icon"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+  
+  <div class="action-buttons">
+    <button class="primary-button">Contact Support</button>
+  </div>
+</div>

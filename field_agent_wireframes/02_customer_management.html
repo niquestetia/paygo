@@ -1,0 +1,641 @@
+<!-- Customer Registration Screen -->
+<div class="wireframe customer-registration">
+  <!-- Header -->
+  <div class="header">
+    <div class="menu-toggle">
+      <i class="menu-icon"></i>
+    </div>
+    <div class="page-title">
+      <h1>New Customer Registration</h1>
+    </div>
+    <div class="header-actions">
+      <button class="sync-button">
+        <i class="sync-icon"></i>
+        <span>Last sync: 10:45 AM</span>
+      </button>
+      <button class="notification-button">
+        <i class="notification-icon"></i>
+        <span class="badge">3</span>
+      </button>
+      <div class="agent-profile">
+        <img src="images/agent-avatar.png" alt="Agent Avatar" />
+        <span>John D.</span>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Main Content -->
+  <div class="main-content">
+    <div class="form-progress">
+      <div class="progress-step active">
+        <div class="step-number">1</div>
+        <span>Personal Info</span>
+      </div>
+      <div class="progress-connector"></div>
+      <div class="progress-step">
+        <div class="step-number">2</div>
+        <span>Location</span>
+      </div>
+      <div class="progress-connector"></div>
+      <div class="progress-step">
+        <div class="step-number">3</div>
+        <span>Device</span>
+      </div>
+      <div class="progress-connector"></div>
+      <div class="progress-step">
+        <div class="step-number">4</div>
+        <span>Payment</span>
+      </div>
+      <div class="progress-connector"></div>
+      <div class="progress-step">
+        <div class="step-number">5</div>
+        <span>Confirmation</span>
+      </div>
+    </div>
+    
+    <div class="registration-form">
+      <div class="form-section">
+        <h2>Personal Information</h2>
+        <p class="section-description">Enter the customer's personal details</p>
+        
+        <div class="form-grid">
+          <div class="form-group">
+            <label>Full Name <span class="required">*</span></label>
+            <input type="text" placeholder="Enter customer's full name" />
+          </div>
+          
+          <div class="form-group">
+            <label>Phone Number <span class="required">*</span></label>
+            <div class="phone-input">
+              <select class="country-code">
+                <option>+254</option>
+                <option>+255</option>
+                <option>+256</option>
+                <option>+251</option>
+              </select>
+              <input type="tel" placeholder="712 345 678" />
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <label>ID Type <span class="required">*</span></label>
+            <select>
+              <option>National ID</option>
+              <option>Passport</option>
+              <option>Driver's License</option>
+              <option>Other</option>
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <label>ID Number <span class="required">*</span></label>
+            <input type="text" placeholder="Enter ID number" />
+          </div>
+          
+          <div class="form-group">
+            <label>Email (Optional)</label>
+            <input type="email" placeholder="Enter email address" />
+          </div>
+          
+          <div class="form-group">
+            <label>Gender</label>
+            <div class="radio-group">
+              <label class="radio-option">
+                <input type="radio" name="gender" value="male" />
+                <span>Male</span>
+              </label>
+              <label class="radio-option">
+                <input type="radio" name="gender" value="female" />
+                <span>Female</span>
+              </label>
+              <label class="radio-option">
+                <input type="radio" name="gender" value="other" />
+                <span>Other</span>
+              </label>
+            </div>
+          </div>
+        </div>
+        
+        <div class="form-group">
+          <label>ID Document Photo</label>
+          <div class="document-upload">
+            <div class="upload-area">
+              <i class="camera-icon"></i>
+              <span>Take photo or upload</span>
+            </div>
+            <button class="upload-button">
+              <i class="camera-icon"></i>
+              <span>Capture</span>
+            </button>
+          </div>
+        </div>
+        
+        <div class="form-group">
+          <label>Customer Photo</label>
+          <div class="document-upload">
+            <div class="upload-area">
+              <i class="camera-icon"></i>
+              <span>Take photo or upload</span>
+            </div>
+            <button class="upload-button">
+              <i class="camera-icon"></i>
+              <span>Capture</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Footer Actions -->
+  <div class="form-actions">
+    <button class="secondary-button">Save as Draft</button>
+    <button class="primary-button">Next: Location</button>
+  </div>
+</div>
+
+<!-- Customer Search Screen -->
+<div class="wireframe customer-search">
+  <!-- Header -->
+  <div class="header">
+    <div class="menu-toggle">
+      <i class="menu-icon"></i>
+    </div>
+    <div class="page-title">
+      <h1>Customers</h1>
+    </div>
+    <div class="header-actions">
+      <button class="sync-button">
+        <i class="sync-icon"></i>
+        <span>Last sync: 10:45 AM</span>
+      </button>
+      <button class="notification-button">
+        <i class="notification-icon"></i>
+        <span class="badge">3</span>
+      </button>
+      <div class="agent-profile">
+        <img src="images/agent-avatar.png" alt="Agent Avatar" />
+        <span>John D.</span>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Main Content -->
+  <div class="main-content">
+    <div class="search-controls">
+      <div class="search-bar">
+        <i class="search-icon"></i>
+        <input type="text" placeholder="Search by name, phone, or ID" />
+        <button class="scan-button">
+          <i class="qr-code-icon"></i>
+        </button>
+      </div>
+      
+      <div class="filter-controls">
+        <button class="filter-button">
+          <i class="filter-icon"></i>
+          <span>Filter</span>
+        </button>
+        <div class="view-toggle">
+          <button class="toggle-button active">
+            <i class="list-icon"></i>
+          </button>
+          <button class="toggle-button">
+            <i class="map-icon"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    
+    <div class="filter-tags">
+      <div class="filter-tag">
+        <span>Status: Active</span>
+        <i class="remove-icon"></i>
+      </div>
+      <div class="filter-tag">
+        <span>Payment: Due</span>
+        <i class="remove-icon"></i>
+      </div>
+      <button class="clear-filters">Clear All</button>
+    </div>
+    
+    <div class="customer-list">
+      <div class="customer-card">
+        <div class="customer-info">
+          <div class="customer-avatar">
+            <img src="images/customer-avatar-1.png" alt="Customer Avatar" />
+          </div>
+          <div class="customer-details">
+            <h3>Sarah Kamau</h3>
+            <p><i class="phone-icon"></i> +254 712 345 678</p>
+            <p><i class="location-icon"></i> Nairobi, Kenya</p>
+          </div>
+        </div>
+        <div class="customer-status">
+          <span class="status-badge active">Active</span>
+          <span class="payment-status">Payment due in 3 days</span>
+        </div>
+        <div class="customer-actions">
+          <button class="action-button small">
+            <i class="view-icon"></i>
+            <span>View</span>
+          </button>
+          <button class="action-button small">
+            <i class="payment-icon"></i>
+            <span>Collect</span>
+          </button>
+          <button class="more-button">
+            <i class="more-icon"></i>
+          </button>
+        </div>
+      </div>
+      
+      <div class="customer-card">
+        <div class="customer-info">
+          <div class="customer-avatar">
+            <img src="images/customer-avatar-2.png" alt="Customer Avatar" />
+          </div>
+          <div class="customer-details">
+            <h3>John Omondi</h3>
+            <p><i class="phone-icon"></i> +254 723 456 789</p>
+            <p><i class="location-icon"></i> Nairobi, Kenya</p>
+          </div>
+        </div>
+        <div class="customer-status">
+          <span class="status-badge locked">Locked</span>
+          <span class="payment-status overdue">Payment overdue by 5 days</span>
+        </div>
+        <div class="customer-actions">
+          <button class="action-button small">
+            <i class="view-icon"></i>
+            <span>View</span>
+          </button>
+          <button class="action-button small">
+            <i class="payment-icon"></i>
+            <span>Collect</span>
+          </button>
+          <button class="more-button">
+            <i class="more-icon"></i>
+          </button>
+        </div>
+      </div>
+      
+      <div class="customer-card">
+        <div class="customer-info">
+          <div class="customer-avatar">
+            <img src="images/customer-avatar-3.png" alt="Customer Avatar" />
+          </div>
+          <div class="customer-details">
+            <h3>Mary Wanjiku</h3>
+            <p><i class="phone-icon"></i> +254 734 567 890</p>
+            <p><i class="location-icon"></i> Nairobi, Kenya</p>
+          </div>
+        </div>
+        <div class="customer-status">
+          <span class="status-badge active">Active</span>
+          <span class="payment-status">Payment due in 12 days</span>
+        </div>
+        <div class="customer-actions">
+          <button class="action-button small">
+            <i class="view-icon"></i>
+            <span>View</span>
+          </button>
+          <button class="action-button small">
+            <i class="payment-icon"></i>
+            <span>Collect</span>
+          </button>
+          <button class="more-button">
+            <i class="more-icon"></i>
+          </button>
+        </div>
+      </div>
+      
+      <div class="customer-card">
+        <div class="customer-info">
+          <div class="customer-avatar">
+            <img src="images/customer-avatar-4.png" alt="Customer Avatar" />
+          </div>
+          <div class="customer-details">
+            <h3>James Mwangi</h3>
+            <p><i class="phone-icon"></i> +254 745 678 901</p>
+            <p><i class="location-icon"></i> Nairobi, Kenya</p>
+          </div>
+        </div>
+        <div class="customer-status">
+          <span class="status-badge maintenance">Maintenance</span>
+          <span class="payment-status">Payment due in 8 days</span>
+        </div>
+        <div class="customer-actions">
+          <button class="action-button small">
+            <i class="view-icon"></i>
+            <span>View</span>
+          </button>
+          <button class="action-button small">
+            <i class="payment-icon"></i>
+            <span>Collect</span>
+          </button>
+          <button class="more-button">
+            <i class="more-icon"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Floating Action Button -->
+  <button class="floating-action-button">
+    <i class="add-icon"></i>
+  </button>
+</div>
+
+<!-- Customer Profile Screen -->
+<div class="wireframe customer-profile">
+  <!-- Header -->
+  <div class="header">
+    <button class="back-button">
+      <i class="back-icon"></i>
+    </button>
+    <div class="page-title">
+      <h1>Customer Profile</h1>
+    </div>
+    <div class="header-actions">
+      <button class="edit-button">
+        <i class="edit-icon"></i>
+      </button>
+      <button class="more-button">
+        <i class="more-icon"></i>
+      </button>
+    </div>
+  </div>
+  
+  <!-- Main Content -->
+  <div class="main-content">
+    <div class="profile-header">
+      <div class="customer-avatar">
+        <img src="images/customer-avatar-1.png" alt="Customer Avatar" />
+      </div>
+      <div class="customer-info">
+        <h2>Sarah Kamau</h2>
+        <p><i class="phone-icon"></i> +254 712 345 678</p>
+        <p><i class="id-icon"></i> ID: 12345678</p>
+        <div class="status-badges">
+          <span class="status-badge active">Active</span>
+          <span class="customer-since">Customer since: Mar 2025</span>
+        </div>
+      </div>
+    </div>
+    
+    <div class="quick-actions">
+      <button class="action-button">
+        <i class="call-icon"></i>
+        <span>Call</span>
+      </button>
+      <button class="action-button">
+        <i class="message-icon"></i>
+        <span>Message</span>
+      </button>
+      <button class="action-button">
+        <i class="payment-icon"></i>
+        <span>Collect Payment</span>
+      </button>
+      <button class="action-button">
+        <i class="directions-icon"></i>
+        <span>Directions</span>
+      </button>
+    </div>
+    
+    <div class="tab-navigation">
+      <button class="tab-button active">Overview</button>
+      <button class="tab-button">Devices</button>
+      <button class="tab-button">Payments</button>
+      <button class="tab-button">History</button>
+    </div>
+    
+    <div class="tab-content">
+      <!-- Overview Tab -->
+      <div class="tab-pane active">
+        <div class="info-card">
+          <div class="card-header">
+            <h3>Payment Status</h3>
+          </div>
+          <div class="payment-status-details">
+            <div class="status-item">
+              <span class="label">Current Balance</span>
+              <span class="value">KSh 350</span>
+            </div>
+            <div class="status-item">
+              <span class="label">Next Payment Due</span>
+              <span class="value">Apr 24, 2025</span>
+            </div>
+            <div class="status-item">
+              <span class="label">Payment Frequency</span>
+              <span class="value">Monthly</span>
+            </div>
+            <div class="status-item">
+              <span class="label">Payment Method</span>
+              <span class="value">M-Pesa</span>
+            </div>
+            <div class="credit-progress">
+              <div class="progress-header">
+                <span>Credit Remaining</span>
+                <span>65%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress" style="width: 65%"></div>
+              </div>
+              <span class="days-remaining">Approximately 7 days remaining</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="info-card">
+          <div class="card-header">
+            <h3>Device Information</h3>
+            <button class="view-all">View All</button>
+          </div>
+          <div class="device-info">
+            <div class="device-image">
+              <img src="images/stove-device.png" alt="Stove Device" />
+            </div>
+            <div class="device-details">
+              <h4>BURN Induction Cooker IC-2000</h4>
+              <p><i class="serial-icon"></i> Serial: BRN12345678</p>
+              <p><i class="status-icon"></i> Status: Active</p>
+              <p><i class="activation-icon"></i> Activated: Mar 10, 2025</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="info-card">
+          <div class="card-header">
+            <h3>Location</h3>
+          </div>
+          <div class="location-info">
+            <div class="map-container">
+              <img src="images/customer-location-map.png" alt="Customer Location Map" />
+            </div>
+            <div class="address-details">
+              <p><i class="location-pin-icon"></i> 123 Moi Avenue, Nairobi, Kenya</p>
+              <p><i class="landmark-icon"></i> Near Central Market</p>
+              <button class="secondary-button small">
+                <i class="directions-icon"></i>
+                <span>Get Directions</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="info-card">
+          <div class="card-header">
+            <h3>Notes & Reminders</h3>
+            <button class="add-button">
+              <i class="add-icon"></i>
+            </button>
+          </div>
+          <div class="notes-list">
+            <div class="note-item">
+              <div class="note-header">
+                <span class="note-date">Apr 15, 2025</span>
+                <button class="more-button small">
+                  <i class="more-icon"></i>
+                </button>
+              </div>
+              <p class="note-content">Customer prefers visits in the morning. Has expressed interest in purchasing a second stove for her shop.</p>
+            </div>
+            <div class="note-item">
+              <div class="note-header">
+                <span class="note-date">Mar 25, 2025</span>
+                <button class="more-button small">
+                  <i class="more-icon"></i>
+                </button>
+              </div>
+              <p class="note-content">Provided basic maintenance training. Customer was very receptive and understood the instructions well.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Customer Payment History Screen -->
+<div class="wireframe payment-history">
+  <!-- Header -->
+  <div class="header">
+    <button class="back-button">
+      <i class="back-icon"></i>
+    </button>
+    <div class="page-title">
+      <h1>Payment History</h1>
+      <p>Sarah Kamau</p>
+    </div>
+    <div class="header-actions">
+      <button class="filter-button">
+        <i class="filter-icon"></i>
+      </button>
+      <button class="download-button">
+        <i class="download-icon"></i>
+      </button>
+    </div>
+  </div>
+  
+  <!-- Main Content -->
+  <div class="main-content">
+    <div class="payment-summary">
+      <div class="summary-card">
+        <h3>Total Paid</h3>
+        <span class="amount">KSh 12,500</span>
+      </div>
+      <div class="summary-card">
+        <h3>Current Balance</h3>
+        <span class="amount">KSh 350</span>
+      </div>
+      <div class="summary-card">
+        <h3>Payment Frequency</h3>
+        <span>Monthly</span>
+      </div>
+    </div>
+    
+    <div class="payment-list">
+      <div class="month-header">
+        <h3>April 2025</h3>
+      </div>
+      
+      <div class="payment-item">
+        <div class="payment-icon">
+          <i class="payment-received-icon"></i>
+        </div>
+        <div class="payment-details">
+          <div class="payment-info">
+            <h4>Payment Received</h4>
+            <p>Transaction ID: MP12345678</p>
+          </div>
+          <div class="payment-amount">
+            <span class="amount">KSh 500</span>
+            <span class="date">Apr 15, 2025</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="month-header">
+        <h3>March 2025</h3>
+      </div>
+      
+      <div class="payment-item">
+        <div class="payment-icon">
+          <i class="payment-received-icon"></i>
+        </div>
+        <div class="payment-details">
+          <div class="payment-info">
+            <h4>Payment Received</h4>
+            <p>Transaction ID: MP12345677</p>
+          </div>
+          <div class="payment-amount">
+            <span class="amount">KSh 1,000</span>
+            <span class="date">Mar 28, 2025</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="payment-item">
+        <div class="payment-icon">
+          <i class="payment-received-icon"></i>
+        </div>
+        <div class="payment-details">
+          <div class="payment-info">
+            <h4>Payment Received</h4>
+            <p>Transaction ID: MP12345676</p>
+          </div>
+          <div class="payment-amount">
+            <span class="amount">KSh 1,000</span>
+            <span class="date">Mar 15, 2025</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="payment-item">
+        <div class="payment-icon">
+          <i class="initial-payment-icon"></i>
+        </div>
+        <div class="payment-details">
+          <div class="payment-info">
+            <h4>Initial Payment</h4>
+            <p>Transaction ID: MP12345675</p>
+          </div>
+          <div class="payment-amount">
+            <span class="amount">KSh 10,000</span>
+            <span class="date">Mar 10, 2025</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Footer Actions -->
+  <div class="footer-actions">
+    <button class="primary-button">
+      <i class="collect-payment-icon"></i>
+      <span>Collect New Payment</span>
+    </button>
+  </div>
+</div>

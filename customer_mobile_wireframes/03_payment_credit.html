@@ -1,0 +1,300 @@
+<!-- Payment Methods Screen -->
+<div class="wireframe payment-methods">
+  <div class="header">
+    <button class="back-button">
+      <i class="back-icon"></i>
+    </button>
+    <h1>Add Credit</h1>
+  </div>
+  
+  <div class="main-content">
+    <div class="amount-selection">
+      <h2>Select Amount</h2>
+      <div class="amount-options">
+        <button class="amount-option">
+          <span class="amount">KSh 100</span>
+          <span class="duration">~2 days</span>
+        </button>
+        <button class="amount-option selected">
+          <span class="amount">KSh 300</span>
+          <span class="duration">~7 days</span>
+        </button>
+        <button class="amount-option">
+          <span class="amount">KSh 500</span>
+          <span class="duration">~12 days</span>
+        </button>
+        <button class="amount-option">
+          <span class="amount">KSh 1000</span>
+          <span class="duration">~24 days</span>
+        </button>
+      </div>
+      <div class="custom-amount">
+        <label>Custom Amount (KSh)</label>
+        <input type="number" placeholder="Enter amount" />
+      </div>
+    </div>
+    
+    <div class="payment-method-selection">
+      <h2>Select Payment Method</h2>
+      <div class="payment-methods-list">
+        <button class="payment-method selected">
+          <img src="images/mpesa-logo.png" alt="M-Pesa" />
+          <span>M-Pesa</span>
+          <i class="check-icon"></i>
+        </button>
+        <button class="payment-method">
+          <img src="images/airtel-money-logo.png" alt="Airtel Money" />
+          <span>Airtel Money</span>
+        </button>
+        <button class="payment-method">
+          <img src="images/card-icon.png" alt="Credit/Debit Card" />
+          <span>Card Payment</span>
+        </button>
+        <button class="payment-method">
+          <img src="images/voucher-icon.png" alt="Voucher" />
+          <span>Voucher Code</span>
+        </button>
+      </div>
+    </div>
+  </div>
+  
+  <div class="action-buttons">
+    <div class="payment-summary">
+      <span>Total Amount:</span>
+      <span class="total-amount">KSh 300</span>
+    </div>
+    <button class="primary-button">Continue to Payment</button>
+  </div>
+</div>
+
+<!-- M-Pesa Payment Screen -->
+<div class="wireframe mpesa-payment">
+  <div class="header">
+    <button class="back-button">
+      <i class="back-icon"></i>
+    </button>
+    <h1>M-Pesa Payment</h1>
+  </div>
+  
+  <div class="main-content">
+    <div class="payment-info">
+      <img src="images/mpesa-logo.png" alt="M-Pesa" class="payment-logo" />
+      <p class="instruction">To complete your payment of <span class="amount">KSh 300</span>, follow these steps:</p>
+      
+      <div class="payment-steps">
+        <div class="step">
+          <div class="step-number">1</div>
+          <div class="step-content">
+            <p>Go to your M-Pesa menu on your phone</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-number">2</div>
+          <div class="step-content">
+            <p>Select "Lipa na M-Pesa"</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-number">3</div>
+          <div class="step-content">
+            <p>Select "Pay Bill"</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-number">4</div>
+          <div class="step-content">
+            <p>Enter Business Number: <span class="highlight">247247</span></p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-number">5</div>
+          <div class="step-content">
+            <p>Enter Account Number: <span class="highlight">BRN12345</span></p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-number">6</div>
+          <div class="step-content">
+            <p>Enter Amount: <span class="highlight">300</span></p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-number">7</div>
+          <div class="step-content">
+            <p>Enter your M-Pesa PIN and confirm</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="alternative-option">
+        <p>Alternatively, you can use the STK Push below:</p>
+        <button class="secondary-button">
+          <i class="phone-icon"></i>
+          <span>Send M-Pesa Request</span>
+        </button>
+      </div>
+    </div>
+    
+    <div class="payment-status">
+      <p>Waiting for payment confirmation...</p>
+      <div class="loading-indicator">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <p class="helper-text">This may take a few moments. Please don't close the app.</p>
+    </div>
+  </div>
+  
+  <div class="action-buttons">
+    <button class="text-button">I've already paid</button>
+    <button class="secondary-button">Cancel Payment</button>
+  </div>
+</div>
+
+<!-- Payment Confirmation Screen -->
+<div class="wireframe payment-confirmation">
+  <div class="main-content">
+    <div class="confirmation-status success">
+      <i class="success-icon"></i>
+      <h1>Payment Successful!</h1>
+      <p>Your payment of <span class="amount">KSh 300</span> has been received.</p>
+    </div>
+    
+    <div class="transaction-details">
+      <h2>Transaction Details</h2>
+      <div class="detail-item">
+        <span class="label">Transaction ID</span>
+        <span class="value">MP12345678</span>
+      </div>
+      <div class="detail-item">
+        <span class="label">Date & Time</span>
+        <span class="value">21 Apr 2025, 11:45 AM</span>
+      </div>
+      <div class="detail-item">
+        <span class="label">Payment Method</span>
+        <span class="value">M-Pesa</span>
+      </div>
+      <div class="detail-item">
+        <span class="label">Amount</span>
+        <span class="value">KSh 300</span>
+      </div>
+      <div class="detail-item">
+        <span class="label">Estimated Usage</span>
+        <span class="value">~7 days</span>
+      </div>
+    </div>
+    
+    <div class="stove-status">
+      <h2>Stove Status</h2>
+      <div class="status-indicator active">
+        <i class="check-icon"></i>
+        <span>Your stove is now active and ready to use</span>
+      </div>
+    </div>
+  </div>
+  
+  <div class="action-buttons">
+    <button class="secondary-button">View Receipt</button>
+    <button class="primary-button">Return to Home</button>
+  </div>
+</div>
+
+<!-- Transaction History Screen -->
+<div class="wireframe transaction-history">
+  <div class="header">
+    <button class="back-button">
+      <i class="back-icon"></i>
+    </button>
+    <h1>Payment History</h1>
+    <button class="icon-button">
+      <i class="filter-icon"></i>
+    </button>
+  </div>
+  
+  <div class="main-content">
+    <div class="filter-tabs">
+      <button class="tab-button active">All</button>
+      <button class="tab-button">Payments</button>
+      <button class="tab-button">Rewards</button>
+    </div>
+    
+    <div class="transaction-list">
+      <div class="date-header">
+        <span>Today</span>
+      </div>
+      
+      <div class="transaction-item">
+        <div class="transaction-icon payment">
+          <i class="payment-icon"></i>
+        </div>
+        <div class="transaction-details">
+          <div class="transaction-info">
+            <h3>Payment</h3>
+            <p>M-Pesa</p>
+          </div>
+          <div class="transaction-amount">
+            <span class="amount">KSh 300</span>
+            <span class="time">11:45 AM</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="date-header">
+        <span>15 Apr 2025</span>
+      </div>
+      
+      <div class="transaction-item">
+        <div class="transaction-icon reward">
+          <i class="reward-icon"></i>
+        </div>
+        <div class="transaction-details">
+          <div class="transaction-info">
+            <h3>Carbon Reward</h3>
+            <p>10 kg CO₂ saved</p>
+          </div>
+          <div class="transaction-amount">
+            <span class="amount">KSh 50</span>
+            <span class="time">3:20 PM</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="date-header">
+        <span>10 Apr 2025</span>
+      </div>
+      
+      <div class="transaction-item">
+        <div class="transaction-icon payment">
+          <i class="payment-icon"></i>
+        </div>
+        <div class="transaction-details">
+          <div class="transaction-info">
+            <h3>Payment</h3>
+            <p>Airtel Money</p>
+          </div>
+          <div class="transaction-amount">
+            <span class="amount">KSh 500</span>
+            <span class="time">9:15 AM</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="transaction-item">
+        <div class="transaction-icon voucher">
+          <i class="voucher-icon"></i>
+        </div>
+        <div class="transaction-details">
+          <div class="transaction-info">
+            <h3>Voucher Redemption</h3>
+            <p>Promo code: NEWUSER</p>
+          </div>
+          <div class="transaction-amount">
+            <span class="amount">KSh 100</span>
+            <span class="time">9:10 AM</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

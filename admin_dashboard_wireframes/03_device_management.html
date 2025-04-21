@@ -1,0 +1,1276 @@
+<!-- Device Fleet Overview -->
+<div class="wireframe device-fleet-overview">
+  <!-- Header -->
+  <div class="header">
+    <div class="logo-container">
+      <img src="images/burn-logo-small.png" alt="BURN Logo" />
+      <h1>PayGo Admin</h1>
+    </div>
+    <div class="header-actions">
+      <div class="search-bar">
+        <i class="search-icon"></i>
+        <input type="text" placeholder="Search..." />
+      </div>
+      <button class="notification-button">
+        <i class="notification-icon"></i>
+        <span class="badge">5</span>
+      </button>
+      <div class="admin-profile">
+        <img src="images/admin-avatar.png" alt="Admin Avatar" />
+        <span>Admin</span>
+        <i class="dropdown-icon"></i>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Sidebar Navigation -->
+  <div class="sidebar">
+    <!-- Sidebar navigation content (same as main dashboard) -->
+  </div>
+  
+  <!-- Main Content -->
+  <div class="main-content">
+    <div class="page-header">
+      <h2>Device Fleet Management</h2>
+      <div class="header-actions">
+        <button class="add-button">
+          <i class="add-icon"></i>
+          <span>Register Device</span>
+        </button>
+        <button class="import-button">
+          <i class="import-icon"></i>
+          <span>Import</span>
+        </button>
+        <button class="export-button">
+          <i class="export-icon"></i>
+          <span>Export</span>
+        </button>
+      </div>
+    </div>
+    
+    <div class="device-stats">
+      <div class="stat-card">
+        <div class="stat-icon total">
+          <i class="devices-icon"></i>
+        </div>
+        <div class="stat-data">
+          <h3>Total Devices</h3>
+          <div class="stat-value">
+            <span class="value">12,845</span>
+            <span class="trend positive">+182</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="stat-card">
+        <div class="stat-icon active">
+          <i class="active-icon"></i>
+        </div>
+        <div class="stat-data">
+          <h3>Active Devices</h3>
+          <div class="stat-value">
+            <span class="value">10,875</span>
+            <span class="percentage">84.7%</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="stat-card">
+        <div class="stat-icon inactive">
+          <i class="inactive-icon"></i>
+        </div>
+        <div class="stat-data">
+          <h3>Inactive Devices</h3>
+          <div class="stat-value">
+            <span class="value">1,970</span>
+            <span class="percentage">15.3%</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="stat-card">
+        <div class="stat-icon alert">
+          <i class="alert-icon"></i>
+        </div>
+        <div class="stat-data">
+          <h3>Alerts</h3>
+          <div class="stat-value">
+            <span class="value">124</span>
+            <span class="trend negative">+18</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="device-distribution">
+      <div class="section-header">
+        <h3>Device Distribution</h3>
+      </div>
+      <div class="distribution-grid">
+        <div class="distribution-chart">
+          <div class="chart-header">
+            <h4>By Model</h4>
+          </div>
+          <div class="chart">
+            <img src="images/device-model-distribution-chart.png" alt="Device Model Distribution Chart" />
+          </div>
+          <div class="chart-legend">
+            <div class="legend-item">
+              <span class="color-indicator ic2000"></span>
+              <span>IC-2000: 45%</span>
+            </div>
+            <div class="legend-item">
+              <span class="color-indicator ic1500"></span>
+              <span>IC-1500: 30%</span>
+            </div>
+            <div class="legend-item">
+              <span class="color-indicator es1000"></span>
+              <span>ES-1000: 15%</span>
+            </div>
+            <div class="legend-item">
+              <span class="color-indicator lpg500"></span>
+              <span>LPG-500: 10%</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="distribution-chart">
+          <div class="chart-header">
+            <h4>By Region</h4>
+          </div>
+          <div class="chart">
+            <img src="images/device-region-distribution-chart.png" alt="Device Region Distribution Chart" />
+          </div>
+          <div class="chart-legend">
+            <div class="legend-item">
+              <span class="color-indicator nairobi"></span>
+              <span>Nairobi: 40%</span>
+            </div>
+            <div class="legend-item">
+              <span class="color-indicator mombasa"></span>
+              <span>Mombasa: 25%</span>
+            </div>
+            <div class="legend-item">
+              <span class="color-indicator kisumu"></span>
+              <span>Kisumu: 20%</span>
+            </div>
+            <div class="legend-item">
+              <span class="color-indicator other"></span>
+              <span>Other: 15%</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="distribution-chart">
+          <div class="chart-header">
+            <h4>By Status</h4>
+          </div>
+          <div class="chart">
+            <img src="images/device-status-distribution-chart.png" alt="Device Status Distribution Chart" />
+          </div>
+          <div class="chart-legend">
+            <div class="legend-item">
+              <span class="color-indicator active"></span>
+              <span>Active: 84.7%</span>
+            </div>
+            <div class="legend-item">
+              <span class="color-indicator inactive"></span>
+              <span>Inactive: 10.3%</span>
+            </div>
+            <div class="legend-item">
+              <span class="color-indicator maintenance"></span>
+              <span>Maintenance: 3.5%</span>
+            </div>
+            <div class="legend-item">
+              <span class="color-indicator error"></span>
+              <span>Error: 1.5%</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="distribution-chart">
+          <div class="chart-header">
+            <h4>By Age</h4>
+          </div>
+          <div class="chart">
+            <img src="images/device-age-distribution-chart.png" alt="Device Age Distribution Chart" />
+          </div>
+          <div class="chart-legend">
+            <div class="legend-item">
+              <span class="color-indicator new"></span>
+              <span>< 6 months: 25%</span>
+            </div>
+            <div class="legend-item">
+              <span class="color-indicator medium"></span>
+              <span>6-12 months: 35%</span>
+            </div>
+            <div class="legend-item">
+              <span class="color-indicator old"></span>
+              <span>1-2 years: 30%</span>
+            </div>
+            <div class="legend-item">
+              <span class="color-indicator oldest"></span>
+              <span>> 2 years: 10%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="device-filters">
+      <div class="search-bar">
+        <i class="search-icon"></i>
+        <input type="text" placeholder="Search devices..." />
+      </div>
+      <div class="filter-controls">
+        <select class="filter-select">
+          <option>All Status</option>
+          <option>Active</option>
+          <option>Inactive</option>
+          <option>Maintenance</option>
+          <option>Error</option>
+        </select>
+        <select class="filter-select">
+          <option>All Models</option>
+          <option>IC-2000</option>
+          <option>IC-1500</option>
+          <option>ES-1000</option>
+          <option>LPG-500</option>
+        </select>
+        <select class="filter-select">
+          <option>All Regions</option>
+          <option>Nairobi</option>
+          <option>Mombasa</option>
+          <option>Kisumu</option>
+          <option>Other</option>
+        </select>
+        <button class="filter-button">
+          <i class="filter-icon"></i>
+          <span>More Filters</span>
+        </button>
+      </div>
+    </div>
+    
+    <div class="devices-table">
+      <div class="table-header">
+        <div class="header-cell">
+          <input type="checkbox" />
+        </div>
+        <div class="header-cell">Device ID</div>
+        <div class="header-cell">Model</div>
+        <div class="header-cell">Status</div>
+        <div class="header-cell">Customer</div>
+        <div class="header-cell">Region</div>
+        <div class="header-cell">Last Active</div>
+        <div class="header-cell">Firmware</div>
+        <div class="header-cell">Actions</div>
+      </div>
+      
+      <div class="table-row">
+        <div class="cell">
+          <input type="checkbox" />
+        </div>
+        <div class="cell">DEV-87654321</div>
+        <div class="cell">IC-2000</div>
+        <div class="cell">
+          <span class="status-badge active">Active</span>
+        </div>
+        <div class="cell">Sarah Kamau</div>
+        <div class="cell">Nairobi</div>
+        <div class="cell">Apr 21, 2025</div>
+        <div class="cell">v2.5.1</div>
+        <div class="cell actions-cell">
+          <button class="action-button small">
+            <i class="view-icon"></i>
+          </button>
+          <button class="action-button small">
+            <i class="edit-icon"></i>
+          </button>
+          <button class="action-button small">
+            <i class="more-icon"></i>
+          </button>
+        </div>
+      </div>
+      
+      <div class="table-row">
+        <div class="cell">
+          <input type="checkbox" />
+        </div>
+        <div class="cell">DEV-87654322</div>
+        <div class="cell">IC-1500</div>
+        <div class="cell">
+          <span class="status-badge active">Active</span>
+        </div>
+        <div class="cell">Mary Wanjiku</div>
+        <div class="cell">Nairobi</div>
+        <div class="cell">Apr 21, 2025</div>
+        <div class="cell">v2.5.1</div>
+        <div class="cell actions-cell">
+          <button class="action-button small">
+            <i class="view-icon"></i>
+          </button>
+          <button class="action-button small">
+            <i class="edit-icon"></i>
+          </button>
+          <button class="action-button small">
+            <i class="more-icon"></i>
+          </button>
+        </div>
+      </div>
+      
+      <div class="table-row">
+        <div class="cell">
+          <input type="checkbox" />
+        </div>
+        <div class="cell">DEV-87654323</div>
+        <div class="cell">ES-1000</div>
+        <div class="cell">
+          <span class="status-badge inactive">Inactive</span>
+        </div>
+        <div class="cell">John Omondi</div>
+        <div class="cell">Kisumu</div>
+        <div class="cell">Apr 10, 2025</div>
+        <div class="cell">v2.4.8</div>
+        <div class="cell actions-cell">
+          <button class="action-button small">
+            <i class="view-icon"></i>
+          </button>
+          <button class="action-button small">
+            <i class="edit-icon"></i>
+          </button>
+          <button class="action-button small">
+            <i class="more-icon"></i>
+          </button>
+        </div>
+      </div>
+      
+      <div class="table-row">
+        <div class="cell">
+          <input type="checkbox" />
+        </div>
+        <div class="cell">DEV-87654324</div>
+        <div class="cell">LPG-500</div>
+        <div class="cell">
+          <span class="status-badge active">Active</span>
+        </div>
+        <div class="cell">Peter Njoroge</div>
+        <div class="cell">Mombasa</div>
+        <div class="cell">Apr 20, 2025</div>
+        <div class="cell">v2.5.0</div>
+        <div class="cell actions-cell">
+          <button class="action-button small">
+            <i class="view-icon"></i>
+          </button>
+          <button class="action-button small">
+            <i class="edit-icon"></i>
+          </button>
+          <button class="action-button small">
+            <i class="more-icon"></i>
+          </button>
+        </div>
+      </div>
+      
+      <div class="table-row">
+        <div class="cell">
+          <input type="checkbox" />
+        </div>
+        <div class="cell">DEV-87654325</div>
+        <div class="cell">IC-2000</div>
+        <div class="cell">
+          <span class="status-badge maintenance">Maintenance</span>
+        </div>
+        <div class="cell">Grace Achieng</div>
+        <div class="cell">Kisumu</div>
+        <div class="cell">Apr 18, 2025</div>
+        <div class="cell">v2.5.1</div>
+        <div class="cell actions-cell">
+          <button class="action-button small">
+            <i class="view-icon"></i>
+          </button>
+          <button class="action-button small">
+            <i class="edit-icon"></i>
+          </button>
+          <button class="action-button small">
+            <i class="more-icon"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    
+    <div class="pagination">
+      <button class="page-button">
+        <i class="prev-icon"></i>
+      </button>
+      <button class="page-button active">1</button>
+      <button class="page-button">2</button>
+      <button class="page-button">3</button>
+      <span class="page-ellipsis">...</span>
+      <button class="page-button">50</button>
+      <button class="page-button">
+        <i class="next-icon"></i>
+      </button>
+      <div class="page-size">
+        <span>Show:</span>
+        <select>
+          <option>10</option>
+          <option selected>20</option>
+          <option>50</option>
+          <option>100</option>
+        </select>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Device Status Monitoring -->
+<div class="wireframe device-status-monitoring">
+  <!-- Header -->
+  <div class="header">
+    <div class="logo-container">
+      <img src="images/burn-logo-small.png" alt="BURN Logo" />
+      <h1>PayGo Admin</h1>
+    </div>
+    <div class="header-actions">
+      <div class="search-bar">
+        <i class="search-icon"></i>
+        <input type="text" placeholder="Search..." />
+      </div>
+      <button class="notification-button">
+        <i class="notification-icon"></i>
+        <span class="badge">5</span>
+      </button>
+      <div class="admin-profile">
+        <img src="images/admin-avatar.png" alt="Admin Avatar" />
+        <span>Admin</span>
+        <i class="dropdown-icon"></i>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Sidebar Navigation -->
+  <div class="sidebar">
+    <!-- Sidebar navigation content (same as main dashboard) -->
+  </div>
+  
+  <!-- Main Content -->
+  <div class="main-content">
+    <div class="page-header">
+      <div class="breadcrumb">
+        <a href="#">Device Management</a>
+        <i class="separator-icon"></i>
+        <span>Device Status Monitoring</span>
+      </div>
+      <div class="header-actions">
+        <button class="refresh-button">
+          <i class="refresh-icon"></i>
+          <span>Refresh</span>
+        </button>
+        <div class="auto-refresh">
+          <span>Auto-refresh:</span>
+          <select>
+            <option>Off</option>
+            <option selected>30 seconds</option>
+            <option>1 minute</option>
+            <option>5 minutes</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    
+    <div class="device-status-summary">
+      <div class="summary-card">
+        <div class="card-header">
+          <h3>Device Status Overview</h3>
+        </div>
+        <div class="status-grid">
+          <div class="status-item">
+            <div class="status-icon active">
+              <i class="active-icon"></i>
+            </div>
+            <div class="status-data">
+              <h4>Active</h4>
+              <span class="count">10,875</span>
+              <span class="percentage">84.7%</span>
+            </div>
+          </div>
+          
+          <div class="status-item">
+            <div class="status-icon inactive">
+              <i class="inactive-icon"></i>
+            </div>
+            <div class="status-data">
+              <h4>Inactive</h4>
+              <span class="count">1,325</span>
+              <span class="percentage">10.3%</span>
+            </div>
+          </div>
+          
+          <div class="status-item">
+            <div class="status-icon maintenance">
+              <i class="maintenance-icon"></i>
+            </div>
+            <div class="status-data">
+              <h4>Maintenance</h4>
+              <span class="count">450</span>
+              <span class="percentage">3.5%</span>
+            </div>
+          </div>
+          
+          <div class="status-item">
+            <div class="status-icon error">
+              <i class="error-icon"></i>
+            </div>
+            <div class="status-data">
+              <h4>Error</h4>
+              <span class="count">195</span>
+              <span class="percentage">1.5%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="alert-summary">
+      <div class="section-header">
+        <h3>Active Alerts</h3>
+        <button class="view-all">View All</button>
+      </div>
+      <div class="alerts-list">
+        <div class="alert-item critical">
+          <div class="alert-icon">
+            <i class="critical-icon"></i>
+          </div>
+          <div class="alert-details">
+            <div class="alert-header">
+              <h4>Critical Temperature</h4>
+              <span class="alert-time">15 minutes ago</span>
+            </div>
+            <p>Device DEV-87654330 reporting critical temperature (95°C)</p>
+            <div class="alert-meta">
+              <span class="device-id">DEV-87654330</span>
+              <span class="customer">James Mwangi</span>
+              <span class="location">Nairobi</span>
+            </div>
+          </div>
+          <div class="alert-actions">
+            <button class="action-button small">
+              <i class="view-icon"></i>
+            </button>
+            <button class="action-button small">
+              <i class="resolve-icon"></i>
+            </button>
+          </div>
+        </div>
+        
+        <div class="alert-item warning">
+          <div class="alert-icon">
+            <i class="warning-icon"></i>
+          </div>
+          <div class="alert-details">
+            <div class="alert-header">
+              <h4>Low Battery</h4>
+              <span class="alert-time">30 minutes ago</span>
+            </div>
+            <p>Device DEV-87654335 reporting low battery (15%)</p>
+            <div class="alert-meta">
+              <span class="device-id">DEV-87654335</span>
+              <span class="customer">Mary Wanjiku</span>
+              <span class="location">Nairobi</span>
+            </div>
+          </div>
+          <div class="alert-actions">
+            <button class="action-button small">
+              <i class="view-icon"></i>
+            </button>
+            <button class="action-button small">
+              <i class="resolve-icon"></i>
+            </button>
+          </div>
+        </div>
+        
+        <div class="alert-item warning">
+          <div class="alert-icon">
+            <i class="warning-icon"></i>
+          </div>
+          <div class="alert-details">
+            <div class="alert-header">
+              <h4>Connectivity Issues</h4>
+              <span class="alert-time">45 minutes ago</span>
+            </div>
+            <p>Device DEV-87654340 experiencing intermittent connectivity</p>
+            <div class="alert-meta">
+              <span class="device-id">DEV-87654340</span>
+              <span class="customer">John Omondi</span>
+              <span class="location">Kisumu</span>
+            </div>
+          </div>
+          <div class="alert-actions">
+            <button class="action-button small">
+              <i class="view-icon"></i>
+            </button>
+            <button class="action-button small">
+              <i class="resolve-icon"></i>
+            </button>
+          </div>
+        </div>
+        
+        <div class="alert-item info">
+          <div class="alert-icon">
+            <i class="info-icon"></i>
+          </div>
+          <div class="alert-details">
+            <div class="alert-header">
+              <h4>Firmware Update Available</h4>
+              <span class="alert-time">1 hour ago</span>
+            </div>
+            <p>Device DEV-87654345 eligible for firmware update (v2.4.8 → v2.5.1)</p>
+            <div class="alert-meta">
+              <span class="device-id">DEV-87654345</span>
+              <span class="customer">Peter Njoroge</span>
+              <span class="location">Mombasa</span>
+            </div>
+          </div>
+          <div class="alert-actions">
+            <button class="action-button small">
+              <i class="view-icon"></i>
+            </button>
+            <button class="action-button small">
+              <i class="resolve-icon"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="device-details">
+      <div class="section-header">
+        <h3>Device Details</h3>
+        <div class="device-selector">
+          <span>Device:</span>
+          <select>
+            <option>DEV-87654321</option>
+            <option>DEV-87654322</option>
+            <option>DEV-87654323</option>
+            <option selected>DEV-87654324</option>
+            <option>DEV-87654325</option>
+          </select>
+        </div>
+      </div>
+      
+      <div class="device-info-card">
+        <div class="device-header">
+          <div class="device-image">
+            <img src="images/stove-device.png" alt="Device" />
+          </div>
+          <div class="device-info">
+            <h3>LPG-500 Gas Stove</h3>
+            <div class="device-meta">
+              <span class="id">DEV-87654324</span>
+              <span class="status active">Active</span>
+              <span class="firmware">v2.5.0</span>
+            </div>
+            <div class="customer-info">
+              <span class="label">Customer:</span>
+              <span class="value">Peter Njoroge</span>
+            </div>
+            <div class="location-info">
+              <span class="label">Location:</span>
+              <span class="value">Mombasa, Kenya</span>
+            </div>
+          </div>
+          <div class="device-actions">
+            <button class="action-button">
+              <i class="remote-icon"></i>
+              <span>Remote Control</span>
+            </button>
+            <button class="action-button">
+              <i class="update-icon"></i>
+              <span>Update Firmware</span>
+            </button>
+            <button class="action-button">
+              <i class="lock-icon"></i>
+              <span>Lock Device</span>
+            </button>
+          </div>
+        </div>
+        
+        <div class="device-metrics">
+          <div class="metric-card">
+            <div class="metric-icon usage">
+              <i class="usage-icon"></i>
+            </div>
+            <div class="metric-data">
+              <h4>Usage</h4>
+              <div class="metric-value">
+                <span class="value">4.5 hours</span>
+                <span class="period">today</span>
+              </div>
+              <div class="metric-chart">
+                <img src="images/device-usage-chart.png" alt="Device Usage Chart" />
+              </div>
+            </div>
+          </div>
+          
+          <div class="metric-card">
+            <div class="metric-icon credit">
+              <i class="credit-icon"></i>
+            </div>
+            <div class="metric-data">
+              <h4>Credit Balance</h4>
+              <div class="metric-value">
+                <span class="value">KSh 850</span>
+                <span class="period">12 days left</span>
+              </div>
+              <div class="metric-chart">
+                <img src="images/device-credit-chart.png" alt="Device Credit Chart" />
+              </div>
+            </div>
+          </div>
+          
+          <div class="metric-card">
+            <div class="metric-icon temperature">
+              <i class="temperature-icon"></i>
+            </div>
+            <div class="metric-data">
+              <h4>Temperature</h4>
+              <div class="metric-value">
+                <span class="value">42°C</span>
+                <span class="status normal">Normal</span>
+              </div>
+              <div class="metric-chart">
+                <img src="images/device-temperature-chart.png" alt="Device Temperature Chart" />
+              </div>
+            </div>
+          </div>
+          
+          <div class="metric-card">
+            <div class="metric-icon connectivity">
+              <i class="connectivity-icon"></i>
+            </div>
+            <div class="metric-data">
+              <h4>Connectivity</h4>
+              <div class="metric-value">
+                <span class="value">Strong</span>
+                <span class="signal">4/5</span>
+              </div>
+              <div class="metric-chart">
+                <img src="images/device-connectivity-chart.png" alt="Device Connectivity Chart" />
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="device-logs">
+          <div class="logs-header">
+            <h4>Device Logs</h4>
+            <button class="view-all">View All</button>
+          </div>
+          <div class="logs-list">
+            <div class="log-item">
+              <div class="log-time">Apr 21, 2025, 11:30 AM</div>
+              <div class="log-type info">Info</div>
+              <div class="log-message">Device connected to network</div>
+            </div>
+            <div class="log-item">
+              <div class="log-time">Apr 21, 2025, 10:15 AM</div>
+              <div class="log-type info">Info</div>
+              <div class="log-message">Usage session started</div>
+            </div>
+            <div class="log-item">
+              <div class="log-time">Apr 21, 2025, 09:45 AM</div>
+              <div class="log-type info">Info</div>
+              <div class="log-message">Device powered on</div>
+            </div>
+            <div class="log-item">
+              <div class="log-time">Apr 20, 2025, 08:30 PM</div>
+              <div class="log-type info">Info</div>
+              <div class="log-message">Device powered off</div>
+            </div>
+            <div class="log-item">
+              <div class="log-time">Apr 20, 2025, 06:15 PM</div>
+              <div class="log-type warning">Warning</div>
+              <div class="log-message">Low gas level detected</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Firmware Management -->
+<div class="wireframe firmware-management">
+  <!-- Header -->
+  <div class="header">
+    <div class="logo-container">
+      <img src="images/burn-logo-small.png" alt="BURN Logo" />
+      <h1>PayGo Admin</h1>
+    </div>
+    <div class="header-actions">
+      <div class="search-bar">
+        <i class="search-icon"></i>
+        <input type="text" placeholder="Search..." />
+      </div>
+      <button class="notification-button">
+        <i class="notification-icon"></i>
+        <span class="badge">5</span>
+      </button>
+      <div class="admin-profile">
+        <img src="images/admin-avatar.png" alt="Admin Avatar" />
+        <span>Admin</span>
+        <i class="dropdown-icon"></i>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Sidebar Navigation -->
+  <div class="sidebar">
+    <!-- Sidebar navigation content (same as main dashboard) -->
+  </div>
+  
+  <!-- Main Content -->
+  <div class="main-content">
+    <div class="page-header">
+      <div class="breadcrumb">
+        <a href="#">Device Management</a>
+        <i class="separator-icon"></i>
+        <span>Firmware Management</span>
+      </div>
+      <div class="header-actions">
+        <button class="add-button">
+          <i class="add-icon"></i>
+          <span>Upload Firmware</span>
+        </button>
+      </div>
+    </div>
+    
+    <div class="firmware-summary">
+      <div class="summary-card">
+        <div class="card-header">
+          <h3>Firmware Status</h3>
+        </div>
+        <div class="firmware-stats">
+          <div class="stat-item">
+            <div class="stat-icon latest">
+              <i class="latest-icon"></i>
+            </div>
+            <div class="stat-data">
+              <h4>Latest Version</h4>
+              <span class="value">8,542</span>
+              <span class="percentage">66.5%</span>
+            </div>
+          </div>
+          
+          <div class="stat-item">
+            <div class="stat-icon outdated">
+              <i class="outdated-icon"></i>
+            </div>
+            <div class="stat-data">
+              <h4>Outdated</h4>
+              <span class="value">4,303</span>
+              <span class="percentage">33.5%</span>
+            </div>
+          </div>
+          
+          <div class="stat-item">
+            <div class="stat-icon updating">
+              <i class="updating-icon"></i>
+            </div>
+            <div class="stat-data">
+              <h4>Updating</h4>
+              <span class="value">245</span>
+              <span class="percentage">1.9%</span>
+            </div>
+          </div>
+          
+          <div class="stat-item">
+            <div class="stat-icon failed">
+              <i class="failed-icon"></i>
+            </div>
+            <div class="stat-data">
+              <h4>Update Failed</h4>
+              <span class="value">32</span>
+              <span class="percentage">0.2%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="firmware-versions">
+      <div class="section-header">
+        <h3>Firmware Versions</h3>
+      </div>
+      <div class="versions-table">
+        <div class="table-header">
+          <div class="header-cell">Version</div>
+          <div class="header-cell">Release Date</div>
+          <div class="header-cell">Compatible Models</div>
+          <div class="header-cell">Devices</div>
+          <div class="header-cell">Status</div>
+          <div class="header-cell">Actions</div>
+        </div>
+        
+        <div class="table-row">
+          <div class="cell version-cell">
+            <div class="version-info">
+              <h4>v2.5.1</h4>
+              <span class="latest-tag">Latest</span>
+            </div>
+          </div>
+          <div class="cell">Apr 15, 2025</div>
+          <div class="cell">
+            <div class="models-list">
+              <span class="model-badge">IC-2000</span>
+              <span class="model-badge">IC-1500</span>
+              <span class="model-badge">ES-1000</span>
+            </div>
+          </div>
+          <div class="cell">
+            <div class="device-count">
+              <span class="count">8,542</span>
+              <span class="percentage">66.5%</span>
+            </div>
+          </div>
+          <div class="cell">
+            <span class="status-badge active">Active</span>
+          </div>
+          <div class="cell actions-cell">
+            <button class="action-button small">
+              <i class="view-icon"></i>
+            </button>
+            <button class="action-button small">
+              <i class="deploy-icon"></i>
+            </button>
+            <button class="action-button small">
+              <i class="more-icon"></i>
+            </button>
+          </div>
+        </div>
+        
+        <div class="table-row">
+          <div class="cell version-cell">
+            <div class="version-info">
+              <h4>v2.5.0</h4>
+            </div>
+          </div>
+          <div class="cell">Apr 1, 2025</div>
+          <div class="cell">
+            <div class="models-list">
+              <span class="model-badge">IC-2000</span>
+              <span class="model-badge">IC-1500</span>
+              <span class="model-badge">ES-1000</span>
+              <span class="model-badge">LPG-500</span>
+            </div>
+          </div>
+          <div class="cell">
+            <div class="device-count">
+              <span class="count">2,845</span>
+              <span class="percentage">22.1%</span>
+            </div>
+          </div>
+          <div class="cell">
+            <span class="status-badge active">Active</span>
+          </div>
+          <div class="cell actions-cell">
+            <button class="action-button small">
+              <i class="view-icon"></i>
+            </button>
+            <button class="action-button small">
+              <i class="deploy-icon"></i>
+            </button>
+            <button class="action-button small">
+              <i class="more-icon"></i>
+            </button>
+          </div>
+        </div>
+        
+        <div class="table-row">
+          <div class="cell version-cell">
+            <div class="version-info">
+              <h4>v2.4.8</h4>
+            </div>
+          </div>
+          <div class="cell">Mar 15, 2025</div>
+          <div class="cell">
+            <div class="models-list">
+              <span class="model-badge">IC-2000</span>
+              <span class="model-badge">IC-1500</span>
+              <span class="model-badge">ES-1000</span>
+              <span class="model-badge">LPG-500</span>
+            </div>
+          </div>
+          <div class="cell">
+            <div class="device-count">
+              <span class="count">1,458</span>
+              <span class="percentage">11.4%</span>
+            </div>
+          </div>
+          <div class="cell">
+            <span class="status-badge deprecated">Deprecated</span>
+          </div>
+          <div class="cell actions-cell">
+            <button class="action-button small">
+              <i class="view-icon"></i>
+            </button>
+            <button class="action-button small">
+              <i class="deploy-icon"></i>
+            </button>
+            <button class="action-button small">
+              <i class="more-icon"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="firmware-details">
+      <div class="section-header">
+        <h3>Firmware Details: v2.5.1</h3>
+      </div>
+      <div class="details-card">
+        <div class="details-header">
+          <div class="version-info">
+            <h4>v2.5.1</h4>
+            <span class="release-date">Released: Apr 15, 2025</span>
+          </div>
+          <div class="version-actions">
+            <button class="action-button">
+              <i class="download-icon"></i>
+              <span>Download</span>
+            </button>
+            <button class="action-button">
+              <i class="deploy-icon"></i>
+              <span>Deploy</span>
+            </button>
+          </div>
+        </div>
+        
+        <div class="details-content">
+          <div class="details-section">
+            <h4>Release Notes</h4>
+            <div class="release-notes">
+              <p>This release includes performance improvements, bug fixes, and new features for the PayGo clean cooking devices.</p>
+              <ul>
+                <li>Improved power management for longer battery life</li>
+                <li>Enhanced temperature control for better cooking experience</li>
+                <li>Fixed connectivity issues in areas with weak signal</li>
+                <li>Added support for new payment methods</li>
+                <li>Improved data reporting for carbon credit tracking</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="details-section">
+            <h4>Compatible Models</h4>
+            <div class="models-grid">
+              <div class="model-item">
+                <div class="model-icon">
+                  <img src="images/ic2000-icon.png" alt="IC-2000" />
+                </div>
+                <div class="model-info">
+                  <h5>IC-2000</h5>
+                  <p>Premium Induction Cooker</p>
+                </div>
+              </div>
+              
+              <div class="model-item">
+                <div class="model-icon">
+                  <img src="images/ic1500-icon.png" alt="IC-1500" />
+                </div>
+                <div class="model-info">
+                  <h5>IC-1500</h5>
+                  <p>Standard Induction Cooker</p>
+                </div>
+              </div>
+              
+              <div class="model-item">
+                <div class="model-icon">
+                  <img src="images/es1000-icon.png" alt="ES-1000" />
+                </div>
+                <div class="model-info">
+                  <h5>ES-1000</h5>
+                  <p>Electric Stove</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="details-section">
+            <h4>Deployment Status</h4>
+            <div class="deployment-stats">
+              <div class="stat-item">
+                <div class="stat-label">Eligible Devices</div>
+                <div class="stat-value">12,845</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-label">Updated Devices</div>
+                <div class="stat-value">8,542</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-label">Pending Updates</div>
+                <div class="stat-value">4,303</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-label">Success Rate</div>
+                <div class="stat-value">99.8%</div>
+              </div>
+            </div>
+            <div class="deployment-progress">
+              <div class="progress-info">
+                <span>Deployment Progress</span>
+                <span>66.5%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress" style="width: 66.5%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="deployment-section">
+      <div class="section-header">
+        <h3>Deployment Strategy</h3>
+      </div>
+      <div class="deployment-card">
+        <div class="deployment-form">
+          <div class="form-group">
+            <label>Firmware Version</label>
+            <select>
+              <option>v2.5.1 (Latest)</option>
+              <option>v2.5.0</option>
+              <option>v2.4.8</option>
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <label>Target Devices</label>
+            <div class="radio-group">
+              <label class="radio-option">
+                <input type="radio" name="target" value="all" />
+                <span>All Compatible Devices</span>
+              </label>
+              <label class="radio-option">
+                <input type="radio" name="target" value="specific" checked />
+                <span>Specific Devices</span>
+              </label>
+              <label class="radio-option">
+                <input type="radio" name="target" value="group" />
+                <span>Device Group</span>
+              </label>
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <label>Device Filters</label>
+            <div class="filter-grid">
+              <select>
+                <option>All Models</option>
+                <option>IC-2000</option>
+                <option>IC-1500</option>
+                <option>ES-1000</option>
+                <option>LPG-500</option>
+              </select>
+              <select>
+                <option>All Regions</option>
+                <option>Nairobi</option>
+                <option>Mombasa</option>
+                <option>Kisumu</option>
+                <option>Other</option>
+              </select>
+              <select>
+                <option>All Current Versions</option>
+                <option>v2.5.0</option>
+                <option>v2.4.8</option>
+                <option>v2.4.7</option>
+                <option>Earlier</option>
+              </select>
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <label>Deployment Schedule</label>
+            <div class="radio-group">
+              <label class="radio-option">
+                <input type="radio" name="schedule" value="immediate" />
+                <span>Immediate</span>
+              </label>
+              <label class="radio-option">
+                <input type="radio" name="schedule" value="scheduled" checked />
+                <span>Scheduled</span>
+              </label>
+              <label class="radio-option">
+                <input type="radio" name="schedule" value="phased" />
+                <span>Phased Rollout</span>
+              </label>
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <label>Start Date & Time</label>
+            <div class="datetime-input">
+              <input type="date" value="2025-04-22" />
+              <input type="time" value="02:00" />
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <label>Deployment Options</label>
+            <div class="checkbox-group">
+              <label class="checkbox-option">
+                <input type="checkbox" checked />
+                <span>Notify customers before update</span>
+              </label>
+              <label class="checkbox-option">
+                <input type="checkbox" checked />
+                <span>Only update when device is idle</span>
+              </label>
+              <label class="checkbox-option">
+                <input type="checkbox" checked />
+                <span>Automatic rollback on failure</span>
+              </label>
+              <label class="checkbox-option">
+                <input type="checkbox" />
+                <span>Force update regardless of device state</span>
+              </label>
+            </div>
+          </div>
+        </div>
+        
+        <div class="deployment-summary">
+          <div class="summary-header">
+            <h4>Deployment Summary</h4>
+          </div>
+          <div class="summary-content">
+            <div class="summary-item">
+              <span class="label">Firmware Version:</span>
+              <span class="value">v2.5.1</span>
+            </div>
+            <div class="summary-item">
+              <span class="label">Target Devices:</span>
+              <span class="value">1,458 devices</span>
+            </div>
+            <div class="summary-item">
+              <span class="label">Filters:</span>
+              <span class="value">All models, All regions, v2.4.8</span>
+            </div>
+            <div class="summary-item">
+              <span class="label">Schedule:</span>
+              <span class="value">Apr 22, 2025, 02:00 AM</span>
+            </div>
+            <div class="summary-item">
+              <span class="label">Estimated Completion:</span>
+              <span class="value">Apr 22, 2025, 06:00 AM</span>
+            </div>
+          </div>
+          <div class="summary-actions">
+            <button class="secondary-button">Cancel</button>
+            <button class="primary-button">Deploy Firmware</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

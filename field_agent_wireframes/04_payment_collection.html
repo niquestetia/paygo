@@ -1,0 +1,530 @@
+<!-- Payment Collection Screen -->
+<div class="wireframe payment-collection">
+  <!-- Header -->
+  <div class="header">
+    <button class="back-button">
+      <i class="back-icon"></i>
+    </button>
+    <div class="page-title">
+      <h1>Collect Payment</h1>
+    </div>
+    <div class="header-actions">
+      <button class="help-button">
+        <i class="help-icon"></i>
+      </button>
+    </div>
+  </div>
+  
+  <!-- Main Content -->
+  <div class="main-content">
+    <div class="form-section">
+      <h2>Customer Information</h2>
+      
+      <div class="customer-card">
+        <div class="customer-avatar">
+          <img src="images/customer-avatar-1.png" alt="Customer Avatar" />
+        </div>
+        <div class="customer-details">
+          <h3>Sarah Kamau</h3>
+          <p><i class="phone-icon"></i> +254 712 345 678</p>
+          <p><i class="location-icon"></i> Nairobi, Kenya</p>
+          <div class="status-badges">
+            <span class="status-badge active">Active</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="payment-status">
+        <div class="status-item">
+          <span class="label">Current Balance</span>
+          <span class="value">KSh 350</span>
+        </div>
+        <div class="status-item">
+          <span class="label">Next Payment Due</span>
+          <span class="value">Apr 24, 2025</span>
+        </div>
+        <div class="status-item">
+          <span class="label">Payment Frequency</span>
+          <span class="value">Monthly</span>
+        </div>
+      </div>
+    </div>
+    
+    <div class="form-section">
+      <h2>Payment Details</h2>
+      
+      <div class="form-group">
+        <label>Payment Amount <span class="required">*</span></label>
+        <div class="amount-input">
+          <span class="currency">KSh</span>
+          <input type="number" value="1000" />
+        </div>
+      </div>
+      
+      <div class="amount-suggestions">
+        <button class="amount-button">KSh 500</button>
+        <button class="amount-button active">KSh 1,000</button>
+        <button class="amount-button">KSh 2,000</button>
+        <button class="amount-button">KSh 5,000</button>
+      </div>
+      
+      <div class="form-group">
+        <label>Payment Method <span class="required">*</span></label>
+        <select>
+          <option>M-Pesa</option>
+          <option>Airtel Money</option>
+          <option>Cash</option>
+          <option>Bank Transfer</option>
+        </select>
+      </div>
+      
+      <div class="payment-method-details">
+        <div class="method-instructions">
+          <h3>M-Pesa Payment Instructions</h3>
+          <ol class="instruction-steps">
+            <li>Ask customer to initiate payment to Till Number: <span class="highlight">247247</span></li>
+            <li>Enter Business Number: <span class="highlight">247247</span></li>
+            <li>Enter Account Number: <span class="highlight">BRN12345</span></li>
+            <li>Enter Amount: <span class="highlight">1,000</span></li>
+            <li>Customer enters M-Pesa PIN and confirms</li>
+          </ol>
+        </div>
+        
+        <div class="alternative-option">
+          <p>Alternatively, you can use the STK Push:</p>
+          <button class="secondary-button">
+            <i class="phone-icon"></i>
+            <span>Send M-Pesa Request</span>
+          </button>
+        </div>
+      </div>
+      
+      <div class="form-group">
+        <label>Transaction Reference <span class="required">*</span></label>
+        <input type="text" placeholder="Enter M-Pesa transaction ID" />
+        <p class="helper-text">e.g., QDE12345678</p>
+      </div>
+      
+      <div class="form-group">
+        <label>Payment Notes</label>
+        <textarea placeholder="Enter any additional notes about this payment"></textarea>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Footer Actions -->
+  <div class="form-actions">
+    <button class="secondary-button">Cancel</button>
+    <button class="primary-button">Confirm Payment</button>
+  </div>
+</div>
+
+<!-- Payment Confirmation Screen -->
+<div class="wireframe payment-confirmation">
+  <!-- Header -->
+  <div class="header">
+    <div class="page-title">
+      <h1>Payment Confirmation</h1>
+    </div>
+  </div>
+  
+  <!-- Main Content -->
+  <div class="main-content">
+    <div class="confirmation-status success">
+      <i class="success-icon"></i>
+      <h2>Payment Successful!</h2>
+      <p>The payment has been successfully processed and recorded.</p>
+    </div>
+    
+    <div class="transaction-details">
+      <h3>Transaction Details</h3>
+      <div class="detail-item">
+        <span class="label">Customer</span>
+        <span class="value">Sarah Kamau</span>
+      </div>
+      <div class="detail-item">
+        <span class="label">Amount</span>
+        <span class="value">KSh 1,000</span>
+      </div>
+      <div class="detail-item">
+        <span class="label">Payment Method</span>
+        <span class="value">M-Pesa</span>
+      </div>
+      <div class="detail-item">
+        <span class="label">Transaction ID</span>
+        <span class="value">QDE12345678</span>
+      </div>
+      <div class="detail-item">
+        <span class="label">Date & Time</span>
+        <span class="value">Apr 21, 2025, 11:45 AM</span>
+      </div>
+      <div class="detail-item">
+        <span class="label">Collected By</span>
+        <span class="value">John Doe</span>
+      </div>
+    </div>
+    
+    <div class="device-status">
+      <h3>Device Status</h3>
+      <div class="status-indicator active">
+        <i class="check-icon"></i>
+        <span>Device is active and ready to use</span>
+      </div>
+      <div class="credit-update">
+        <p>New Credit Balance: <span class="amount">KSh 1,350</span></p>
+        <p>Estimated days remaining: <span>32 days</span></p>
+      </div>
+    </div>
+    
+    <div class="receipt-actions">
+      <h3>Receipt Options</h3>
+      <div class="action-buttons">
+        <button class="action-button">
+          <i class="sms-icon"></i>
+          <span>Send SMS</span>
+        </button>
+        <button class="action-button">
+          <i class="email-icon"></i>
+          <span>Email Receipt</span>
+        </button>
+        <button class="action-button">
+          <i class="print-icon"></i>
+          <span>Print Receipt</span>
+        </button>
+        <button class="action-button">
+          <i class="share-icon"></i>
+          <span>Share</span>
+        </button>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Footer Actions -->
+  <div class="form-actions">
+    <button class="secondary-button">View Customer</button>
+    <button class="primary-button">Done</button>
+  </div>
+</div>
+
+<!-- Payment Methods Screen -->
+<div class="wireframe payment-methods">
+  <!-- Header -->
+  <div class="header">
+    <div class="menu-toggle">
+      <i class="menu-icon"></i>
+    </div>
+    <div class="page-title">
+      <h1>Payment Methods</h1>
+    </div>
+    <div class="header-actions">
+      <button class="sync-button">
+        <i class="sync-icon"></i>
+        <span>Last sync: 10:45 AM</span>
+      </button>
+      <button class="notification-button">
+        <i class="notification-icon"></i>
+        <span class="badge">3</span>
+      </button>
+      <div class="agent-profile">
+        <img src="images/agent-avatar.png" alt="Agent Avatar" />
+        <span>John D.</span>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Main Content -->
+  <div class="main-content">
+    <div class="payment-methods-list">
+      <div class="method-card">
+        <div class="method-icon">
+          <img src="images/mpesa-logo.png" alt="M-Pesa" />
+        </div>
+        <div class="method-details">
+          <h3>M-Pesa</h3>
+          <p>Mobile money service by Safaricom</p>
+          <div class="method-info">
+            <span class="info-item">Till Number: 247247</span>
+            <span class="info-item">Business Name: BURN PayGo</span>
+          </div>
+        </div>
+        <div class="method-status">
+          <span class="status-badge active">Active</span>
+        </div>
+      </div>
+      
+      <div class="method-card">
+        <div class="method-icon">
+          <img src="images/airtel-money-logo.png" alt="Airtel Money" />
+        </div>
+        <div class="method-details">
+          <h3>Airtel Money</h3>
+          <p>Mobile money service by Airtel</p>
+          <div class="method-info">
+            <span class="info-item">Business Number: 654321</span>
+            <span class="info-item">Business Name: BURN PayGo</span>
+          </div>
+        </div>
+        <div class="method-status">
+          <span class="status-badge active">Active</span>
+        </div>
+      </div>
+      
+      <div class="method-card">
+        <div class="method-icon">
+          <i class="cash-icon"></i>
+        </div>
+        <div class="method-details">
+          <h3>Cash</h3>
+          <p>Physical cash collection</p>
+          <div class="method-info">
+            <span class="info-item">Requires receipt generation</span>
+            <span class="info-item">Daily reconciliation required</span>
+          </div>
+        </div>
+        <div class="method-status">
+          <span class="status-badge active">Active</span>
+        </div>
+      </div>
+      
+      <div class="method-card">
+        <div class="method-icon">
+          <i class="bank-icon"></i>
+        </div>
+        <div class="method-details">
+          <h3>Bank Transfer</h3>
+          <p>Direct bank deposit or transfer</p>
+          <div class="method-info">
+            <span class="info-item">Account Number: 1234567890</span>
+            <span class="info-item">Bank: Kenya Commercial Bank</span>
+          </div>
+        </div>
+        <div class="method-status">
+          <span class="status-badge inactive">Inactive</span>
+        </div>
+      </div>
+    </div>
+    
+    <div class="payment-reconciliation">
+      <h2>Today's Payment Summary</h2>
+      <div class="summary-cards">
+        <div class="summary-card">
+          <h3>Total Collected</h3>
+          <span class="amount">KSh 12,500</span>
+          <span class="count">5 payments</span>
+        </div>
+        <div class="summary-card">
+          <h3>M-Pesa</h3>
+          <span class="amount">KSh 8,500</span>
+          <span class="count">3 payments</span>
+        </div>
+        <div class="summary-card">
+          <h3>Cash</h3>
+          <span class="amount">KSh 4,000</span>
+          <span class="count">2 payments</span>
+        </div>
+      </div>
+      
+      <div class="reconciliation-actions">
+        <button class="secondary-button">
+          <i class="reconcile-icon"></i>
+          <span>Reconcile Payments</span>
+        </button>
+        <button class="secondary-button">
+          <i class="report-icon"></i>
+          <span>Generate Report</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Payment Reconciliation Screen -->
+<div class="wireframe payment-reconciliation">
+  <!-- Header -->
+  <div class="header">
+    <button class="back-button">
+      <i class="back-icon"></i>
+    </button>
+    <div class="page-title">
+      <h1>Payment Reconciliation</h1>
+    </div>
+    <div class="header-actions">
+      <button class="filter-button">
+        <i class="filter-icon"></i>
+      </button>
+      <button class="download-button">
+        <i class="download-icon"></i>
+      </button>
+    </div>
+  </div>
+  
+  <!-- Main Content -->
+  <div class="main-content">
+    <div class="date-selector">
+      <button class="date-nav">
+        <i class="prev-icon"></i>
+      </button>
+      <div class="current-date">
+        <i class="calendar-icon"></i>
+        <span>April 21, 2025</span>
+      </div>
+      <button class="date-nav">
+        <i class="next-icon"></i>
+      </button>
+    </div>
+    
+    <div class="reconciliation-summary">
+      <div class="summary-card">
+        <h3>Total Collected</h3>
+        <span class="amount">KSh 12,500</span>
+        <span class="count">5 payments</span>
+      </div>
+      <div class="summary-card">
+        <h3>Electronic</h3>
+        <span class="amount">KSh 8,500</span>
+        <span class="count">3 payments</span>
+      </div>
+      <div class="summary-card">
+        <h3>Cash</h3>
+        <span class="amount">KSh 4,000</span>
+        <span class="count">2 payments</span>
+      </div>
+    </div>
+    
+    <div class="reconciliation-tabs">
+      <button class="tab-button active">All Payments</button>
+      <button class="tab-button">M-Pesa</button>
+      <button class="tab-button">Cash</button>
+      <button class="tab-button">Other</button>
+    </div>
+    
+    <div class="payments-list">
+      <div class="payment-item">
+        <div class="payment-icon mpesa">
+          <i class="mpesa-icon"></i>
+        </div>
+        <div class="payment-details">
+          <div class="payment-info">
+            <h4>Sarah Kamau</h4>
+            <p>Transaction ID: QDE12345678</p>
+          </div>
+          <div class="payment-amount">
+            <span class="amount">KSh 1,000</span>
+            <span class="time">11:45 AM</span>
+          </div>
+        </div>
+        <div class="payment-status">
+          <span class="status-badge verified">Verified</span>
+        </div>
+      </div>
+      
+      <div class="payment-item">
+        <div class="payment-icon cash">
+          <i class="cash-icon"></i>
+        </div>
+        <div class="payment-details">
+          <div class="payment-info">
+            <h4>John Omondi</h4>
+            <p>Receipt: RCT-12345</p>
+          </div>
+          <div class="payment-amount">
+            <span class="amount">KSh 2,000</span>
+            <span class="time">10:30 AM</span>
+          </div>
+        </div>
+        <div class="payment-status">
+          <span class="status-badge verified">Verified</span>
+        </div>
+      </div>
+      
+      <div class="payment-item">
+        <div class="payment-icon mpesa">
+          <i class="mpesa-icon"></i>
+        </div>
+        <div class="payment-details">
+          <div class="payment-info">
+            <h4>Mary Wanjiku</h4>
+            <p>Transaction ID: QDE12345677</p>
+          </div>
+          <div class="payment-amount">
+            <span class="amount">KSh 5,000</span>
+            <span class="time">09:45 AM</span>
+          </div>
+        </div>
+        <div class="payment-status">
+          <span class="status-badge verified">Verified</span>
+        </div>
+      </div>
+      
+      <div class="payment-item">
+        <div class="payment-icon mpesa">
+          <i class="mpesa-icon"></i>
+        </div>
+        <div class="payment-details">
+          <div class="payment-info">
+            <h4>James Mwangi</h4>
+            <p>Transaction ID: QDE12345676</p>
+          </div>
+          <div class="payment-amount">
+            <span class="amount">KSh 2,500</span>
+            <span class="time">09:15 AM</span>
+          </div>
+        </div>
+        <div class="payment-status">
+          <span class="status-badge pending">Pending</span>
+        </div>
+      </div>
+      
+      <div class="payment-item">
+        <div class="payment-icon cash">
+          <i class="cash-icon"></i>
+        </div>
+        <div class="payment-details">
+          <div class="payment-info">
+            <h4>Peter Njoroge</h4>
+            <p>Receipt: RCT-12344</p>
+          </div>
+          <div class="payment-amount">
+            <span class="amount">KSh 2,000</span>
+            <span class="time">08:30 AM</span>
+          </div>
+        </div>
+        <div class="payment-status">
+          <span class="status-badge verified">Verified</span>
+        </div>
+      </div>
+    </div>
+    
+    <div class="cash-reconciliation">
+      <h3>Cash Reconciliation</h3>
+      <div class="cash-summary">
+        <div class="summary-item">
+          <span class="label">Total Cash Collected</span>
+          <span class="value">KSh 4,000</span>
+        </div>
+        <div class="summary-item">
+          <span class="label">Cash on Hand</span>
+          <div class="editable-value">
+            <input type="number" value="4000" />
+            <span class="currency">KSh</span>
+          </div>
+        </div>
+        <div class="summary-item">
+          <span class="label">Discrepancy</span>
+          <span class="value balanced">KSh 0</span>
+        </div>
+      </div>
+      
+      <div class="form-group">
+        <label>Notes</label>
+        <textarea placeholder="Enter any notes about cash reconciliation"></textarea>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Footer Actions -->
+  <div class="form-actions">
+    <button class="secondary-button">Save Draft</button>
+    <button class="primary-button">Submit Reconciliation</button>
+  </div>
+</div>

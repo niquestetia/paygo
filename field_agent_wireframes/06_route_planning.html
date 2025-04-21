@@ -1,0 +1,639 @@
+<!-- Route Planning Screen -->
+<div class="wireframe route-planning">
+  <!-- Header -->
+  <div class="header">
+    <div class="menu-toggle">
+      <i class="menu-icon"></i>
+    </div>
+    <div class="page-title">
+      <h1>Route Planning</h1>
+    </div>
+    <div class="header-actions">
+      <button class="sync-button">
+        <i class="sync-icon"></i>
+        <span>Last sync: 10:45 AM</span>
+      </button>
+      <button class="notification-button">
+        <i class="notification-icon"></i>
+        <span class="badge">3</span>
+      </button>
+      <div class="agent-profile">
+        <img src="images/agent-avatar.png" alt="Agent Avatar" />
+        <span>John D.</span>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Main Content -->
+  <div class="main-content">
+    <div class="date-selector">
+      <button class="date-nav">
+        <i class="prev-icon"></i>
+      </button>
+      <div class="current-date">
+        <i class="calendar-icon"></i>
+        <span>April 21, 2025</span>
+      </div>
+      <button class="date-nav">
+        <i class="next-icon"></i>
+      </button>
+    </div>
+    
+    <div class="view-toggle">
+      <button class="toggle-button">
+        <i class="list-icon"></i>
+        <span>List</span>
+      </button>
+      <button class="toggle-button active">
+        <i class="map-icon"></i>
+        <span>Map</span>
+      </button>
+    </div>
+    
+    <div class="route-map">
+      <div class="map-container">
+        <img src="images/route-map.png" alt="Route Map" />
+        <!-- Map markers and route lines would be rendered here -->
+      </div>
+      
+      <div class="map-controls">
+        <button class="map-control-button">
+          <i class="zoom-in-icon"></i>
+        </button>
+        <button class="map-control-button">
+          <i class="zoom-out-icon"></i>
+        </button>
+        <button class="map-control-button">
+          <i class="locate-icon"></i>
+        </button>
+        <button class="map-control-button">
+          <i class="layers-icon"></i>
+        </button>
+      </div>
+    </div>
+    
+    <div class="route-summary">
+      <div class="summary-header">
+        <h2>Today's Route</h2>
+        <div class="summary-stats">
+          <div class="stat-item">
+            <i class="visits-icon"></i>
+            <span>12 visits</span>
+          </div>
+          <div class="stat-item">
+            <i class="distance-icon"></i>
+            <span>28 km</span>
+          </div>
+          <div class="stat-item">
+            <i class="time-icon"></i>
+            <span>5h 30m</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="route-actions">
+        <button class="action-button">
+          <i class="optimize-icon"></i>
+          <span>Optimize Route</span>
+        </button>
+        <button class="action-button">
+          <i class="navigate-icon"></i>
+          <span>Start Navigation</span>
+        </button>
+        <button class="action-button">
+          <i class="share-icon"></i>
+          <span>Share Route</span>
+        </button>
+      </div>
+    </div>
+    
+    <div class="visit-list">
+      <div class="visit-item completed">
+        <div class="visit-time">
+          <span>09:00 AM</span>
+        </div>
+        <div class="visit-status">
+          <i class="check-icon"></i>
+        </div>
+        <div class="visit-details">
+          <div class="customer-info">
+            <h3>Sarah Kamau</h3>
+            <p><i class="location-pin-icon"></i> 123 Moi Avenue, Nairobi</p>
+          </div>
+          <div class="visit-type">
+            <span class="type-badge payment">Payment Collection</span>
+          </div>
+          <div class="visit-actions">
+            <button class="action-button small">
+              <i class="details-icon"></i>
+              <span>Details</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="visit-item current">
+        <div class="visit-time">
+          <span>11:30 AM</span>
+        </div>
+        <div class="visit-status">
+          <i class="current-icon"></i>
+        </div>
+        <div class="visit-details">
+          <div class="customer-info">
+            <h3>New Customer Registration</h3>
+            <p><i class="location-pin-icon"></i> 45 Kimathi Street, Nairobi</p>
+          </div>
+          <div class="visit-type">
+            <span class="type-badge registration">Registration</span>
+          </div>
+          <div class="visit-actions">
+            <button class="action-button small">
+              <i class="navigate-icon"></i>
+              <span>Navigate</span>
+            </button>
+            <button class="action-button small">
+              <i class="start-icon"></i>
+              <span>Start</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="visit-item">
+        <div class="visit-time">
+          <span>02:00 PM</span>
+        </div>
+        <div class="visit-status">
+          <i class="upcoming-icon"></i>
+        </div>
+        <div class="visit-details">
+          <div class="customer-info">
+            <h3>John Omondi</h3>
+            <p><i class="location-pin-icon"></i> 78 Kenyatta Avenue, Nairobi</p>
+          </div>
+          <div class="visit-type">
+            <span class="type-badge maintenance">Maintenance</span>
+          </div>
+          <div class="visit-actions">
+            <button class="action-button small">
+              <i class="navigate-icon"></i>
+              <span>Navigate</span>
+            </button>
+            <button class="action-button small">
+              <i class="reschedule-icon"></i>
+              <span>Reschedule</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="visit-item">
+        <div class="visit-time">
+          <span>03:30 PM</span>
+        </div>
+        <div class="visit-status">
+          <i class="upcoming-icon"></i>
+        </div>
+        <div class="visit-details">
+          <div class="customer-info">
+            <h3>Mary Wanjiku</h3>
+            <p><i class="location-pin-icon"></i> 92 Mfangano Street, Nairobi</p>
+          </div>
+          <div class="visit-type">
+            <span class="type-badge payment">Payment Collection</span>
+          </div>
+          <div class="visit-actions">
+            <button class="action-button small">
+              <i class="navigate-icon"></i>
+              <span>Navigate</span>
+            </button>
+            <button class="action-button small">
+              <i class="reschedule-icon"></i>
+              <span>Reschedule</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="visit-item">
+        <div class="visit-time">
+          <span>04:30 PM</span>
+        </div>
+        <div class="visit-status">
+          <i class="upcoming-icon"></i>
+        </div>
+        <div class="visit-details">
+          <div class="customer-info">
+            <h3>Inventory Pickup</h3>
+            <p><i class="location-pin-icon"></i> BURN Distribution Center</p>
+          </div>
+          <div class="visit-type">
+            <span class="type-badge inventory">Inventory</span>
+          </div>
+          <div class="visit-actions">
+            <button class="action-button small">
+              <i class="navigate-icon"></i>
+              <span>Navigate</span>
+            </button>
+            <button class="action-button small">
+              <i class="reschedule-icon"></i>
+              <span>Reschedule</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Floating Action Button -->
+  <button class="floating-action-button">
+    <i class="add-icon"></i>
+  </button>
+</div>
+
+<!-- Visit Scheduling Screen -->
+<div class="wireframe visit-scheduling">
+  <!-- Header -->
+  <div class="header">
+    <button class="back-button">
+      <i class="back-icon"></i>
+    </button>
+    <div class="page-title">
+      <h1>Schedule Visit</h1>
+    </div>
+    <div class="header-actions">
+      <button class="help-button">
+        <i class="help-icon"></i>
+      </button>
+    </div>
+  </div>
+  
+  <!-- Main Content -->
+  <div class="main-content">
+    <div class="form-section">
+      <h2>Visit Details</h2>
+      
+      <div class="form-group">
+        <label>Visit Type <span class="required">*</span></label>
+        <select>
+          <option>Customer Registration</option>
+          <option>Payment Collection</option>
+          <option>Device Maintenance</option>
+          <option>Follow-up Visit</option>
+          <option>Inventory Pickup</option>
+          <option>Other</option>
+        </select>
+      </div>
+      
+      <div class="form-group">
+        <label>Customer <span class="required">*</span></label>
+        <div class="search-input">
+          <i class="search-icon"></i>
+          <input type="text" placeholder="Search customer" />
+        </div>
+      </div>
+      
+      <div class="customer-result selected">
+        <div class="customer-avatar">
+          <img src="images/customer-avatar-3.png" alt="Customer Avatar" />
+        </div>
+        <div class="customer-info">
+          <h3>Mary Wanjiku</h3>
+          <p>+254 734 567 890</p>
+          <p>92 Mfangano Street, Nairobi</p>
+        </div>
+        <div class="selection-indicator">
+          <i class="check-icon"></i>
+        </div>
+      </div>
+      
+      <div class="form-group">
+        <label>Date <span class="required">*</span></label>
+        <div class="date-input">
+          <input type="date" value="2025-04-22" />
+          <i class="calendar-icon"></i>
+        </div>
+      </div>
+      
+      <div class="form-group">
+        <label>Time <span class="required">*</span></label>
+        <div class="time-input">
+          <input type="time" value="10:30" />
+          <i class="time-icon"></i>
+        </div>
+      </div>
+      
+      <div class="form-group">
+        <label>Duration <span class="required">*</span></label>
+        <select>
+          <option>15 minutes</option>
+          <option>30 minutes</option>
+          <option selected>45 minutes</option>
+          <option>1 hour</option>
+          <option>1.5 hours</option>
+          <option>2 hours</option>
+        </select>
+      </div>
+      
+      <div class="form-group">
+        <label>Priority <span class="required">*</span></label>
+        <div class="radio-group">
+          <label class="radio-option">
+            <input type="radio" name="priority" value="low" />
+            <span>Low</span>
+          </label>
+          <label class="radio-option">
+            <input type="radio" name="priority" value="medium" checked />
+            <span>Medium</span>
+          </label>
+          <label class="radio-option">
+            <input type="radio" name="priority" value="high" />
+            <span>High</span>
+          </label>
+        </div>
+      </div>
+      
+      <div class="form-group">
+        <label>Purpose <span class="required">*</span></label>
+        <textarea placeholder="Describe the purpose of this visit"></textarea>
+      </div>
+    </div>
+    
+    <div class="form-section">
+      <h2>Location</h2>
+      
+      <div class="location-map">
+        <img src="images/customer-location-map.png" alt="Customer Location Map" />
+      </div>
+      
+      <div class="location-details">
+        <div class="form-group">
+          <label>Address <span class="required">*</span></label>
+          <input type="text" value="92 Mfangano Street, Nairobi, Kenya" />
+        </div>
+        
+        <div class="form-group">
+          <label>Landmark (Optional)</label>
+          <input type="text" placeholder="Enter nearby landmark" />
+        </div>
+        
+        <div class="form-group">
+          <label>GPS Coordinates</label>
+          <div class="coordinates-input">
+            <input type="text" value="-1.2864, 36.8172" readonly />
+            <button class="refresh-button">
+              <i class="refresh-icon"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="form-section">
+      <h2>Notifications</h2>
+      
+      <div class="form-group">
+        <label>Remind Customer</label>
+        <div class="checkbox-group">
+          <label class="checkbox-option">
+            <input type="checkbox" checked />
+            <span>Send SMS reminder to customer</span>
+          </label>
+        </div>
+      </div>
+      
+      <div class="form-group">
+        <label>Reminder Time</label>
+        <select>
+          <option>15 minutes before</option>
+          <option>30 minutes before</option>
+          <option selected>1 hour before</option>
+          <option>2 hours before</option>
+          <option>1 day before</option>
+        </select>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Footer Actions -->
+  <div class="form-actions">
+    <button class="secondary-button">Cancel</button>
+    <button class="primary-button">Schedule Visit</button>
+  </div>
+</div>
+
+<!-- Visit Reporting Screen -->
+<div class="wireframe visit-reporting">
+  <!-- Header -->
+  <div class="header">
+    <button class="back-button">
+      <i class="back-icon"></i>
+    </button>
+    <div class="page-title">
+      <h1>Visit Report</h1>
+      <p>Sarah Kamau</p>
+    </div>
+    <div class="header-actions">
+      <button class="save-button">
+        <i class="save-icon"></i>
+      </button>
+    </div>
+  </div>
+  
+  <!-- Main Content -->
+  <div class="main-content">
+    <div class="visit-summary">
+      <div class="summary-header">
+        <div class="visit-type">
+          <span class="type-badge payment">Payment Collection</span>
+        </div>
+        <div class="visit-time">
+          <i class="time-icon"></i>
+          <span>Apr 21, 2025, 09:00 AM</span>
+        </div>
+      </div>
+      
+      <div class="customer-card">
+        <div class="customer-avatar">
+          <img src="images/customer-avatar-1.png" alt="Customer Avatar" />
+        </div>
+        <div class="customer-details">
+          <h3>Sarah Kamau</h3>
+          <p><i class="phone-icon"></i> +254 712 345 678</p>
+          <p><i class="location-pin-icon"></i> 123 Moi Avenue, Nairobi</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="form-section">
+      <h2>Visit Status</h2>
+      
+      <div class="form-group">
+        <label>Status <span class="required">*</span></label>
+        <select>
+          <option>Select status</option>
+          <option selected>Completed</option>
+          <option>Partially Completed</option>
+          <option>Rescheduled</option>
+          <option>Cancelled</option>
+          <option>Customer Not Available</option>
+        </select>
+      </div>
+      
+      <div class="form-group">
+        <label>Duration</label>
+        <div class="duration-display">
+          <span>Start: 09:00 AM</span>
+          <span>End: 09:45 AM</span>
+          <span class="total-time">Total: 45 minutes</span>
+        </div>
+      </div>
+    </div>
+    
+    <div class="form-section">
+      <h2>Activities Performed</h2>
+      
+      <div class="checkbox-group">
+        <label class="checkbox-option">
+          <input type="checkbox" checked />
+          <span>Payment Collection</span>
+        </label>
+        <label class="checkbox-option">
+          <input type="checkbox" checked />
+          <span>Device Inspection</span>
+        </label>
+        <label class="checkbox-option">
+          <input type="checkbox" checked />
+          <span>Customer Education</span>
+        </label>
+        <label class="checkbox-option">
+          <input type="checkbox" />
+          <span>Maintenance</span>
+        </label>
+        <label class="checkbox-option">
+          <input type="checkbox" />
+          <span>Parts Replacement</span>
+        </label>
+      </div>
+      
+      <div class="form-group">
+        <label>Other Activities</label>
+        <input type="text" placeholder="Enter other activities performed" />
+      </div>
+    </div>
+    
+    <div class="form-section">
+      <h2>Payment Details</h2>
+      
+      <div class="payment-summary">
+        <div class="summary-item">
+          <span class="label">Amount Collected</span>
+          <span class="value">KSh 1,000</span>
+        </div>
+        <div class="summary-item">
+          <span class="label">Payment Method</span>
+          <span class="value">M-Pesa</span>
+        </div>
+        <div class="summary-item">
+          <span class="label">Transaction ID</span>
+          <span class="value">QDE12345678</span>
+        </div>
+      </div>
+    </div>
+    
+    <div class="form-section">
+      <h2>Device Status</h2>
+      
+      <div class="form-group">
+        <label>Device Condition <span class="required">*</span></label>
+        <select>
+          <option>Select condition</option>
+          <option selected>Good</option>
+          <option>Fair</option>
+          <option>Poor</option>
+          <option>Needs Repair</option>
+          <option>Not Functioning</option>
+        </select>
+      </div>
+      
+      <div class="form-group">
+        <label>Issues Identified</label>
+        <textarea placeholder="Describe any issues with the device"></textarea>
+      </div>
+      
+      <div class="form-group">
+        <label>Photos</label>
+        <div class="photo-upload-grid">
+          <div class="upload-item">
+            <div class="upload-area">
+              <i class="camera-icon"></i>
+              <span>Device Photo</span>
+            </div>
+            <button class="upload-button">
+              <i class="camera-icon"></i>
+            </button>
+          </div>
+          <div class="upload-item">
+            <div class="upload-area">
+              <i class="camera-icon"></i>
+              <span>Issue Photo</span>
+            </div>
+            <button class="upload-button">
+              <i class="camera-icon"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="form-section">
+      <h2>Customer Feedback</h2>
+      
+      <div class="form-group">
+        <label>Satisfaction Level <span class="required">*</span></label>
+        <div class="rating-input">
+          <i class="star-icon filled"></i>
+          <i class="star-icon filled"></i>
+          <i class="star-icon filled"></i>
+          <i class="star-icon filled"></i>
+          <i class="star-icon"></i>
+        </div>
+      </div>
+      
+      <div class="form-group">
+        <label>Customer Comments</label>
+        <textarea placeholder="Enter customer feedback or comments">Very satisfied with the service. The stove is working well and the payment process was smooth.</textarea>
+      </div>
+    </div>
+    
+    <div class="form-section">
+      <h2>Follow-up Actions</h2>
+      
+      <div class="form-group">
+        <label>Follow-up Required</label>
+        <div class="radio-group">
+          <label class="radio-option">
+            <input type="radio" name="followup" value="yes" />
+            <span>Yes</span>
+          </label>
+          <label class="radio-option">
+            <input type="radio" name="followup" value="no" checked />
+            <span>No</span>
+          </label>
+        </div>
+      </div>
+      
+      <div class="form-group">
+        <label>Notes for Next Visit</label>
+        <textarea placeholder="Enter notes for the next visit"></textarea>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Footer Actions -->
+  <div class="form-actions">
+    <button class="secondary-button">Save as Draft</button>
+    <button class="primary-button">Submit Report</button>
+  </div>
+</div>

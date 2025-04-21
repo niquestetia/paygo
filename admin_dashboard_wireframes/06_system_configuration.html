@@ -1,0 +1,1945 @@
+<!-- System Configuration -->
+<div class="wireframe system-configuration">
+  <!-- Header -->
+  <div class="header">
+    <div class="logo-container">
+      <img src="images/burn-logo-small.png" alt="BURN Logo" />
+      <h1>PayGo Admin</h1>
+    </div>
+    <div class="header-actions">
+      <div class="search-bar">
+        <i class="search-icon"></i>
+        <input type="text" placeholder="Search..." />
+      </div>
+      <button class="notification-button">
+        <i class="notification-icon"></i>
+        <span class="badge">5</span>
+      </button>
+      <div class="admin-profile">
+        <img src="images/admin-avatar.png" alt="Admin Avatar" />
+        <span>Admin</span>
+        <i class="dropdown-icon"></i>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Sidebar Navigation -->
+  <div class="sidebar">
+    <!-- Sidebar navigation content (same as main dashboard) -->
+  </div>
+  
+  <!-- Main Content -->
+  <div class="main-content">
+    <div class="page-header">
+      <h2>System Configuration</h2>
+      <div class="header-actions">
+        <button class="save-button">
+          <i class="save-icon"></i>
+          <span>Save Changes</span>
+        </button>
+      </div>
+    </div>
+    
+    <div class="configuration-tabs">
+      <button class="tab-button active">General</button>
+      <button class="tab-button">Payment</button>
+      <button class="tab-button">Notifications</button>
+      <button class="tab-button">Security</button>
+      <button class="tab-button">Integrations</button>
+      <button class="tab-button">Advanced</button>
+    </div>
+    
+    <div class="configuration-content">
+      <!-- General Settings Tab -->
+      <div class="tab-content general-settings active">
+        <div class="settings-section">
+          <h3>Company Information</h3>
+          <div class="form-group">
+            <label>Company Name</label>
+            <input type="text" value="BURN Manufacturing" />
+          </div>
+          <div class="form-group">
+            <label>Company Logo</label>
+            <div class="logo-upload">
+              <img src="images/burn-logo.png" alt="Company Logo" />
+              <button class="upload-button">
+                <i class="upload-icon"></i>
+                <span>Upload New Logo</span>
+              </button>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Primary Contact Email</label>
+            <input type="email" value="support@burnmfg.com" />
+          </div>
+          <div class="form-group">
+            <label>Support Phone Number</label>
+            <input type="tel" value="+254 700 123 456" />
+          </div>
+          <div class="form-group">
+            <label>Business Address</label>
+            <textarea>BURN Manufacturing
+Ruiru, Kenya
+P.O. Box 1234-00100
+Nairobi, Kenya</textarea>
+          </div>
+        </div>
+        
+        <div class="settings-section">
+          <h3>Regional Settings</h3>
+          <div class="form-group">
+            <label>Default Currency</label>
+            <select>
+              <option selected>KSh (Kenyan Shilling)</option>
+              <option>USD (US Dollar)</option>
+              <option>EUR (Euro)</option>
+              <option>TZS (Tanzanian Shilling)</option>
+              <option>UGX (Ugandan Shilling)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Default Language</label>
+            <select>
+              <option selected>English</option>
+              <option>Swahili</option>
+              <option>French</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Time Zone</label>
+            <select>
+              <option selected>East Africa Time (UTC+3)</option>
+              <option>Central Africa Time (UTC+2)</option>
+              <option>West Africa Time (UTC+1)</option>
+              <option>UTC</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Date Format</label>
+            <select>
+              <option selected>DD/MM/YYYY</option>
+              <option>MM/DD/YYYY</option>
+              <option>YYYY-MM-DD</option>
+            </select>
+          </div>
+        </div>
+        
+        <div class="settings-section">
+          <h3>System Defaults</h3>
+          <div class="form-group">
+            <label>Default Dashboard View</label>
+            <select>
+              <option selected>Overview</option>
+              <option>Financial</option>
+              <option>Devices</option>
+              <option>Customers</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Data Refresh Rate</label>
+            <select>
+              <option>Real-time</option>
+              <option selected>Every 5 minutes</option>
+              <option>Every 15 minutes</option>
+              <option>Every 30 minutes</option>
+              <option>Every hour</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Default Export Format</label>
+            <select>
+              <option selected>CSV</option>
+              <option>Excel</option>
+              <option>PDF</option>
+              <option>JSON</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Items Per Page</label>
+            <select>
+              <option>10</option>
+              <option selected>20</option>
+              <option>50</option>
+              <option>100</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Payment Settings Tab -->
+      <div class="tab-content payment-settings">
+        <div class="settings-section">
+          <h3>Payment Gateways</h3>
+          <div class="gateway-list">
+            <div class="gateway-item active">
+              <div class="gateway-header">
+                <div class="gateway-logo">
+                  <img src="images/mpesa-logo.png" alt="M-Pesa" />
+                </div>
+                <div class="gateway-info">
+                  <h4>M-Pesa</h4>
+                  <span class="status-badge active">Active</span>
+                </div>
+                <div class="gateway-actions">
+                  <button class="action-button">
+                    <i class="edit-icon"></i>
+                    <span>Edit</span>
+                  </button>
+                  <button class="action-button">
+                    <i class="deactivate-icon"></i>
+                    <span>Deactivate</span>
+                  </button>
+                </div>
+              </div>
+              <div class="gateway-details">
+                <div class="form-group">
+                  <label>API Key</label>
+                  <input type="password" value="••••••••••••••••" />
+                  <button class="show-button">Show</button>
+                </div>
+                <div class="form-group">
+                  <label>Secret Key</label>
+                  <input type="password" value="••••••••••••••••" />
+                  <button class="show-button">Show</button>
+                </div>
+                <div class="form-group">
+                  <label>Business Short Code</label>
+                  <input type="text" value="123456" />
+                </div>
+                <div class="form-group">
+                  <label>Transaction Type</label>
+                  <select>
+                    <option selected>CustomerPayBillOnline</option>
+                    <option>CustomerBuyGoodsOnline</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            
+            <div class="gateway-item active">
+              <div class="gateway-header">
+                <div class="gateway-logo">
+                  <img src="images/airtel-money-logo.png" alt="Airtel Money" />
+                </div>
+                <div class="gateway-info">
+                  <h4>Airtel Money</h4>
+                  <span class="status-badge active">Active</span>
+                </div>
+                <div class="gateway-actions">
+                  <button class="action-button">
+                    <i class="edit-icon"></i>
+                    <span>Edit</span>
+                  </button>
+                  <button class="action-button">
+                    <i class="deactivate-icon"></i>
+                    <span>Deactivate</span>
+                  </button>
+                </div>
+              </div>
+              <div class="gateway-details">
+                <div class="form-group">
+                  <label>API Key</label>
+                  <input type="password" value="••••••••••••••••" />
+                  <button class="show-button">Show</button>
+                </div>
+                <div class="form-group">
+                  <label>Secret Key</label>
+                  <input type="password" value="••••••••••••••••" />
+                  <button class="show-button">Show</button>
+                </div>
+                <div class="form-group">
+                  <label>Merchant ID</label>
+                  <input type="text" value="AIRTEL123456" />
+                </div>
+              </div>
+            </div>
+            
+            <div class="gateway-item inactive">
+              <div class="gateway-header">
+                <div class="gateway-logo">
+                  <img src="images/paypal-logo.png" alt="PayPal" />
+                </div>
+                <div class="gateway-info">
+                  <h4>PayPal</h4>
+                  <span class="status-badge inactive">Inactive</span>
+                </div>
+                <div class="gateway-actions">
+                  <button class="action-button">
+                    <i class="setup-icon"></i>
+                    <span>Set Up</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            
+            <div class="add-gateway">
+              <button class="add-button">
+                <i class="add-icon"></i>
+                <span>Add Payment Gateway</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="settings-section">
+          <h3>Payment Terms</h3>
+          <div class="form-group">
+            <label>Default Grace Period</label>
+            <div class="input-with-unit">
+              <input type="number" value="3" />
+              <span class="unit">days</span>
+            </div>
+            <p class="help-text">Number of days after payment due date before device is locked</p>
+          </div>
+          <div class="form-group">
+            <label>Default Late Payment Fee</label>
+            <div class="input-with-unit">
+              <input type="number" value="10" />
+              <span class="unit">%</span>
+            </div>
+            <p class="help-text">Percentage of original payment amount</p>
+          </div>
+          <div class="form-group">
+            <label>Early Payment Discount</label>
+            <div class="input-with-unit">
+              <input type="number" value="5" />
+              <span class="unit">%</span>
+            </div>
+            <p class="help-text">Percentage discount for payments made before due date</p>
+          </div>
+          <div class="form-group">
+            <label>Minimum Payment Amount</label>
+            <div class="input-with-unit">
+              <span class="currency">KSh</span>
+              <input type="number" value="50" />
+            </div>
+            <p class="help-text">Minimum amount accepted for any payment</p>
+          </div>
+        </div>
+        
+        <div class="settings-section">
+          <h3>Payment Reminders</h3>
+          <div class="form-group">
+            <label>First Reminder</label>
+            <div class="input-with-unit">
+              <input type="number" value="3" />
+              <span class="unit">days before due date</span>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Second Reminder</label>
+            <div class="input-with-unit">
+              <input type="number" value="1" />
+              <span class="unit">day before due date</span>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Due Date Reminder</label>
+            <div class="checkbox-option">
+              <input type="checkbox" checked />
+              <span>Send reminder on due date</span>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Overdue Reminders</label>
+            <div class="input-with-unit">
+              <input type="number" value="1" />
+              <span class="unit">day after due date</span>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Final Warning</label>
+            <div class="input-with-unit">
+              <input type="number" value="2" />
+              <span class="unit">days after due date</span>
+            </div>
+            <p class="help-text">Final warning before device lock</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Notification Settings Tab -->
+      <div class="tab-content notification-settings">
+        <div class="settings-section">
+          <h3>Customer Notifications</h3>
+          <div class="notification-list">
+            <div class="notification-item">
+              <div class="notification-info">
+                <h4>Payment Reminders</h4>
+                <p>Reminders for upcoming and overdue payments</p>
+              </div>
+              <div class="notification-channels">
+                <div class="channel-option">
+                  <input type="checkbox" checked />
+                  <span>SMS</span>
+                </div>
+                <div class="channel-option">
+                  <input type="checkbox" checked />
+                  <span>App Push</span>
+                </div>
+                <div class="channel-option">
+                  <input type="checkbox" checked />
+                  <span>Email</span>
+                </div>
+                <div class="channel-option">
+                  <input type="checkbox" />
+                  <span>WhatsApp</span>
+                </div>
+              </div>
+              <div class="notification-actions">
+                <button class="action-button">
+                  <i class="edit-icon"></i>
+                  <span>Edit</span>
+                </button>
+              </div>
+            </div>
+            
+            <div class="notification-item">
+              <div class="notification-info">
+                <h4>Device Status</h4>
+                <p>Updates on device status changes (locked, unlocked, etc.)</p>
+              </div>
+              <div class="notification-channels">
+                <div class="channel-option">
+                  <input type="checkbox" checked />
+                  <span>SMS</span>
+                </div>
+                <div class="channel-option">
+                  <input type="checkbox" checked />
+                  <span>App Push</span>
+                </div>
+                <div class="channel-option">
+                  <input type="checkbox" />
+                  <span>Email</span>
+                </div>
+                <div class="channel-option">
+                  <input type="checkbox" />
+                  <span>WhatsApp</span>
+                </div>
+              </div>
+              <div class="notification-actions">
+                <button class="action-button">
+                  <i class="edit-icon"></i>
+                  <span>Edit</span>
+                </button>
+              </div>
+            </div>
+            
+            <div class="notification-item">
+              <div class="notification-info">
+                <h4>Low Credit</h4>
+                <p>Alerts when credit balance is running low</p>
+              </div>
+              <div class="notification-channels">
+                <div class="channel-option">
+                  <input type="checkbox" checked />
+                  <span>SMS</span>
+                </div>
+                <div class="channel-option">
+                  <input type="checkbox" checked />
+                  <span>App Push</span>
+                </div>
+                <div class="channel-option">
+                  <input type="checkbox" />
+                  <span>Email</span>
+                </div>
+                <div class="channel-option">
+                  <input type="checkbox" />
+                  <span>WhatsApp</span>
+                </div>
+              </div>
+              <div class="notification-actions">
+                <button class="action-button">
+                  <i class="edit-icon"></i>
+                  <span>Edit</span>
+                </button>
+              </div>
+            </div>
+            
+            <div class="notification-item">
+              <div class="notification-info">
+                <h4>Promotions & Offers</h4>
+                <p>Marketing messages about special offers and promotions</p>
+              </div>
+              <div class="notification-channels">
+                <div class="channel-option">
+                  <input type="checkbox" checked />
+                  <span>SMS</span>
+                </div>
+                <div class="channel-option">
+                  <input type="checkbox" checked />
+                  <span>App Push</span>
+                </div>
+                <div class="channel-option">
+                  <input type="checkbox" checked />
+                  <span>Email</span>
+                </div>
+                <div class="channel-option">
+                  <input type="checkbox" />
+                  <span>WhatsApp</span>
+                </div>
+              </div>
+              <div class="notification-actions">
+                <button class="action-button">
+                  <i class="edit-icon"></i>
+                  <span>Edit</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="settings-section">
+          <h3>Field Agent Notifications</h3>
+          <div class="notification-list">
+            <div class="notification-item">
+              <div class="notification-info">
+                <h4>Customer Assignments</h4>
+                <p>Notifications about new customer assignments</p>
+              </div>
+              <div class="notification-channels">
+                <div class="channel-option">
+                  <input type="checkbox" checked />
+                  <span>SMS</span>
+                </div>
+                <div class="channel-option">
+                  <input type="checkbox" checked />
+                  <span>App Push</span>
+                </div>
+                <div class="channel-option">
+                  <input type="checkbox" checked />
+                  <span>Email</span>
+                </div>
+                <div class="channel-option">
+                  <input type="checkbox" />
+                  <span>WhatsApp</span>
+                </div>
+              </div>
+              <div class="notification-actions">
+                <button class="action-button">
+                  <i class="edit-icon"></i>
+                  <span>Edit</span>
+                </button>
+              </div>
+            </div>
+            
+            <div class="notification-item">
+              <div class="notification-info">
+                <h4>Device Issues</h4>
+                <p>Alerts about device problems requiring attention</p>
+              </div>
+              <div class="notification-channels">
+                <div class="channel-option">
+                  <input type="checkbox" checked />
+                  <span>SMS</span>
+                </div>
+                <div class="channel-option">
+                  <input type="checkbox" checked />
+                  <span>App Push</span>
+                </div>
+                <div class="channel-option">
+                  <input type="checkbox" />
+                  <span>Email</span>
+                </div>
+                <div class="channel-option">
+                  <input type="checkbox" />
+                  <span>WhatsApp</span>
+                </div>
+              </div>
+              <div class="notification-actions">
+                <button class="action-button">
+                  <i class="edit-icon"></i>
+                  <span>Edit</span>
+                </button>
+              </div>
+            </div>
+            
+            <div class="notification-item">
+              <div class="notification-info">
+                <h4>Payment Collections</h4>
+                <p>Reminders about pending payment collections</p>
+              </div>
+              <div class="notification-channels">
+                <div class="channel-option">
+                  <input type="checkbox" checked />
+                  <span>SMS</span>
+                </div>
+                <div class="channel-option">
+                  <input type="checkbox" checked />
+                  <span>App Push</span>
+                </div>
+                <div class="channel-option">
+                  <input type="checkbox" />
+                  <span>Email</span>
+                </div>
+                <div class="channel-option">
+                  <input type="checkbox" />
+                  <span>WhatsApp</span>
+                </div>
+              </div>
+              <div class="notification-actions">
+                <button class="action-button">
+                  <i class="edit-icon"></i>
+                  <span>Edit</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="settings-section">
+          <h3>Admin Notifications</h3>
+          <div class="notification-list">
+            <div class="notification-item">
+              <div class="notification-info">
+                <h4>System Alerts</h4>
+                <p>Critical system alerts requiring immediate attention</p>
+              </div>
+              <div class="notification-channels">
+                <div class="channel-option">
+                  <input type="checkbox" checked />
+                  <span>SMS</span>
+                </div>
+                <div class="channel-option">
+                  <input type="checkbox" checked />
+                  <span>App Push</span>
+                </div>
+                <div class="channel-option">
+                  <input type="checkbox" checked />
+                  <span>Email</span>
+                </div>
+                <div class="channel-option">
+                  <input type="checkbox" />
+                  <span>WhatsApp</span>
+                </div>
+              </div>
+              <div class="notification-actions">
+                <button class="action-button">
+                  <i class="edit-icon"></i>
+                  <span>Edit</span>
+                </button>
+              </div>
+            </div>
+            
+            <div class="notification-item">
+              <div class="notification-info">
+                <h4>Payment Reconciliation</h4>
+                <p>Alerts about payment reconciliation issues</p>
+              </div>
+              <div class="notification-channels">
+                <div class="channel-option">
+                  <input type="checkbox" />
+                  <span>SMS</span>
+                </div>
+                <div class="channel-option">
+                  <input type="checkbox" checked />
+                  <span>App Push</span>
+                </div>
+                <div class="channel-option">
+                  <input type="checkbox" checked />
+                  <span>Email</span>
+                </div>
+                <div class="channel-option">
+                  <input type="checkbox" />
+                  <span>WhatsApp</span>
+                </div>
+              </div>
+              <div class="notification-actions">
+                <button class="action-button">
+                  <i class="edit-icon"></i>
+                  <span>Edit</span>
+                </button>
+              </div>
+            </div>
+            
+            <div class="notification-item">
+              <div class="notification-info">
+                <h4>Device Fleet Status</h4>
+                <p>Regular updates on device fleet status</p>
+              </div>
+              <div class="notification-channels">
+                <div class="channel-option">
+                  <input type="checkbox" />
+                  <span>SMS</span>
+                </div>
+                <div class="channel-option">
+                  <input type="checkbox" />
+                  <span>App Push</span>
+                </div>
+                <div class="channel-option">
+                  <input type="checkbox" checked />
+                  <span>Email</span>
+                </div>
+                <div class="channel-option">
+                  <input type="checkbox" />
+                  <span>WhatsApp</span>
+                </div>
+              </div>
+              <div class="notification-actions">
+                <button class="action-button">
+                  <i class="edit-icon"></i>
+                  <span>Edit</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Security Settings Tab -->
+      <div class="tab-content security-settings">
+        <div class="settings-section">
+          <h3>Authentication</h3>
+          <div class="form-group">
+            <label>Password Policy</label>
+            <div class="checkbox-group">
+              <div class="checkbox-option">
+                <input type="checkbox" checked />
+                <span>Minimum 8 characters</span>
+              </div>
+              <div class="checkbox-option">
+                <input type="checkbox" checked />
+                <span>Require uppercase letters</span>
+              </div>
+              <div class="checkbox-option">
+                <input type="checkbox" checked />
+                <span>Require numbers</span>
+              </div>
+              <div class="checkbox-option">
+                <input type="checkbox" checked />
+                <span>Require special characters</span>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Password Expiry</label>
+            <div class="input-with-unit">
+              <input type="number" value="90" />
+              <span class="unit">days</span>
+            </div>
+            <p class="help-text">Set to 0 for no expiry</p>
+          </div>
+          <div class="form-group">
+            <label>Two-Factor Authentication</label>
+            <div class="radio-group">
+              <div class="radio-option">
+                <input type="radio" name="2fa" value="optional" />
+                <span>Optional</span>
+              </div>
+              <div class="radio-option">
+                <input type="radio" name="2fa" value="required" checked />
+                <span>Required for all users</span>
+              </div>
+              <div class="radio-option">
+                <input type="radio" name="2fa" value="admin" />
+                <span>Required for admin users only</span>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Account Lockout</label>
+            <div class="input-with-unit">
+              <input type="number" value="5" />
+              <span class="unit">failed attempts</span>
+            </div>
+            <p class="help-text">Number of failed login attempts before account is locked</p>
+          </div>
+        </div>
+        
+        <div class="settings-section">
+          <h3>Session Management</h3>
+          <div class="form-group">
+            <label>Session Timeout</label>
+            <div class="input-with-unit">
+              <input type="number" value="30" />
+              <span class="unit">minutes</span>
+            </div>
+            <p class="help-text">Time of inactivity before user is logged out</p>
+          </div>
+          <div class="form-group">
+            <label>Maximum Concurrent Sessions</label>
+            <div class="input-with-unit">
+              <input type="number" value="3" />
+              <span class="unit">sessions</span>
+            </div>
+            <p class="help-text">Maximum number of active sessions per user</p>
+          </div>
+          <div class="form-group">
+            <label>Remember Me Duration</label>
+            <div class="input-with-unit">
+              <input type="number" value="14" />
+              <span class="unit">days</span>
+            </div>
+            <p class="help-text">Duration of "Remember Me" cookie</p>
+          </div>
+        </div>
+        
+        <div class="settings-section">
+          <h3>API Security</h3>
+          <div class="form-group">
+            <label>API Rate Limiting</label>
+            <div class="input-with-unit">
+              <input type="number" value="100" />
+              <span class="unit">requests per minute</span>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>API Key Expiry</label>
+            <div class="input-with-unit">
+              <input type="number" value="90" />
+              <span class="unit">days</span>
+            </div>
+            <p class="help-text">Set to 0 for no expiry</p>
+          </div>
+          <div class="form-group">
+            <label>API Access Control</label>
+            <select>
+              <option>Open (no restrictions)</option>
+              <option selected>IP whitelist</option>
+              <option>Token-based only</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>IP Whitelist</label>
+            <textarea>192.168.1.1
+203.0.113.0/24
+2001:db8::/32</textarea>
+            <p class="help-text">Enter one IP address or CIDR range per line</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Integrations Tab -->
+      <div class="tab-content integrations-settings">
+        <div class="settings-section">
+          <h3>Connected Services</h3>
+          <div class="integration-list">
+            <div class="integration-item active">
+              <div class="integration-header">
+                <div class="integration-logo">
+                  <img src="images/quickbooks-logo.png" alt="QuickBooks" />
+                </div>
+                <div class="integration-info">
+                  <h4>QuickBooks</h4>
+                  <span class="status-badge active">Connected</span>
+                </div>
+                <div class="integration-actions">
+                  <button class="action-button">
+                    <i class="configure-icon"></i>
+                    <span>Configure</span>
+                  </button>
+                  <button class="action-button">
+                    <i class="disconnect-icon"></i>
+                    <span>Disconnect</span>
+                  </button>
+                </div>
+              </div>
+              <div class="integration-details">
+                <p>Connected Account: finance@burnmfg.com</p>
+                <p>Last Sync: Apr 21, 2025, 06:30 AM</p>
+                <p>Sync Frequency: Daily</p>
+              </div>
+            </div>
+            
+            <div class="integration-item active">
+              <div class="integration-header">
+                <div class="integration-logo">
+                  <img src="images/salesforce-logo.png" alt="Salesforce" />
+                </div>
+                <div class="integration-info">
+                  <h4>Salesforce</h4>
+                  <span class="status-badge active">Connected</span>
+                </div>
+                <div class="integration-actions">
+                  <button class="action-button">
+                    <i class="configure-icon"></i>
+                    <span>Configure</span>
+                  </button>
+                  <button class="action-button">
+                    <i class="disconnect-icon"></i>
+                    <span>Disconnect</span>
+                  </button>
+                </div>
+              </div>
+              <div class="integration-details">
+                <p>Connected Account: sales@burnmfg.com</p>
+                <p>Last Sync: Apr 21, 2025, 07:15 AM</p>
+                <p>Sync Frequency: Real-time</p>
+              </div>
+            </div>
+            
+            <div class="integration-item inactive">
+              <div class="integration-header">
+                <div class="integration-logo">
+                  <img src="images/hubspot-logo.png" alt="HubSpot" />
+                </div>
+                <div class="integration-info">
+                  <h4>HubSpot</h4>
+                  <span class="status-badge inactive">Not Connected</span>
+                </div>
+                <div class="integration-actions">
+                  <button class="action-button">
+                    <i class="connect-icon"></i>
+                    <span>Connect</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            
+            <div class="integration-item inactive">
+              <div class="integration-header">
+                <div class="integration-logo">
+                  <img src="images/zapier-logo.png" alt="Zapier" />
+                </div>
+                <div class="integration-info">
+                  <h4>Zapier</h4>
+                  <span class="status-badge inactive">Not Connected</span>
+                </div>
+                <div class="integration-actions">
+                  <button class="action-button">
+                    <i class="connect-icon"></i>
+                    <span>Connect</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="settings-section">
+          <h3>IoT Platform Integration</h3>
+          <div class="form-group">
+            <label>IoT Platform</label>
+            <select>
+              <option selected>AWS IoT</option>
+              <option>Azure IoT</option>
+              <option>Google Cloud IoT</option>
+              <option>Custom</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>API Endpoint</label>
+            <input type="text" value="https://iot.us-east-1.amazonaws.com" />
+          </div>
+          <div class="form-group">
+            <label>API Key</label>
+            <input type="password" value="••••••••••••••••" />
+            <button class="show-button">Show</button>
+          </div>
+          <div class="form-group">
+            <label>Secret Key</label>
+            <input type="password" value="••••••••••••••••" />
+            <button class="show-button">Show</button>
+          </div>
+          <div class="form-group">
+            <label>Data Sync Frequency</label>
+            <select>
+              <option>Real-time</option>
+              <option selected>Every 5 minutes</option>
+              <option>Every 15 minutes</option>
+              <option>Every 30 minutes</option>
+              <option>Every hour</option>
+            </select>
+          </div>
+        </div>
+        
+        <div class="settings-section">
+          <h3>SMS Gateway</h3>
+          <div class="form-group">
+            <label>SMS Provider</label>
+            <select>
+              <option selected>Africa's Talking</option>
+              <option>Twilio</option>
+              <option>Infobip</option>
+              <option>Custom</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>API Key</label>
+            <input type="password" value="••••••••••••••••" />
+            <button class="show-button">Show</button>
+          </div>
+          <div class="form-group">
+            <label>Sender ID</label>
+            <input type="text" value="BURNPAYGO" />
+          </div>
+          <div class="form-group">
+            <label>Default Country Code</label>
+            <input type="text" value="+254" />
+          </div>
+        </div>
+      </div>
+      
+      <!-- Advanced Settings Tab -->
+      <div class="tab-content advanced-settings">
+        <div class="settings-section">
+          <h3>System Maintenance</h3>
+          <div class="form-group">
+            <label>Database Backup</label>
+            <div class="radio-group">
+              <div class="radio-option">
+                <input type="radio" name="backup" value="daily" checked />
+                <span>Daily</span>
+              </div>
+              <div class="radio-option">
+                <input type="radio" name="backup" value="weekly" />
+                <span>Weekly</span>
+              </div>
+              <div class="radio-option">
+                <input type="radio" name="backup" value="monthly" />
+                <span>Monthly</span>
+              </div>
+              <div class="radio-option">
+                <input type="radio" name="backup" value="manual" />
+                <span>Manual only</span>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Backup Retention</label>
+            <div class="input-with-unit">
+              <input type="number" value="30" />
+              <span class="unit">days</span>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Log Retention</label>
+            <div class="input-with-unit">
+              <input type="number" value="90" />
+              <span class="unit">days</span>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Maintenance Window</label>
+            <div class="time-range">
+              <select>
+                <option>Sunday</option>
+                <option selected>Monday</option>
+                <option>Tuesday</option>
+                <option>Wednesday</option>
+                <option>Thursday</option>
+                <option>Friday</option>
+                <option>Saturday</option>
+              </select>
+              <input type="time" value="02:00" />
+              <span>to</span>
+              <input type="time" value="04:00" />
+            </div>
+          </div>
+          <div class="maintenance-actions">
+            <button class="action-button">
+              <i class="backup-icon"></i>
+              <span>Backup Now</span>
+            </button>
+            <button class="action-button">
+              <i class="restore-icon"></i>
+              <span>Restore Backup</span>
+            </button>
+            <button class="action-button">
+              <i class="clear-icon"></i>
+              <span>Clear Cache</span>
+            </button>
+          </div>
+        </div>
+        
+        <div class="settings-section">
+          <h3>Device Management</h3>
+          <div class="form-group">
+            <label>Default Device Lock Behavior</label>
+            <select>
+              <option>Immediate lock on payment default</option>
+              <option selected>Lock after grace period</option>
+              <option>Warning mode only</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Device Heartbeat Frequency</label>
+            <div class="input-with-unit">
+              <input type="number" value="6" />
+              <span class="unit">hours</span>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Device Offline Threshold</label>
+            <div class="input-with-unit">
+              <input type="number" value="24" />
+              <span class="unit">hours</span>
+            </div>
+            <p class="help-text">Time before device is considered offline</p>
+          </div>
+          <div class="form-group">
+            <label>Firmware Update Strategy</label>
+            <select>
+              <option>Manual updates only</option>
+              <option selected>Automatic during maintenance window</option>
+              <option>Automatic immediate</option>
+              <option>Phased rollout</option>
+            </select>
+          </div>
+        </div>
+        
+        <div class="settings-section">
+          <h3>Carbon Credit Calculation</h3>
+          <div class="form-group">
+            <label>Calculation Methodology</label>
+            <select>
+              <option selected>Gold Standard</option>
+              <option>Clean Development Mechanism (CDM)</option>
+              <option>Verified Carbon Standard (VCS)</option>
+              <option>Custom</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Baseline Fuel Type</label>
+            <div class="checkbox-group">
+              <div class="checkbox-option">
+                <input type="checkbox" checked />
+                <span>Charcoal</span>
+              </div>
+              <div class="checkbox-option">
+                <input type="checkbox" checked />
+                <span>Wood</span>
+              </div>
+              <div class="checkbox-option">
+                <input type="checkbox" checked />
+                <span>Kerosene</span>
+              </div>
+              <div class="checkbox-option">
+                <input type="checkbox" />
+                <span>LPG</span>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Emission Factors</label>
+            <div class="emission-factors">
+              <div class="factor-item">
+                <span class="label">Charcoal</span>
+                <div class="input-with-unit">
+                  <input type="number" value="9.5" />
+                  <span class="unit">kg CO2e/kg</span>
+                </div>
+              </div>
+              <div class="factor-item">
+                <span class="label">Wood</span>
+                <div class="input-with-unit">
+                  <input type="number" value="1.7" />
+                  <span class="unit">kg CO2e/kg</span>
+                </div>
+              </div>
+              <div class="factor-item">
+                <span class="label">Kerosene</span>
+                <div class="input-with-unit">
+                  <input type="number" value="2.5" />
+                  <span class="unit">kg CO2e/liter</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Calculation Frequency</label>
+            <select>
+              <option>Daily</option>
+              <option selected>Weekly</option>
+              <option>Monthly</option>
+              <option>Quarterly</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- User Access Control -->
+<div class="wireframe user-access-control">
+  <!-- Header -->
+  <div class="header">
+    <div class="logo-container">
+      <img src="images/burn-logo-small.png" alt="BURN Logo" />
+      <h1>PayGo Admin</h1>
+    </div>
+    <div class="header-actions">
+      <div class="search-bar">
+        <i class="search-icon"></i>
+        <input type="text" placeholder="Search..." />
+      </div>
+      <button class="notification-button">
+        <i class="notification-icon"></i>
+        <span class="badge">5</span>
+      </button>
+      <div class="admin-profile">
+        <img src="images/admin-avatar.png" alt="Admin Avatar" />
+        <span>Admin</span>
+        <i class="dropdown-icon"></i>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Sidebar Navigation -->
+  <div class="sidebar">
+    <!-- Sidebar navigation content (same as main dashboard) -->
+  </div>
+  
+  <!-- Main Content -->
+  <div class="main-content">
+    <div class="page-header">
+      <div class="breadcrumb">
+        <a href="#">System Configuration</a>
+        <i class="separator-icon"></i>
+        <span>User Access Control</span>
+      </div>
+      <div class="header-actions">
+        <button class="add-button">
+          <i class="add-icon"></i>
+          <span>Add User</span>
+        </button>
+        <button class="add-button">
+          <i class="add-icon"></i>
+          <span>Add Role</span>
+        </button>
+      </div>
+    </div>
+    
+    <div class="access-tabs">
+      <button class="tab-button active">Users</button>
+      <button class="tab-button">Roles</button>
+      <button class="tab-button">Permissions</button>
+      <button class="tab-button">Audit Log</button>
+    </div>
+    
+    <div class="access-content">
+      <!-- Users Tab -->
+      <div class="tab-content users-tab active">
+        <div class="filter-controls">
+          <div class="search-bar">
+            <i class="search-icon"></i>
+            <input type="text" placeholder="Search users..." />
+          </div>
+          <select class="filter-select">
+            <option>All Roles</option>
+            <option>Administrator</option>
+            <option>Manager</option>
+            <option>Finance</option>
+            <option>Support</option>
+            <option>Field Supervisor</option>
+          </select>
+          <select class="filter-select">
+            <option>All Status</option>
+            <option>Active</option>
+            <option>Inactive</option>
+            <option>Locked</option>
+          </select>
+        </div>
+        
+        <div class="users-table">
+          <div class="table-header">
+            <div class="header-cell">
+              <input type="checkbox" />
+            </div>
+            <div class="header-cell">Name</div>
+            <div class="header-cell">Email</div>
+            <div class="header-cell">Role</div>
+            <div class="header-cell">Status</div>
+            <div class="header-cell">Last Login</div>
+            <div class="header-cell">2FA</div>
+            <div class="header-cell">Actions</div>
+          </div>
+          
+          <div class="table-row">
+            <div class="cell">
+              <input type="checkbox" />
+            </div>
+            <div class="cell user-cell">
+              <div class="user-avatar">
+                <img src="images/user-avatar-1.png" alt="User Avatar" />
+              </div>
+              <div class="user-info">
+                <h4>John Mwangi</h4>
+                <p>ID: USR-001</p>
+              </div>
+            </div>
+            <div class="cell">john.mwangi@burnmfg.com</div>
+            <div class="cell">
+              <span class="role-badge admin">Administrator</span>
+            </div>
+            <div class="cell">
+              <span class="status-badge active">Active</span>
+            </div>
+            <div class="cell">Apr 21, 2025, 08:15 AM</div>
+            <div class="cell">
+              <span class="status-badge enabled">Enabled</span>
+            </div>
+            <div class="cell actions-cell">
+              <button class="action-button small">
+                <i class="edit-icon"></i>
+              </button>
+              <button class="action-button small">
+                <i class="lock-icon"></i>
+              </button>
+              <button class="action-button small">
+                <i class="more-icon"></i>
+              </button>
+            </div>
+          </div>
+          
+          <div class="table-row">
+            <div class="cell">
+              <input type="checkbox" />
+            </div>
+            <div class="cell user-cell">
+              <div class="user-avatar">
+                <img src="images/user-avatar-2.png" alt="User Avatar" />
+              </div>
+              <div class="user-info">
+                <h4>Sarah Kamau</h4>
+                <p>ID: USR-002</p>
+              </div>
+            </div>
+            <div class="cell">sarah.kamau@burnmfg.com</div>
+            <div class="cell">
+              <span class="role-badge manager">Manager</span>
+            </div>
+            <div class="cell">
+              <span class="status-badge active">Active</span>
+            </div>
+            <div class="cell">Apr 20, 2025, 04:30 PM</div>
+            <div class="cell">
+              <span class="status-badge enabled">Enabled</span>
+            </div>
+            <div class="cell actions-cell">
+              <button class="action-button small">
+                <i class="edit-icon"></i>
+              </button>
+              <button class="action-button small">
+                <i class="lock-icon"></i>
+              </button>
+              <button class="action-button small">
+                <i class="more-icon"></i>
+              </button>
+            </div>
+          </div>
+          
+          <div class="table-row">
+            <div class="cell">
+              <input type="checkbox" />
+            </div>
+            <div class="cell user-cell">
+              <div class="user-avatar">
+                <img src="images/user-avatar-3.png" alt="User Avatar" />
+              </div>
+              <div class="user-info">
+                <h4>David Omondi</h4>
+                <p>ID: USR-003</p>
+              </div>
+            </div>
+            <div class="cell">david.omondi@burnmfg.com</div>
+            <div class="cell">
+              <span class="role-badge finance">Finance</span>
+            </div>
+            <div class="cell">
+              <span class="status-badge active">Active</span>
+            </div>
+            <div class="cell">Apr 21, 2025, 09:45 AM</div>
+            <div class="cell">
+              <span class="status-badge enabled">Enabled</span>
+            </div>
+            <div class="cell actions-cell">
+              <button class="action-button small">
+                <i class="edit-icon"></i>
+              </button>
+              <button class="action-button small">
+                <i class="lock-icon"></i>
+              </button>
+              <button class="action-button small">
+                <i class="more-icon"></i>
+              </button>
+            </div>
+          </div>
+          
+          <div class="table-row">
+            <div class="cell">
+              <input type="checkbox" />
+            </div>
+            <div class="cell user-cell">
+              <div class="user-avatar">
+                <img src="images/user-avatar-4.png" alt="User Avatar" />
+              </div>
+              <div class="user-info">
+                <h4>Mary Wanjiku</h4>
+                <p>ID: USR-004</p>
+              </div>
+            </div>
+            <div class="cell">mary.wanjiku@burnmfg.com</div>
+            <div class="cell">
+              <span class="role-badge support">Support</span>
+            </div>
+            <div class="cell">
+              <span class="status-badge active">Active</span>
+            </div>
+            <div class="cell">Apr 21, 2025, 08:30 AM</div>
+            <div class="cell">
+              <span class="status-badge disabled">Disabled</span>
+            </div>
+            <div class="cell actions-cell">
+              <button class="action-button small">
+                <i class="edit-icon"></i>
+              </button>
+              <button class="action-button small">
+                <i class="lock-icon"></i>
+              </button>
+              <button class="action-button small">
+                <i class="more-icon"></i>
+              </button>
+            </div>
+          </div>
+          
+          <div class="table-row">
+            <div class="cell">
+              <input type="checkbox" />
+            </div>
+            <div class="cell user-cell">
+              <div class="user-avatar">
+                <img src="images/user-avatar-5.png" alt="User Avatar" />
+              </div>
+              <div class="user-info">
+                <h4>James Njoroge</h4>
+                <p>ID: USR-005</p>
+              </div>
+            </div>
+            <div class="cell">james.njoroge@burnmfg.com</div>
+            <div class="cell">
+              <span class="role-badge supervisor">Field Supervisor</span>
+            </div>
+            <div class="cell">
+              <span class="status-badge locked">Locked</span>
+            </div>
+            <div class="cell">Apr 15, 2025, 02:15 PM</div>
+            <div class="cell">
+              <span class="status-badge enabled">Enabled</span>
+            </div>
+            <div class="cell actions-cell">
+              <button class="action-button small">
+                <i class="edit-icon"></i>
+              </button>
+              <button class="action-button small">
+                <i class="unlock-icon"></i>
+              </button>
+              <button class="action-button small">
+                <i class="more-icon"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="pagination">
+          <button class="page-button">
+            <i class="prev-icon"></i>
+          </button>
+          <button class="page-button active">1</button>
+          <button class="page-button">2</button>
+          <button class="page-button">3</button>
+          <span class="page-ellipsis">...</span>
+          <button class="page-button">10</button>
+          <button class="page-button">
+            <i class="next-icon"></i>
+          </button>
+          <div class="page-size">
+            <span>Show:</span>
+            <select>
+              <option>10</option>
+              <option selected>20</option>
+              <option>50</option>
+              <option>100</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Roles Tab -->
+      <div class="tab-content roles-tab">
+        <div class="roles-list">
+          <div class="role-item">
+            <div class="role-header">
+              <div class="role-info">
+                <h4>Administrator</h4>
+                <span class="user-count">3 users</span>
+              </div>
+              <div class="role-actions">
+                <button class="action-button">
+                  <i class="edit-icon"></i>
+                  <span>Edit</span>
+                </button>
+                <button class="action-button">
+                  <i class="duplicate-icon"></i>
+                  <span>Duplicate</span>
+                </button>
+              </div>
+            </div>
+            <div class="role-description">
+              <p>Full system access with all permissions</p>
+            </div>
+            <div class="permission-summary">
+              <div class="permission-group">
+                <span class="group-name">Dashboard</span>
+                <span class="permission-level full">Full Access</span>
+              </div>
+              <div class="permission-group">
+                <span class="group-name">Customers</span>
+                <span class="permission-level full">Full Access</span>
+              </div>
+              <div class="permission-group">
+                <span class="group-name">Devices</span>
+                <span class="permission-level full">Full Access</span>
+              </div>
+              <div class="permission-group">
+                <span class="group-name">Payments</span>
+                <span class="permission-level full">Full Access</span>
+              </div>
+              <div class="permission-group">
+                <span class="group-name">Reports</span>
+                <span class="permission-level full">Full Access</span>
+              </div>
+              <div class="permission-group">
+                <span class="group-name">Settings</span>
+                <span class="permission-level full">Full Access</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="role-item">
+            <div class="role-header">
+              <div class="role-info">
+                <h4>Manager</h4>
+                <span class="user-count">5 users</span>
+              </div>
+              <div class="role-actions">
+                <button class="action-button">
+                  <i class="edit-icon"></i>
+                  <span>Edit</span>
+                </button>
+                <button class="action-button">
+                  <i class="duplicate-icon"></i>
+                  <span>Duplicate</span>
+                </button>
+              </div>
+            </div>
+            <div class="role-description">
+              <p>Access to most system features except advanced settings</p>
+            </div>
+            <div class="permission-summary">
+              <div class="permission-group">
+                <span class="group-name">Dashboard</span>
+                <span class="permission-level full">Full Access</span>
+              </div>
+              <div class="permission-group">
+                <span class="group-name">Customers</span>
+                <span class="permission-level full">Full Access</span>
+              </div>
+              <div class="permission-group">
+                <span class="group-name">Devices</span>
+                <span class="permission-level full">Full Access</span>
+              </div>
+              <div class="permission-group">
+                <span class="group-name">Payments</span>
+                <span class="permission-level full">Full Access</span>
+              </div>
+              <div class="permission-group">
+                <span class="group-name">Reports</span>
+                <span class="permission-level full">Full Access</span>
+              </div>
+              <div class="permission-group">
+                <span class="group-name">Settings</span>
+                <span class="permission-level partial">Partial Access</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="role-item">
+            <div class="role-header">
+              <div class="role-info">
+                <h4>Finance</h4>
+                <span class="user-count">4 users</span>
+              </div>
+              <div class="role-actions">
+                <button class="action-button">
+                  <i class="edit-icon"></i>
+                  <span>Edit</span>
+                </button>
+                <button class="action-button">
+                  <i class="duplicate-icon"></i>
+                  <span>Duplicate</span>
+                </button>
+              </div>
+            </div>
+            <div class="role-description">
+              <p>Access to financial data and payment processing</p>
+            </div>
+            <div class="permission-summary">
+              <div class="permission-group">
+                <span class="group-name">Dashboard</span>
+                <span class="permission-level view">View Only</span>
+              </div>
+              <div class="permission-group">
+                <span class="group-name">Customers</span>
+                <span class="permission-level view">View Only</span>
+              </div>
+              <div class="permission-group">
+                <span class="group-name">Devices</span>
+                <span class="permission-level view">View Only</span>
+              </div>
+              <div class="permission-group">
+                <span class="group-name">Payments</span>
+                <span class="permission-level full">Full Access</span>
+              </div>
+              <div class="permission-group">
+                <span class="group-name">Reports</span>
+                <span class="permission-level partial">Partial Access</span>
+              </div>
+              <div class="permission-group">
+                <span class="group-name">Settings</span>
+                <span class="permission-level none">No Access</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="role-item">
+            <div class="role-header">
+              <div class="role-info">
+                <h4>Support</h4>
+                <span class="user-count">8 users</span>
+              </div>
+              <div class="role-actions">
+                <button class="action-button">
+                  <i class="edit-icon"></i>
+                  <span>Edit</span>
+                </button>
+                <button class="action-button">
+                  <i class="duplicate-icon"></i>
+                  <span>Duplicate</span>
+                </button>
+              </div>
+            </div>
+            <div class="role-description">
+              <p>Customer and device support capabilities</p>
+            </div>
+            <div class="permission-summary">
+              <div class="permission-group">
+                <span class="group-name">Dashboard</span>
+                <span class="permission-level view">View Only</span>
+              </div>
+              <div class="permission-group">
+                <span class="group-name">Customers</span>
+                <span class="permission-level partial">Partial Access</span>
+              </div>
+              <div class="permission-group">
+                <span class="group-name">Devices</span>
+                <span class="permission-level partial">Partial Access</span>
+              </div>
+              <div class="permission-group">
+                <span class="group-name">Payments</span>
+                <span class="permission-level view">View Only</span>
+              </div>
+              <div class="permission-group">
+                <span class="group-name">Reports</span>
+                <span class="permission-level view">View Only</span>
+              </div>
+              <div class="permission-group">
+                <span class="group-name">Settings</span>
+                <span class="permission-level none">No Access</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="role-item">
+            <div class="role-header">
+              <div class="role-info">
+                <h4>Field Supervisor</h4>
+                <span class="user-count">12 users</span>
+              </div>
+              <div class="role-actions">
+                <button class="action-button">
+                  <i class="edit-icon"></i>
+                  <span>Edit</span>
+                </button>
+                <button class="action-button">
+                  <i class="duplicate-icon"></i>
+                  <span>Duplicate</span>
+                </button>
+              </div>
+            </div>
+            <div class="role-description">
+              <p>Manages field agents and their activities</p>
+            </div>
+            <div class="permission-summary">
+              <div class="permission-group">
+                <span class="group-name">Dashboard</span>
+                <span class="permission-level partial">Partial Access</span>
+              </div>
+              <div class="permission-group">
+                <span class="group-name">Customers</span>
+                <span class="permission-level partial">Partial Access</span>
+              </div>
+              <div class="permission-group">
+                <span class="group-name">Devices</span>
+                <span class="permission-level partial">Partial Access</span>
+              </div>
+              <div class="permission-group">
+                <span class="group-name">Payments</span>
+                <span class="permission-level view">View Only</span>
+              </div>
+              <div class="permission-group">
+                <span class="group-name">Reports</span>
+                <span class="permission-level view">View Only</span>
+              </div>
+              <div class="permission-group">
+                <span class="group-name">Settings</span>
+                <span class="permission-level none">No Access</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- System Logs -->
+<div class="wireframe system-logs">
+  <!-- Header -->
+  <div class="header">
+    <div class="logo-container">
+      <img src="images/burn-logo-small.png" alt="BURN Logo" />
+      <h1>PayGo Admin</h1>
+    </div>
+    <div class="header-actions">
+      <div class="search-bar">
+        <i class="search-icon"></i>
+        <input type="text" placeholder="Search..." />
+      </div>
+      <button class="notification-button">
+        <i class="notification-icon"></i>
+        <span class="badge">5</span>
+      </button>
+      <div class="admin-profile">
+        <img src="images/admin-avatar.png" alt="Admin Avatar" />
+        <span>Admin</span>
+        <i class="dropdown-icon"></i>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Sidebar Navigation -->
+  <div class="sidebar">
+    <!-- Sidebar navigation content (same as main dashboard) -->
+  </div>
+  
+  <!-- Main Content -->
+  <div class="main-content">
+    <div class="page-header">
+      <div class="breadcrumb">
+        <a href="#">System Configuration</a>
+        <i class="separator-icon"></i>
+        <span>System Logs</span>
+      </div>
+      <div class="header-actions">
+        <div class="date-filter">
+          <button class="date-button">
+            <i class="calendar-icon"></i>
+            <span>Apr 21, 2025</span>
+            <i class="dropdown-icon"></i>
+          </button>
+        </div>
+        <button class="export-button">
+          <i class="export-icon"></i>
+          <span>Export</span>
+        </button>
+      </div>
+    </div>
+    
+    <div class="logs-tabs">
+      <button class="tab-button active">System Logs</button>
+      <button class="tab-button">Error Logs</button>
+      <button class="tab-button">Audit Logs</button>
+      <button class="tab-button">API Logs</button>
+    </div>
+    
+    <div class="logs-content">
+      <!-- System Logs Tab -->
+      <div class="tab-content system-logs-tab active">
+        <div class="filter-controls">
+          <div class="search-bar">
+            <i class="search-icon"></i>
+            <input type="text" placeholder="Search logs..." />
+          </div>
+          <select class="filter-select">
+            <option>All Levels</option>
+            <option>Info</option>
+            <option>Warning</option>
+            <option>Error</option>
+            <option>Critical</option>
+          </select>
+          <select class="filter-select">
+            <option>All Components</option>
+            <option>Authentication</option>
+            <option>Payment</option>
+            <option>Device</option>
+            <option>User</option>
+            <option>API</option>
+          </select>
+          <button class="filter-button">
+            <i class="filter-icon"></i>
+            <span>More Filters</span>
+          </button>
+        </div>
+        
+        <div class="logs-table">
+          <div class="table-header">
+            <div class="header-cell">Timestamp</div>
+            <div class="header-cell">Level</div>
+            <div class="header-cell">Component</div>
+            <div class="header-cell">Message</div>
+            <div class="header-cell">IP Address</div>
+            <div class="header-cell">User</div>
+            <div class="header-cell">Actions</div>
+          </div>
+          
+          <div class="table-row">
+            <div class="cell">Apr 21, 2025, 08:45:12</div>
+            <div class="cell">
+              <span class="log-level info">Info</span>
+            </div>
+            <div class="cell">Authentication</div>
+            <div class="cell log-message">User login successful</div>
+            <div class="cell">192.168.1.105</div>
+            <div class="cell">john.mwangi@burnmfg.com</div>
+            <div class="cell actions-cell">
+              <button class="action-button small">
+                <i class="view-icon"></i>
+              </button>
+            </div>
+          </div>
+          
+          <div class="table-row">
+            <div class="cell">Apr 21, 2025, 08:42:35</div>
+            <div class="cell">
+              <span class="log-level warning">Warning</span>
+            </div>
+            <div class="cell">Payment</div>
+            <div class="cell log-message">Payment gateway timeout, retrying</div>
+            <div class="cell">192.168.1.100</div>
+            <div class="cell">system</div>
+            <div class="cell actions-cell">
+              <button class="action-button small">
+                <i class="view-icon"></i>
+              </button>
+            </div>
+          </div>
+          
+          <div class="table-row">
+            <div class="cell">Apr 21, 2025, 08:40:18</div>
+            <div class="cell">
+              <span class="log-level error">Error</span>
+            </div>
+            <div class="cell">Device</div>
+            <div class="cell log-message">Failed to update device firmware: DEV-87654330</div>
+            <div class="cell">192.168.1.100</div>
+            <div class="cell">system</div>
+            <div class="cell actions-cell">
+              <button class="action-button small">
+                <i class="view-icon"></i>
+              </button>
+            </div>
+          </div>
+          
+          <div class="table-row">
+            <div class="cell">Apr 21, 2025, 08:35:42</div>
+            <div class="cell">
+              <span class="log-level info">Info</span>
+            </div>
+            <div class="cell">User</div>
+            <div class="cell log-message">User profile updated</div>
+            <div class="cell">192.168.1.110</div>
+            <div class="cell">sarah.kamau@burnmfg.com</div>
+            <div class="cell actions-cell">
+              <button class="action-button small">
+                <i class="view-icon"></i>
+              </button>
+            </div>
+          </div>
+          
+          <div class="table-row">
+            <div class="cell">Apr 21, 2025, 08:30:15</div>
+            <div class="cell">
+              <span class="log-level info">Info</span>
+            </div>
+            <div class="cell">Payment</div>
+            <div class="cell log-message">Payment received: TRX-12345678</div>
+            <div class="cell">192.168.1.100</div>
+            <div class="cell">system</div>
+            <div class="cell actions-cell">
+              <button class="action-button small">
+                <i class="view-icon"></i>
+              </button>
+            </div>
+          </div>
+          
+          <div class="table-row">
+            <div class="cell">Apr 21, 2025, 08:25:03</div>
+            <div class="cell">
+              <span class="log-level critical">Critical</span>
+            </div>
+            <div class="cell">Database</div>
+            <div class="cell log-message">Database connection failed, retrying</div>
+            <div class="cell">192.168.1.100</div>
+            <div class="cell">system</div>
+            <div class="cell actions-cell">
+              <button class="action-button small">
+                <i class="view-icon"></i>
+              </button>
+            </div>
+          </div>
+          
+          <div class="table-row">
+            <div class="cell">Apr 21, 2025, 08:24:45</div>
+            <div class="cell">
+              <span class="log-level info">Info</span>
+            </div>
+            <div class="cell">API</div>
+            <div class="cell log-message">API request: GET /api/v1/devices</div>
+            <div class="cell">192.168.1.120</div>
+            <div class="cell">api-client</div>
+            <div class="cell actions-cell">
+              <button class="action-button small">
+                <i class="view-icon"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="pagination">
+          <button class="page-button">
+            <i class="prev-icon"></i>
+          </button>
+          <button class="page-button active">1</button>
+          <button class="page-button">2</button>
+          <button class="page-button">3</button>
+          <span class="page-ellipsis">...</span>
+          <button class="page-button">50</button>
+          <button class="page-button">
+            <i class="next-icon"></i>
+          </button>
+          <div class="page-size">
+            <span>Show:</span>
+            <select>
+              <option>10</option>
+              <option selected>20</option>
+              <option>50</option>
+              <option>100</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

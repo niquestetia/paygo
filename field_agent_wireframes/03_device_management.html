@@ -1,0 +1,689 @@
+<!-- Device Registration Screen -->
+<div class="wireframe device-registration">
+  <!-- Header -->
+  <div class="header">
+    <div class="menu-toggle">
+      <i class="menu-icon"></i>
+    </div>
+    <div class="page-title">
+      <h1>Device Registration</h1>
+    </div>
+    <div class="header-actions">
+      <button class="sync-button">
+        <i class="sync-icon"></i>
+        <span>Last sync: 10:45 AM</span>
+      </button>
+      <button class="notification-button">
+        <i class="notification-icon"></i>
+        <span class="badge">3</span>
+      </button>
+      <div class="agent-profile">
+        <img src="images/agent-avatar.png" alt="Agent Avatar" />
+        <span>John D.</span>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Main Content -->
+  <div class="main-content">
+    <div class="form-section">
+      <h2>Device Information</h2>
+      <p class="section-description">Register a new device or link to an existing customer</p>
+      
+      <div class="form-group">
+        <label>Device Serial Number <span class="required">*</span></label>
+        <div class="serial-input">
+          <input type="text" placeholder="Enter device serial number" />
+          <button class="scan-button">
+            <i class="qr-code-icon"></i>
+            <span>Scan</span>
+          </button>
+        </div>
+        <p class="helper-text">Found on the bottom of the device or on the packaging</p>
+      </div>
+      
+      <div class="form-group">
+        <label>Device Model <span class="required">*</span></label>
+        <select>
+          <option>Select device model</option>
+          <option>BURN Induction Cooker IC-2000</option>
+          <option>BURN Induction Cooker IC-1500</option>
+          <option>BURN Electric Stove ES-1000</option>
+          <option>BURN LPG Stove LPG-500</option>
+        </select>
+      </div>
+      
+      <div class="form-group">
+        <label>Device Condition <span class="required">*</span></label>
+        <select>
+          <option>New</option>
+          <option>Refurbished</option>
+          <option>Used</option>
+        </select>
+      </div>
+      
+      <div class="form-group">
+        <label>Device Photos</label>
+        <div class="photo-upload-grid">
+          <div class="upload-item">
+            <div class="upload-area">
+              <i class="camera-icon"></i>
+              <span>Front View</span>
+            </div>
+            <button class="upload-button">
+              <i class="camera-icon"></i>
+            </button>
+          </div>
+          <div class="upload-item">
+            <div class="upload-area">
+              <i class="camera-icon"></i>
+              <span>Back View</span>
+            </div>
+            <button class="upload-button">
+              <i class="camera-icon"></i>
+            </button>
+          </div>
+          <div class="upload-item">
+            <div class="upload-area">
+              <i class="camera-icon"></i>
+              <span>Serial Number</span>
+            </div>
+            <button class="upload-button">
+              <i class="camera-icon"></i>
+            </button>
+          </div>
+          <div class="upload-item">
+            <div class="upload-area">
+              <i class="camera-icon"></i>
+              <span>Package</span>
+            </div>
+            <button class="upload-button">
+              <i class="camera-icon"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="form-section">
+      <h2>Customer Assignment</h2>
+      <p class="section-description">Link this device to a customer</p>
+      
+      <div class="assignment-options">
+        <div class="option-tabs">
+          <button class="tab-button active">Existing Customer</button>
+          <button class="tab-button">New Customer</button>
+        </div>
+        
+        <div class="tab-content">
+          <div class="tab-pane active">
+            <div class="form-group">
+              <label>Search Customer <span class="required">*</span></label>
+              <div class="search-input">
+                <i class="search-icon"></i>
+                <input type="text" placeholder="Search by name, phone, or ID" />
+              </div>
+            </div>
+            
+            <div class="search-results">
+              <div class="customer-result selected">
+                <div class="customer-avatar">
+                  <img src="images/customer-avatar-1.png" alt="Customer Avatar" />
+                </div>
+                <div class="customer-info">
+                  <h3>Sarah Kamau</h3>
+                  <p>+254 712 345 678</p>
+                  <p>Nairobi, Kenya</p>
+                </div>
+                <div class="selection-indicator">
+                  <i class="check-icon"></i>
+                </div>
+              </div>
+              
+              <div class="customer-result">
+                <div class="customer-avatar">
+                  <img src="images/customer-avatar-3.png" alt="Customer Avatar" />
+                </div>
+                <div class="customer-info">
+                  <h3>Mary Wanjiku</h3>
+                  <p>+254 734 567 890</p>
+                  <p>Nairobi, Kenya</p>
+                </div>
+                <div class="selection-indicator">
+                  <i class="check-icon"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="form-section">
+      <h2>Payment Plan</h2>
+      <p class="section-description">Set up the payment plan for this device</p>
+      
+      <div class="form-group">
+        <label>Payment Plan <span class="required">*</span></label>
+        <select>
+          <option>Standard PayGo Plan</option>
+          <option>Premium PayGo Plan</option>
+          <option>Flexible Payment Plan</option>
+          <option>Custom Plan</option>
+        </select>
+      </div>
+      
+      <div class="payment-plan-details">
+        <div class="plan-item">
+          <span class="label">Device Price</span>
+          <span class="value">KSh 15,000</span>
+        </div>
+        <div class="plan-item">
+          <span class="label">Initial Payment</span>
+          <span class="value">KSh 3,000</span>
+        </div>
+        <div class="plan-item">
+          <span class="label">Monthly Payment</span>
+          <span class="value">KSh 1,000</span>
+        </div>
+        <div class="plan-item">
+          <span class="label">Payment Period</span>
+          <span class="value">12 months</span>
+        </div>
+        <div class="plan-item">
+          <span class="label">Total Cost</span>
+          <span class="value">KSh 15,000</span>
+        </div>
+      </div>
+      
+      <div class="form-group">
+        <label>Initial Payment Method <span class="required">*</span></label>
+        <select>
+          <option>M-Pesa</option>
+          <option>Airtel Money</option>
+          <option>Cash</option>
+          <option>Bank Transfer</option>
+        </select>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Footer Actions -->
+  <div class="form-actions">
+    <button class="secondary-button">Save as Draft</button>
+    <button class="primary-button">Register Device</button>
+  </div>
+</div>
+
+<!-- Device Diagnostics Screen -->
+<div class="wireframe device-diagnostics">
+  <!-- Header -->
+  <div class="header">
+    <button class="back-button">
+      <i class="back-icon"></i>
+    </button>
+    <div class="page-title">
+      <h1>Device Diagnostics</h1>
+      <p>BURN Induction Cooker IC-2000</p>
+    </div>
+    <div class="header-actions">
+      <button class="refresh-button">
+        <i class="refresh-icon"></i>
+      </button>
+      <button class="more-button">
+        <i class="more-icon"></i>
+      </button>
+    </div>
+  </div>
+  
+  <!-- Main Content -->
+  <div class="main-content">
+    <div class="device-header">
+      <div class="device-image">
+        <img src="images/stove-device.png" alt="Stove Device" />
+      </div>
+      <div class="device-info">
+        <h2>BURN Induction Cooker IC-2000</h2>
+        <p><i class="serial-icon"></i> Serial: BRN12345678</p>
+        <p><i class="customer-icon"></i> Owner: Sarah Kamau</p>
+        <div class="status-badges">
+          <span class="status-badge active">Active</span>
+          <span class="firmware-badge">Firmware: v2.3.5</span>
+        </div>
+      </div>
+    </div>
+    
+    <div class="tab-navigation">
+      <button class="tab-button active">Diagnostics</button>
+      <button class="tab-button">History</button>
+      <button class="tab-button">Settings</button>
+    </div>
+    
+    <div class="tab-content">
+      <!-- Diagnostics Tab -->
+      <div class="tab-pane active">
+        <div class="diagnostic-actions">
+          <button class="action-button">
+            <i class="run-diagnostics-icon"></i>
+            <span>Run Diagnostics</span>
+          </button>
+          <button class="action-button">
+            <i class="remote-control-icon"></i>
+            <span>Remote Control</span>
+          </button>
+          <button class="action-button">
+            <i class="update-icon"></i>
+            <span>Check for Updates</span>
+          </button>
+        </div>
+        
+        <div class="diagnostic-results">
+          <div class="result-header">
+            <h3>Diagnostic Results</h3>
+            <span class="timestamp">Last run: Today, 10:30 AM</span>
+          </div>
+          
+          <div class="system-status">
+            <div class="status-item">
+              <div class="status-icon healthy">
+                <i class="check-icon"></i>
+              </div>
+              <div class="status-info">
+                <h4>Heating Element</h4>
+                <p>Working normally</p>
+              </div>
+              <button class="more-button small">
+                <i class="more-icon"></i>
+              </button>
+            </div>
+            
+            <div class="status-item">
+              <div class="status-icon healthy">
+                <i class="check-icon"></i>
+              </div>
+              <div class="status-info">
+                <h4>Control Board</h4>
+                <p>Working normally</p>
+              </div>
+              <button class="more-button small">
+                <i class="more-icon"></i>
+              </button>
+            </div>
+            
+            <div class="status-item">
+              <div class="status-icon healthy">
+                <i class="check-icon"></i>
+              </div>
+              <div class="status-info">
+                <h4>Temperature Sensor</h4>
+                <p>Working normally</p>
+              </div>
+              <button class="more-button small">
+                <i class="more-icon"></i>
+              </button>
+            </div>
+            
+            <div class="status-item">
+              <div class="status-icon warning">
+                <i class="warning-icon"></i>
+              </div>
+              <div class="status-info">
+                <h4>Connectivity</h4>
+                <p>Signal strength low</p>
+              </div>
+              <button class="more-button small">
+                <i class="more-icon"></i>
+              </button>
+            </div>
+            
+            <div class="status-item">
+              <div class="status-icon healthy">
+                <i class="check-icon"></i>
+              </div>
+              <div class="status-info">
+                <h4>Power Supply</h4>
+                <p>Working normally</p>
+              </div>
+              <button class="more-button small">
+                <i class="more-icon"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="usage-statistics">
+          <div class="stats-header">
+            <h3>Usage Statistics</h3>
+            <div class="time-period-selector">
+              <button class="period-button">Day</button>
+              <button class="period-button active">Week</button>
+              <button class="period-button">Month</button>
+            </div>
+          </div>
+          
+          <div class="stats-grid">
+            <div class="stat-card">
+              <div class="stat-icon">
+                <i class="time-icon"></i>
+              </div>
+              <div class="stat-data">
+                <h4>Total Usage</h4>
+                <span class="stat-value">12h 30m</span>
+              </div>
+            </div>
+            
+            <div class="stat-card">
+              <div class="stat-icon">
+                <i class="energy-icon"></i>
+              </div>
+              <div class="stat-data">
+                <h4>Energy Used</h4>
+                <span class="stat-value">5.2 kWh</span>
+              </div>
+            </div>
+            
+            <div class="stat-card">
+              <div class="stat-icon">
+                <i class="carbon-icon"></i>
+              </div>
+              <div class="stat-data">
+                <h4>Carbon Saved</h4>
+                <span class="stat-value">3.8 kg CO₂</span>
+              </div>
+            </div>
+            
+            <div class="stat-card">
+              <div class="stat-icon">
+                <i class="cycles-icon"></i>
+              </div>
+              <div class="stat-data">
+                <h4>Cooking Cycles</h4>
+                <span class="stat-value">18</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="usage-chart">
+            <img src="images/device-usage-chart.png" alt="Device Usage Chart" />
+          </div>
+        </div>
+        
+        <div class="error-logs">
+          <div class="logs-header">
+            <h3>Error Logs</h3>
+            <button class="view-all">View All</button>
+          </div>
+          
+          <div class="logs-list">
+            <div class="log-item">
+              <div class="log-icon warning">
+                <i class="warning-icon"></i>
+              </div>
+              <div class="log-details">
+                <div class="log-info">
+                  <h4>Connectivity Warning</h4>
+                  <p>Signal strength below threshold</p>
+                </div>
+                <div class="log-meta">
+                  <span class="log-code">W-1023</span>
+                  <span class="log-time">Today, 09:45 AM</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="log-item">
+              <div class="log-icon info">
+                <i class="info-icon"></i>
+              </div>
+              <div class="log-details">
+                <div class="log-info">
+                  <h4>System Restart</h4>
+                  <p>Device restarted successfully</p>
+                </div>
+                <div class="log-meta">
+                  <span class="log-code">I-5001</span>
+                  <span class="log-time">Yesterday, 08:30 PM</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Footer Actions -->
+  <div class="footer-actions">
+    <button class="secondary-button">
+      <i class="maintenance-icon"></i>
+      <span>Schedule Maintenance</span>
+    </button>
+    <button class="primary-button">
+      <i class="report-icon"></i>
+      <span>Generate Report</span>
+    </button>
+  </div>
+</div>
+
+<!-- Device Replacement Screen -->
+<div class="wireframe device-replacement">
+  <!-- Header -->
+  <div class="header">
+    <button class="back-button">
+      <i class="back-icon"></i>
+    </button>
+    <div class="page-title">
+      <h1>Device Replacement</h1>
+    </div>
+    <div class="header-actions">
+      <button class="help-button">
+        <i class="help-icon"></i>
+      </button>
+    </div>
+  </div>
+  
+  <!-- Main Content -->
+  <div class="main-content">
+    <div class="form-section">
+      <h2>Current Device</h2>
+      <p class="section-description">Device to be replaced or swapped</p>
+      
+      <div class="device-card">
+        <div class="device-image">
+          <img src="images/stove-device.png" alt="Stove Device" />
+        </div>
+        <div class="device-details">
+          <h3>BURN Induction Cooker IC-2000</h3>
+          <p><i class="serial-icon"></i> Serial: BRN12345678</p>
+          <p><i class="customer-icon"></i> Owner: Sarah Kamau</p>
+          <p><i class="status-icon"></i> Status: Maintenance Required</p>
+        </div>
+      </div>
+      
+      <div class="form-group">
+        <label>Replacement Reason <span class="required">*</span></label>
+        <select>
+          <option>Select reason</option>
+          <option>Device Malfunction</option>
+          <option>Upgrade Request</option>
+          <option>Damaged Device</option>
+          <option>End of Life</option>
+          <option>Other</option>
+        </select>
+      </div>
+      
+      <div class="form-group">
+        <label>Detailed Description <span class="required">*</span></label>
+        <textarea placeholder="Describe the issue or reason for replacement"></textarea>
+      </div>
+      
+      <div class="form-group">
+        <label>Device Condition Photos</label>
+        <div class="photo-upload-grid">
+          <div class="upload-item">
+            <div class="upload-area">
+              <i class="camera-icon"></i>
+              <span>Issue Photo 1</span>
+            </div>
+            <button class="upload-button">
+              <i class="camera-icon"></i>
+            </button>
+          </div>
+          <div class="upload-item">
+            <div class="upload-area">
+              <i class="camera-icon"></i>
+              <span>Issue Photo 2</span>
+            </div>
+            <button class="upload-button">
+              <i class="camera-icon"></i>
+            </button>
+          </div>
+          <div class="upload-item">
+            <div class="upload-area">
+              <i class="camera-icon"></i>
+              <span>Serial Number</span>
+            </div>
+            <button class="upload-button">
+              <i class="camera-icon"></i>
+            </button>
+          </div>
+          <div class="upload-item">
+            <div class="upload-area">
+              <i class="camera-icon"></i>
+              <span>Overall View</span>
+            </div>
+            <button class="upload-button">
+              <i class="camera-icon"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="form-section">
+      <h2>Replacement Device</h2>
+      <p class="section-description">New device to be assigned to the customer</p>
+      
+      <div class="form-group">
+        <label>Device Serial Number <span class="required">*</span></label>
+        <div class="serial-input">
+          <input type="text" placeholder="Enter device serial number" />
+          <button class="scan-button">
+            <i class="qr-code-icon"></i>
+            <span>Scan</span>
+          </button>
+        </div>
+      </div>
+      
+      <div class="form-group">
+        <label>Device Model <span class="required">*</span></label>
+        <select>
+          <option>BURN Induction Cooker IC-2000</option>
+          <option>BURN Induction Cooker IC-1500</option>
+          <option>BURN Electric Stove ES-1000</option>
+          <option>BURN LPG Stove LPG-500</option>
+        </select>
+      </div>
+      
+      <div class="form-group">
+        <label>Device Condition <span class="required">*</span></label>
+        <select>
+          <option>New</option>
+          <option>Refurbished</option>
+          <option>Used</option>
+        </select>
+      </div>
+      
+      <div class="form-group">
+        <label>New Device Photos</label>
+        <div class="photo-upload-grid">
+          <div class="upload-item">
+            <div class="upload-area">
+              <i class="camera-icon"></i>
+              <span>Front View</span>
+            </div>
+            <button class="upload-button">
+              <i class="camera-icon"></i>
+            </button>
+          </div>
+          <div class="upload-item">
+            <div class="upload-area">
+              <i class="camera-icon"></i>
+              <span>Back View</span>
+            </div>
+            <button class="upload-button">
+              <i class="camera-icon"></i>
+            </button>
+          </div>
+          <div class="upload-item">
+            <div class="upload-area">
+              <i class="camera-icon"></i>
+              <span>Serial Number</span>
+            </div>
+            <button class="upload-button">
+              <i class="camera-icon"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="form-section">
+      <h2>Transfer Settings</h2>
+      <p class="section-description">Configure how the replacement will be handled</p>
+      
+      <div class="form-group">
+        <label>Transfer Payment Plan <span class="required">*</span></label>
+        <div class="radio-group">
+          <label class="radio-option">
+            <input type="radio" name="transfer_plan" value="continue" checked />
+            <span>Continue existing payment plan</span>
+          </label>
+          <label class="radio-option">
+            <input type="radio" name="transfer_plan" value="new" />
+            <span>Create new payment plan</span>
+          </label>
+        </div>
+      </div>
+      
+      <div class="form-group">
+        <label>Transfer Credit <span class="required">*</span></label>
+        <div class="radio-group">
+          <label class="radio-option">
+            <input type="radio" name="transfer_credit" value="yes" checked />
+            <span>Transfer remaining credit (KSh 350)</span>
+          </label>
+          <label class="radio-option">
+            <input type="radio" name="transfer_credit" value="no" />
+            <span>Do not transfer credit</span>
+          </label>
+        </div>
+      </div>
+      
+      <div class="form-group">
+        <label>Replacement Fee <span class="required">*</span></label>
+        <div class="fee-input">
+          <span class="currency">KSh</span>
+          <input type="number" value="0" />
+        </div>
+        <p class="helper-text">Enter 0 if no fee is required</p>
+      </div>
+      
+      <div class="form-group">
+        <label>Customer Acknowledgment</label>
+        <div class="signature-capture">
+          <div class="signature-area">
+            <span>Customer signature</span>
+          </div>
+          <button class="clear-button">Clear</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Footer Actions -->
+  <div class="form-actions">
+    <button class="secondary-button">Cancel</button>
+    <button class="primary-button">Complete Replacement</button>
+  </div>
+</div>

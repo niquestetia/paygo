@@ -1,0 +1,615 @@
+<!-- Inventory Overview Screen -->
+<div class="wireframe inventory-overview">
+  <!-- Header -->
+  <div class="header">
+    <div class="menu-toggle">
+      <i class="menu-icon"></i>
+    </div>
+    <div class="page-title">
+      <h1>Inventory</h1>
+    </div>
+    <div class="header-actions">
+      <button class="sync-button">
+        <i class="sync-icon"></i>
+        <span>Last sync: 10:45 AM</span>
+      </button>
+      <button class="notification-button">
+        <i class="notification-icon"></i>
+        <span class="badge">3</span>
+      </button>
+      <div class="agent-profile">
+        <img src="images/agent-avatar.png" alt="Agent Avatar" />
+        <span>John D.</span>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Main Content -->
+  <div class="main-content">
+    <div class="inventory-summary">
+      <div class="summary-card">
+        <div class="card-icon">
+          <i class="devices-icon"></i>
+        </div>
+        <div class="card-content">
+          <h3>Total Devices</h3>
+          <span class="count">8</span>
+          <span class="status">5 available, 3 assigned</span>
+        </div>
+      </div>
+      
+      <div class="summary-card">
+        <div class="card-icon">
+          <i class="accessories-icon"></i>
+        </div>
+        <div class="card-content">
+          <h3>Accessories</h3>
+          <span class="count">15</span>
+          <span class="status">3 types</span>
+        </div>
+      </div>
+      
+      <div class="summary-card">
+        <div class="card-icon">
+          <i class="alert-icon"></i>
+        </div>
+        <div class="card-content">
+          <h3>Low Stock</h3>
+          <span class="count">2</span>
+          <span class="status">Items below threshold</span>
+        </div>
+      </div>
+    </div>
+    
+    <div class="inventory-actions">
+      <button class="action-button">
+        <i class="scan-icon"></i>
+        <span>Scan Item</span>
+      </button>
+      <button class="action-button">
+        <i class="add-icon"></i>
+        <span>Add Item</span>
+      </button>
+      <button class="action-button">
+        <i class="transfer-icon"></i>
+        <span>Transfer</span>
+      </button>
+      <button class="action-button">
+        <i class="report-icon"></i>
+        <span>Report</span>
+      </button>
+    </div>
+    
+    <div class="inventory-tabs">
+      <button class="tab-button active">Devices</button>
+      <button class="tab-button">Accessories</button>
+      <button class="tab-button">Returned</button>
+    </div>
+    
+    <div class="inventory-list">
+      <div class="list-header">
+        <div class="search-bar">
+          <i class="search-icon"></i>
+          <input type="text" placeholder="Search inventory" />
+        </div>
+        <button class="filter-button">
+          <i class="filter-icon"></i>
+          <span>Filter</span>
+        </button>
+      </div>
+      
+      <div class="inventory-table">
+        <div class="table-header">
+          <div class="header-cell">Item</div>
+          <div class="header-cell">Serial Number</div>
+          <div class="header-cell">Status</div>
+          <div class="header-cell">Location</div>
+          <div class="header-cell">Actions</div>
+        </div>
+        
+        <div class="table-row">
+          <div class="cell item-cell">
+            <div class="item-image">
+              <img src="images/stove-device.png" alt="Stove Device" />
+            </div>
+            <div class="item-info">
+              <h4>BURN Induction Cooker IC-2000</h4>
+              <p>Premium model</p>
+            </div>
+          </div>
+          <div class="cell">BRN87654321</div>
+          <div class="cell">
+            <span class="status-badge available">Available</span>
+          </div>
+          <div class="cell">Agent Inventory</div>
+          <div class="cell actions-cell">
+            <button class="action-button small">
+              <i class="assign-icon"></i>
+              <span>Assign</span>
+            </button>
+            <button class="more-button">
+              <i class="more-icon"></i>
+            </button>
+          </div>
+        </div>
+        
+        <div class="table-row">
+          <div class="cell item-cell">
+            <div class="item-image">
+              <img src="images/stove-device.png" alt="Stove Device" />
+            </div>
+            <div class="item-info">
+              <h4>BURN Induction Cooker IC-2000</h4>
+              <p>Premium model</p>
+            </div>
+          </div>
+          <div class="cell">BRN87654322</div>
+          <div class="cell">
+            <span class="status-badge available">Available</span>
+          </div>
+          <div class="cell">Agent Inventory</div>
+          <div class="cell actions-cell">
+            <button class="action-button small">
+              <i class="assign-icon"></i>
+              <span>Assign</span>
+            </button>
+            <button class="more-button">
+              <i class="more-icon"></i>
+            </button>
+          </div>
+        </div>
+        
+        <div class="table-row">
+          <div class="cell item-cell">
+            <div class="item-image">
+              <img src="images/stove-device.png" alt="Stove Device" />
+            </div>
+            <div class="item-info">
+              <h4>BURN Induction Cooker IC-1500</h4>
+              <p>Standard model</p>
+            </div>
+          </div>
+          <div class="cell">BRN87654323</div>
+          <div class="cell">
+            <span class="status-badge assigned">Assigned</span>
+          </div>
+          <div class="cell">Sarah Kamau</div>
+          <div class="cell actions-cell">
+            <button class="action-button small">
+              <i class="view-icon"></i>
+              <span>View</span>
+            </button>
+            <button class="more-button">
+              <i class="more-icon"></i>
+            </button>
+          </div>
+        </div>
+        
+        <div class="table-row">
+          <div class="cell item-cell">
+            <div class="item-image">
+              <img src="images/stove-device.png" alt="Stove Device" />
+            </div>
+            <div class="item-info">
+              <h4>BURN Electric Stove ES-1000</h4>
+              <p>Basic model</p>
+            </div>
+          </div>
+          <div class="cell">BRN87654324</div>
+          <div class="cell">
+            <span class="status-badge maintenance">Maintenance</span>
+          </div>
+          <div class="cell">Agent Inventory</div>
+          <div class="cell actions-cell">
+            <button class="action-button small">
+              <i class="repair-icon"></i>
+              <span>Repair</span>
+            </button>
+            <button class="more-button">
+              <i class="more-icon"></i>
+            </button>
+          </div>
+        </div>
+        
+        <div class="table-row">
+          <div class="cell item-cell">
+            <div class="item-image">
+              <img src="images/stove-device.png" alt="Stove Device" />
+            </div>
+            <div class="item-info">
+              <h4>BURN LPG Stove LPG-500</h4>
+              <p>Gas model</p>
+            </div>
+          </div>
+          <div class="cell">BRN87654325</div>
+          <div class="cell">
+            <span class="status-badge low-stock">Low Stock</span>
+          </div>
+          <div class="cell">Agent Inventory</div>
+          <div class="cell actions-cell">
+            <button class="action-button small">
+              <i class="assign-icon"></i>
+              <span>Assign</span>
+            </button>
+            <button class="more-button">
+              <i class="more-icon"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Floating Action Button -->
+  <button class="floating-action-button">
+    <i class="add-icon"></i>
+  </button>
+</div>
+
+<!-- Stock Allocation Screen -->
+<div class="wireframe stock-allocation">
+  <!-- Header -->
+  <div class="header">
+    <button class="back-button">
+      <i class="back-icon"></i>
+    </button>
+    <div class="page-title">
+      <h1>Stock Allocation</h1>
+    </div>
+    <div class="header-actions">
+      <button class="help-button">
+        <i class="help-icon"></i>
+      </button>
+    </div>
+  </div>
+  
+  <!-- Main Content -->
+  <div class="main-content">
+    <div class="form-section">
+      <h2>Request Details</h2>
+      
+      <div class="form-group">
+        <label>Request Type <span class="required">*</span></label>
+        <select>
+          <option>New Allocation</option>
+          <option>Replenishment</option>
+          <option>Return</option>
+          <option>Transfer</option>
+        </select>
+      </div>
+      
+      <div class="form-group">
+        <label>Request Date <span class="required">*</span></label>
+        <div class="date-input">
+          <input type="date" value="2025-04-21" />
+          <i class="calendar-icon"></i>
+        </div>
+      </div>
+      
+      <div class="form-group">
+        <label>Priority <span class="required">*</span></label>
+        <div class="radio-group">
+          <label class="radio-option">
+            <input type="radio" name="priority" value="low" />
+            <span>Low</span>
+          </label>
+          <label class="radio-option">
+            <input type="radio" name="priority" value="medium" checked />
+            <span>Medium</span>
+          </label>
+          <label class="radio-option">
+            <input type="radio" name="priority" value="high" />
+            <span>High</span>
+          </label>
+        </div>
+      </div>
+      
+      <div class="form-group">
+        <label>Notes</label>
+        <textarea placeholder="Enter any additional notes or requirements"></textarea>
+      </div>
+    </div>
+    
+    <div class="form-section">
+      <h2>Requested Items</h2>
+      
+      <div class="item-list">
+        <div class="item-row">
+          <div class="item-details">
+            <div class="item-image">
+              <img src="images/stove-device.png" alt="Stove Device" />
+            </div>
+            <div class="item-info">
+              <h4>BURN Induction Cooker IC-2000</h4>
+              <p>Premium model</p>
+            </div>
+          </div>
+          <div class="item-quantity">
+            <button class="quantity-button">
+              <i class="minus-icon"></i>
+            </button>
+            <input type="number" value="3" min="1" />
+            <button class="quantity-button">
+              <i class="plus-icon"></i>
+            </button>
+          </div>
+          <button class="remove-button">
+            <i class="remove-icon"></i>
+          </button>
+        </div>
+        
+        <div class="item-row">
+          <div class="item-details">
+            <div class="item-image">
+              <img src="images/pot-accessory.png" alt="Pot Accessory" />
+            </div>
+            <div class="item-info">
+              <h4>Induction Cooking Pot</h4>
+              <p>5L capacity</p>
+            </div>
+          </div>
+          <div class="item-quantity">
+            <button class="quantity-button">
+              <i class="minus-icon"></i>
+            </button>
+            <input type="number" value="5" min="1" />
+            <button class="quantity-button">
+              <i class="plus-icon"></i>
+            </button>
+          </div>
+          <button class="remove-button">
+            <i class="remove-icon"></i>
+          </button>
+        </div>
+      </div>
+      
+      <button class="add-item-button">
+        <i class="add-icon"></i>
+        <span>Add Item</span>
+      </button>
+    </div>
+    
+    <div class="form-section">
+      <h2>Delivery Information</h2>
+      
+      <div class="form-group">
+        <label>Delivery Method <span class="required">*</span></label>
+        <select>
+          <option>Pickup from Distribution Center</option>
+          <option>Delivery to Field Location</option>
+          <option>Transfer from Another Agent</option>
+        </select>
+      </div>
+      
+      <div class="form-group">
+        <label>Preferred Delivery Date <span class="required">*</span></label>
+        <div class="date-input">
+          <input type="date" value="2025-04-24" />
+          <i class="calendar-icon"></i>
+        </div>
+      </div>
+      
+      <div class="form-group">
+        <label>Delivery Location <span class="required">*</span></label>
+        <select>
+          <option>Nairobi Distribution Center</option>
+          <option>Mombasa Distribution Center</option>
+          <option>Kisumu Distribution Center</option>
+          <option>Field Office - Nairobi East</option>
+        </select>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Footer Actions -->
+  <div class="form-actions">
+    <button class="secondary-button">Save as Draft</button>
+    <button class="primary-button">Submit Request</button>
+  </div>
+</div>
+
+<!-- Product Catalog Screen -->
+<div class="wireframe product-catalog">
+  <!-- Header -->
+  <div class="header">
+    <div class="menu-toggle">
+      <i class="menu-icon"></i>
+    </div>
+    <div class="page-title">
+      <h1>Product Catalog</h1>
+    </div>
+    <div class="header-actions">
+      <button class="sync-button">
+        <i class="sync-icon"></i>
+        <span>Last sync: 10:45 AM</span>
+      </button>
+      <button class="notification-button">
+        <i class="notification-icon"></i>
+        <span class="badge">3</span>
+      </button>
+      <div class="agent-profile">
+        <img src="images/agent-avatar.png" alt="Agent Avatar" />
+        <span>John D.</span>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Main Content -->
+  <div class="main-content">
+    <div class="catalog-search">
+      <div class="search-bar">
+        <i class="search-icon"></i>
+        <input type="text" placeholder="Search products" />
+      </div>
+      <button class="filter-button">
+        <i class="filter-icon"></i>
+        <span>Filter</span>
+      </button>
+    </div>
+    
+    <div class="catalog-categories">
+      <button class="category-button active">
+        <i class="all-icon"></i>
+        <span>All</span>
+      </button>
+      <button class="category-button">
+        <i class="stoves-icon"></i>
+        <span>Stoves</span>
+      </button>
+      <button class="category-button">
+        <i class="accessories-icon"></i>
+        <span>Accessories</span>
+      </button>
+      <button class="category-button">
+        <i class="parts-icon"></i>
+        <span>Parts</span>
+      </button>
+    </div>
+    
+    <div class="product-grid">
+      <div class="product-card">
+        <div class="product-image">
+          <img src="images/stove-device.png" alt="Stove Device" />
+        </div>
+        <div class="product-info">
+          <h3>BURN Induction Cooker IC-2000</h3>
+          <p>Premium induction cooker with advanced features</p>
+          <div class="product-meta">
+            <span class="price">KSh 15,000</span>
+            <span class="stock">5 in stock</span>
+          </div>
+        </div>
+        <div class="product-actions">
+          <button class="action-button small">
+            <i class="info-icon"></i>
+            <span>Details</span>
+          </button>
+          <button class="action-button small">
+            <i class="request-icon"></i>
+            <span>Request</span>
+          </button>
+        </div>
+      </div>
+      
+      <div class="product-card">
+        <div class="product-image">
+          <img src="images/stove-device.png" alt="Stove Device" />
+        </div>
+        <div class="product-info">
+          <h3>BURN Induction Cooker IC-1500</h3>
+          <p>Standard induction cooker for everyday use</p>
+          <div class="product-meta">
+            <span class="price">KSh 12,000</span>
+            <span class="stock">3 in stock</span>
+          </div>
+        </div>
+        <div class="product-actions">
+          <button class="action-button small">
+            <i class="info-icon"></i>
+            <span>Details</span>
+          </button>
+          <button class="action-button small">
+            <i class="request-icon"></i>
+            <span>Request</span>
+          </button>
+        </div>
+      </div>
+      
+      <div class="product-card">
+        <div class="product-image">
+          <img src="images/stove-device.png" alt="Stove Device" />
+        </div>
+        <div class="product-info">
+          <h3>BURN Electric Stove ES-1000</h3>
+          <p>Basic electric stove for entry-level customers</p>
+          <div class="product-meta">
+            <span class="price">KSh 8,000</span>
+            <span class="stock">8 in stock</span>
+          </div>
+        </div>
+        <div class="product-actions">
+          <button class="action-button small">
+            <i class="info-icon"></i>
+            <span>Details</span>
+          </button>
+          <button class="action-button small">
+            <i class="request-icon"></i>
+            <span>Request</span>
+          </button>
+        </div>
+      </div>
+      
+      <div class="product-card">
+        <div class="product-image">
+          <img src="images/stove-device.png" alt="Stove Device" />
+        </div>
+        <div class="product-info">
+          <h3>BURN LPG Stove LPG-500</h3>
+          <p>Gas stove with PayGo technology</p>
+          <div class="product-meta">
+            <span class="price">KSh 10,000</span>
+            <span class="stock low">1 in stock</span>
+          </div>
+        </div>
+        <div class="product-actions">
+          <button class="action-button small">
+            <i class="info-icon"></i>
+            <span>Details</span>
+          </button>
+          <button class="action-button small">
+            <i class="request-icon"></i>
+            <span>Request</span>
+          </button>
+        </div>
+      </div>
+      
+      <div class="product-card">
+        <div class="product-image">
+          <img src="images/pot-accessory.png" alt="Pot Accessory" />
+        </div>
+        <div class="product-info">
+          <h3>Induction Cooking Pot</h3>
+          <p>5L capacity, compatible with all induction models</p>
+          <div class="product-meta">
+            <span class="price">KSh 2,500</span>
+            <span class="stock">12 in stock</span>
+          </div>
+        </div>
+        <div class="product-actions">
+          <button class="action-button small">
+            <i class="info-icon"></i>
+            <span>Details</span>
+          </button>
+          <button class="action-button small">
+            <i class="request-icon"></i>
+            <span>Request</span>
+          </button>
+        </div>
+      </div>
+      
+      <div class="product-card">
+        <div class="product-image">
+          <img src="images/control-board-part.png" alt="Control Board Part" />
+        </div>
+        <div class="product-info">
+          <h3>Control Board IC-2000</h3>
+          <p>Replacement control board for IC-2000 model</p>
+          <div class="product-meta">
+            <span class="price">KSh 3,000</span>
+            <span class="stock low">2 in stock</span>
+          </div>
+        </div>
+        <div class="product-actions">
+          <button class="action-button small">
+            <i class="info-icon"></i>
+            <span>Details</span>
+          </button>
+          <button class="action-button small">
+            <i class="request-icon"></i>
+            <span>Request</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

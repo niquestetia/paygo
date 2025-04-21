@@ -1,0 +1,1226 @@
+<!-- Financial Overview -->
+<div class="wireframe financial-overview">
+  <!-- Header -->
+  <div class="header">
+    <div class="logo-container">
+      <img src="images/burn-logo-small.png" alt="BURN Logo" />
+      <h1>PayGo Admin</h1>
+    </div>
+    <div class="header-actions">
+      <div class="search-bar">
+        <i class="search-icon"></i>
+        <input type="text" placeholder="Search..." />
+      </div>
+      <button class="notification-button">
+        <i class="notification-icon"></i>
+        <span class="badge">5</span>
+      </button>
+      <div class="admin-profile">
+        <img src="images/admin-avatar.png" alt="Admin Avatar" />
+        <span>Admin</span>
+        <i class="dropdown-icon"></i>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Sidebar Navigation -->
+  <div class="sidebar">
+    <!-- Sidebar navigation content (same as main dashboard) -->
+  </div>
+  
+  <!-- Main Content -->
+  <div class="main-content">
+    <div class="page-header">
+      <h2>Financial Management</h2>
+      <div class="header-actions">
+        <div class="date-filter">
+          <button class="date-button">
+            <i class="calendar-icon"></i>
+            <span>Apr 1 - Apr 21, 2025</span>
+            <i class="dropdown-icon"></i>
+          </button>
+        </div>
+        <button class="export-button">
+          <i class="export-icon"></i>
+          <span>Export</span>
+        </button>
+      </div>
+    </div>
+    
+    <div class="financial-summary">
+      <div class="summary-card">
+        <div class="card-header">
+          <h3>Revenue Overview</h3>
+          <div class="period-selector">
+            <button class="period-button">Day</button>
+            <button class="period-button">Week</button>
+            <button class="period-button active">Month</button>
+            <button class="period-button">Quarter</button>
+            <button class="period-button">Year</button>
+          </div>
+        </div>
+        <div class="revenue-stats">
+          <div class="stat-item">
+            <div class="stat-icon total">
+              <i class="revenue-icon"></i>
+            </div>
+            <div class="stat-data">
+              <h4>Total Revenue</h4>
+              <div class="stat-value">
+                <span class="value">KSh 3.2M</span>
+                <span class="trend positive">+8.5%</span>
+              </div>
+              <div class="stat-meta">
+                <span>vs. KSh 2.95M last month</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="stat-item">
+            <div class="stat-icon recurring">
+              <i class="recurring-icon"></i>
+            </div>
+            <div class="stat-data">
+              <h4>Recurring Revenue</h4>
+              <div class="stat-value">
+                <span class="value">KSh 2.4M</span>
+                <span class="trend positive">+5.2%</span>
+              </div>
+              <div class="stat-meta">
+                <span>75% of total revenue</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="stat-item">
+            <div class="stat-icon one-time">
+              <i class="one-time-icon"></i>
+            </div>
+            <div class="stat-data">
+              <h4>One-time Revenue</h4>
+              <div class="stat-value">
+                <span class="value">KSh 800K</span>
+                <span class="trend positive">+12.7%</span>
+              </div>
+              <div class="stat-meta">
+                <span>25% of total revenue</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="stat-item">
+            <div class="stat-icon arpu">
+              <i class="arpu-icon"></i>
+            </div>
+            <div class="stat-data">
+              <h4>ARPU</h4>
+              <div class="stat-value">
+                <span class="value">KSh 257</span>
+                <span class="trend positive">+3.2%</span>
+              </div>
+              <div class="stat-meta">
+                <span>Average Revenue Per User</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="revenue-chart">
+          <img src="images/revenue-trend-chart.png" alt="Revenue Trend Chart" />
+        </div>
+      </div>
+    </div>
+    
+    <div class="revenue-breakdown">
+      <div class="section-header">
+        <h3>Revenue Breakdown</h3>
+      </div>
+      <div class="breakdown-grid">
+        <div class="breakdown-chart">
+          <div class="chart-header">
+            <h4>By Product</h4>
+          </div>
+          <div class="chart">
+            <img src="images/revenue-by-product-chart.png" alt="Revenue by Product Chart" />
+          </div>
+          <div class="chart-legend">
+            <div class="legend-item">
+              <span class="color-indicator ic2000"></span>
+              <span>IC-2000: KSh 1.44M (45%)</span>
+            </div>
+            <div class="legend-item">
+              <span class="color-indicator ic1500"></span>
+              <span>IC-1500: KSh 960K (30%)</span>
+            </div>
+            <div class="legend-item">
+              <span class="color-indicator es1000"></span>
+              <span>ES-1000: KSh 480K (15%)</span>
+            </div>
+            <div class="legend-item">
+              <span class="color-indicator lpg500"></span>
+              <span>LPG-500: KSh 320K (10%)</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="breakdown-chart">
+          <div class="chart-header">
+            <h4>By Region</h4>
+          </div>
+          <div class="chart">
+            <img src="images/revenue-by-region-chart.png" alt="Revenue by Region Chart" />
+          </div>
+          <div class="chart-legend">
+            <div class="legend-item">
+              <span class="color-indicator nairobi"></span>
+              <span>Nairobi: KSh 1.28M (40%)</span>
+            </div>
+            <div class="legend-item">
+              <span class="color-indicator mombasa"></span>
+              <span>Mombasa: KSh 800K (25%)</span>
+            </div>
+            <div class="legend-item">
+              <span class="color-indicator kisumu"></span>
+              <span>Kisumu: KSh 640K (20%)</span>
+            </div>
+            <div class="legend-item">
+              <span class="color-indicator other"></span>
+              <span>Other: KSh 480K (15%)</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="breakdown-chart">
+          <div class="chart-header">
+            <h4>By Payment Method</h4>
+          </div>
+          <div class="chart">
+            <img src="images/revenue-by-payment-method-chart.png" alt="Revenue by Payment Method Chart" />
+          </div>
+          <div class="chart-legend">
+            <div class="legend-item">
+              <span class="color-indicator mpesa"></span>
+              <span>M-Pesa: KSh 2.24M (70%)</span>
+            </div>
+            <div class="legend-item">
+              <span class="color-indicator airtel"></span>
+              <span>Airtel Money: KSh 480K (15%)</span>
+            </div>
+            <div class="legend-item">
+              <span class="color-indicator cash"></span>
+              <span>Cash: KSh 320K (10%)</span>
+            </div>
+            <div class="legend-item">
+              <span class="color-indicator other"></span>
+              <span>Other: KSh 160K (5%)</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="breakdown-chart">
+          <div class="chart-header">
+            <h4>By Payment Type</h4>
+          </div>
+          <div class="chart">
+            <img src="images/revenue-by-payment-type-chart.png" alt="Revenue by Payment Type Chart" />
+          </div>
+          <div class="chart-legend">
+            <div class="legend-item">
+              <span class="color-indicator daily"></span>
+              <span>Daily: KSh 640K (20%)</span>
+            </div>
+            <div class="legend-item">
+              <span class="color-indicator weekly"></span>
+              <span>Weekly: KSh 960K (30%)</span>
+            </div>
+            <div class="legend-item">
+              <span class="color-indicator monthly"></span>
+              <span>Monthly: KSh 1.28M (40%)</span>
+            </div>
+            <div class="legend-item">
+              <span class="color-indicator other"></span>
+              <span>Other: KSh 320K (10%)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="payment-metrics">
+      <div class="section-header">
+        <h3>Payment Metrics</h3>
+      </div>
+      <div class="metrics-grid">
+        <div class="metric-card">
+          <div class="metric-icon success">
+            <i class="success-icon"></i>
+          </div>
+          <div class="metric-data">
+            <h4>Payment Success Rate</h4>
+            <div class="metric-value">
+              <span class="value">98.5%</span>
+              <span class="trend positive">+0.7%</span>
+            </div>
+            <div class="metric-chart">
+              <img src="images/payment-success-rate-chart.png" alt="Payment Success Rate Chart" />
+            </div>
+          </div>
+        </div>
+        
+        <div class="metric-card">
+          <div class="metric-icon volume">
+            <i class="volume-icon"></i>
+          </div>
+          <div class="metric-data">
+            <h4>Payment Volume</h4>
+            <div class="metric-value">
+              <span class="value">24,568</span>
+              <span class="trend positive">+5.3%</span>
+            </div>
+            <div class="metric-chart">
+              <img src="images/payment-volume-chart.png" alt="Payment Volume Chart" />
+            </div>
+          </div>
+        </div>
+        
+        <div class="metric-card">
+          <div class="metric-icon average">
+            <i class="average-icon"></i>
+          </div>
+          <div class="metric-data">
+            <h4>Average Payment</h4>
+            <div class="metric-value">
+              <span class="value">KSh 130</span>
+              <span class="trend positive">+2.4%</span>
+            </div>
+            <div class="metric-chart">
+              <img src="images/average-payment-chart.png" alt="Average Payment Chart" />
+            </div>
+          </div>
+        </div>
+        
+        <div class="metric-card">
+          <div class="metric-icon churn">
+            <i class="churn-icon"></i>
+          </div>
+          <div class="metric-data">
+            <h4>Payment Churn</h4>
+            <div class="metric-value">
+              <span class="value">3.2%</span>
+              <span class="trend negative">-0.5%</span>
+            </div>
+            <div class="metric-chart">
+              <img src="images/payment-churn-chart.png" alt="Payment Churn Chart" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Payment Reconciliation -->
+<div class="wireframe payment-reconciliation">
+  <!-- Header -->
+  <div class="header">
+    <div class="logo-container">
+      <img src="images/burn-logo-small.png" alt="BURN Logo" />
+      <h1>PayGo Admin</h1>
+    </div>
+    <div class="header-actions">
+      <div class="search-bar">
+        <i class="search-icon"></i>
+        <input type="text" placeholder="Search..." />
+      </div>
+      <button class="notification-button">
+        <i class="notification-icon"></i>
+        <span class="badge">5</span>
+      </button>
+      <div class="admin-profile">
+        <img src="images/admin-avatar.png" alt="Admin Avatar" />
+        <span>Admin</span>
+        <i class="dropdown-icon"></i>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Sidebar Navigation -->
+  <div class="sidebar">
+    <!-- Sidebar navigation content (same as main dashboard) -->
+  </div>
+  
+  <!-- Main Content -->
+  <div class="main-content">
+    <div class="page-header">
+      <div class="breadcrumb">
+        <a href="#">Financial Management</a>
+        <i class="separator-icon"></i>
+        <span>Payment Reconciliation</span>
+      </div>
+      <div class="header-actions">
+        <div class="date-filter">
+          <button class="date-button">
+            <i class="calendar-icon"></i>
+            <span>Apr 21, 2025</span>
+            <i class="dropdown-icon"></i>
+          </button>
+        </div>
+        <button class="export-button">
+          <i class="export-icon"></i>
+          <span>Export</span>
+        </button>
+      </div>
+    </div>
+    
+    <div class="reconciliation-summary">
+      <div class="summary-card">
+        <div class="card-header">
+          <h3>Daily Reconciliation</h3>
+          <div class="status-badge completed">
+            <i class="check-icon"></i>
+            <span>Completed</span>
+          </div>
+        </div>
+        <div class="summary-stats">
+          <div class="stat-item">
+            <div class="stat-icon total">
+              <i class="total-icon"></i>
+            </div>
+            <div class="stat-data">
+              <h4>Total Transactions</h4>
+              <span class="value">1,245</span>
+            </div>
+          </div>
+          
+          <div class="stat-item">
+            <div class="stat-icon amount">
+              <i class="amount-icon"></i>
+            </div>
+            <div class="stat-data">
+              <h4>Total Amount</h4>
+              <span class="value">KSh 158,500</span>
+            </div>
+          </div>
+          
+          <div class="stat-item">
+            <div class="stat-icon reconciled">
+              <i class="reconciled-icon"></i>
+            </div>
+            <div class="stat-data">
+              <h4>Reconciled</h4>
+              <span class="value">KSh 157,850</span>
+              <span class="percentage">99.6%</span>
+            </div>
+          </div>
+          
+          <div class="stat-item">
+            <div class="stat-icon discrepancy">
+              <i class="discrepancy-icon"></i>
+            </div>
+            <div class="stat-data">
+              <h4>Discrepancy</h4>
+              <span class="value">KSh 650</span>
+              <span class="percentage">0.4%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="payment-gateway-reconciliation">
+      <div class="section-header">
+        <h3>Payment Gateway Reconciliation</h3>
+      </div>
+      <div class="gateway-grid">
+        <div class="gateway-card">
+          <div class="gateway-header">
+            <div class="gateway-icon mpesa">
+              <img src="images/mpesa-logo.png" alt="M-Pesa" />
+            </div>
+            <div class="gateway-info">
+              <h4>M-Pesa</h4>
+              <span class="status-badge reconciled">Reconciled</span>
+            </div>
+          </div>
+          <div class="gateway-stats">
+            <div class="stat-row">
+              <span class="label">Transactions</span>
+              <span class="value">875</span>
+            </div>
+            <div class="stat-row">
+              <span class="label">System Amount</span>
+              <span class="value">KSh 112,500</span>
+            </div>
+            <div class="stat-row">
+              <span class="label">Gateway Amount</span>
+              <span class="value">KSh 112,500</span>
+            </div>
+            <div class="stat-row">
+              <span class="label">Discrepancy</span>
+              <span class="value balanced">KSh 0</span>
+            </div>
+          </div>
+          <div class="gateway-actions">
+            <button class="action-button">
+              <i class="view-icon"></i>
+              <span>View Details</span>
+            </button>
+          </div>
+        </div>
+        
+        <div class="gateway-card">
+          <div class="gateway-header">
+            <div class="gateway-icon airtel">
+              <img src="images/airtel-money-logo.png" alt="Airtel Money" />
+            </div>
+            <div class="gateway-info">
+              <h4>Airtel Money</h4>
+              <span class="status-badge reconciled">Reconciled</span>
+            </div>
+          </div>
+          <div class="gateway-stats">
+            <div class="stat-row">
+              <span class="label">Transactions</span>
+              <span class="value">245</span>
+            </div>
+            <div class="stat-row">
+              <span class="label">System Amount</span>
+              <span class="value">KSh 28,500</span>
+            </div>
+            <div class="stat-row">
+              <span class="label">Gateway Amount</span>
+              <span class="value">KSh 28,500</span>
+            </div>
+            <div class="stat-row">
+              <span class="label">Discrepancy</span>
+              <span class="value balanced">KSh 0</span>
+            </div>
+          </div>
+          <div class="gateway-actions">
+            <button class="action-button">
+              <i class="view-icon"></i>
+              <span>View Details</span>
+            </button>
+          </div>
+        </div>
+        
+        <div class="gateway-card">
+          <div class="gateway-header">
+            <div class="gateway-icon cash">
+              <i class="cash-icon"></i>
+            </div>
+            <div class="gateway-info">
+              <h4>Cash Payments</h4>
+              <span class="status-badge discrepancy">Discrepancy</span>
+            </div>
+          </div>
+          <div class="gateway-stats">
+            <div class="stat-row">
+              <span class="label">Transactions</span>
+              <span class="value">125</span>
+            </div>
+            <div class="stat-row">
+              <span class="label">System Amount</span>
+              <span class="value">KSh 17,500</span>
+            </div>
+            <div class="stat-row">
+              <span class="label">Reported Amount</span>
+              <span class="value">KSh 16,850</span>
+            </div>
+            <div class="stat-row">
+              <span class="label">Discrepancy</span>
+              <span class="value negative">KSh 650</span>
+            </div>
+          </div>
+          <div class="gateway-actions">
+            <button class="action-button">
+              <i class="view-icon"></i>
+              <span>View Details</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="transaction-reconciliation">
+      <div class="section-header">
+        <h3>Transaction Reconciliation</h3>
+        <div class="header-actions">
+          <div class="filter-controls">
+            <select class="filter-select">
+              <option>All Gateways</option>
+              <option>M-Pesa</option>
+              <option>Airtel Money</option>
+              <option>Cash</option>
+              <option>Other</option>
+            </select>
+            <select class="filter-select">
+              <option>All Status</option>
+              <option>Reconciled</option>
+              <option>Discrepancy</option>
+              <option>Pending</option>
+            </select>
+            <button class="filter-button">
+              <i class="filter-icon"></i>
+              <span>More Filters</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="transactions-table">
+        <div class="table-header">
+          <div class="header-cell">Transaction ID</div>
+          <div class="header-cell">Gateway</div>
+          <div class="header-cell">Customer</div>
+          <div class="header-cell">Amount</div>
+          <div class="header-cell">Gateway Amount</div>
+          <div class="header-cell">Discrepancy</div>
+          <div class="header-cell">Status</div>
+          <div class="header-cell">Time</div>
+          <div class="header-cell">Actions</div>
+        </div>
+        
+        <div class="table-row">
+          <div class="cell">TRX-12345678</div>
+          <div class="cell">
+            <div class="gateway-badge mpesa">
+              <img src="images/mpesa-logo-small.png" alt="M-Pesa" />
+              <span>M-Pesa</span>
+            </div>
+          </div>
+          <div class="cell">Sarah Kamau</div>
+          <div class="cell">KSh 1,000</div>
+          <div class="cell">KSh 1,000</div>
+          <div class="cell">
+            <span class="discrepancy balanced">KSh 0</span>
+          </div>
+          <div class="cell">
+            <span class="status-badge reconciled">Reconciled</span>
+          </div>
+          <div class="cell">11:45 AM</div>
+          <div class="cell actions-cell">
+            <button class="action-button small">
+              <i class="view-icon"></i>
+            </button>
+          </div>
+        </div>
+        
+        <div class="table-row">
+          <div class="cell">TRX-12345679</div>
+          <div class="cell">
+            <div class="gateway-badge cash">
+              <i class="cash-icon-small"></i>
+              <span>Cash</span>
+            </div>
+          </div>
+          <div class="cell">John Omondi</div>
+          <div class="cell">KSh 2,000</div>
+          <div class="cell">KSh 1,850</div>
+          <div class="cell">
+            <span class="discrepancy negative">KSh 150</span>
+          </div>
+          <div class="cell">
+            <span class="status-badge discrepancy">Discrepancy</span>
+          </div>
+          <div class="cell">10:30 AM</div>
+          <div class="cell actions-cell">
+            <button class="action-button small">
+              <i class="view-icon"></i>
+            </button>
+          </div>
+        </div>
+        
+        <div class="table-row">
+          <div class="cell">TRX-12345680</div>
+          <div class="cell">
+            <div class="gateway-badge mpesa">
+              <img src="images/mpesa-logo-small.png" alt="M-Pesa" />
+              <span>M-Pesa</span>
+            </div>
+          </div>
+          <div class="cell">Mary Wanjiku</div>
+          <div class="cell">KSh 5,000</div>
+          <div class="cell">KSh 5,000</div>
+          <div class="cell">
+            <span class="discrepancy balanced">KSh 0</span>
+          </div>
+          <div class="cell">
+            <span class="status-badge reconciled">Reconciled</span>
+          </div>
+          <div class="cell">09:45 AM</div>
+          <div class="cell actions-cell">
+            <button class="action-button small">
+              <i class="view-icon"></i>
+            </button>
+          </div>
+        </div>
+        
+        <div class="table-row">
+          <div class="cell">TRX-12345681</div>
+          <div class="cell">
+            <div class="gateway-badge airtel">
+              <img src="images/airtel-money-logo-small.png" alt="Airtel Money" />
+              <span>Airtel</span>
+            </div>
+          </div>
+          <div class="cell">James Mwangi</div>
+          <div class="cell">KSh 2,500</div>
+          <div class="cell">KSh 2,500</div>
+          <div class="cell">
+            <span class="discrepancy balanced">KSh 0</span>
+          </div>
+          <div class="cell">
+            <span class="status-badge reconciled">Reconciled</span>
+          </div>
+          <div class="cell">09:15 AM</div>
+          <div class="cell actions-cell">
+            <button class="action-button small">
+              <i class="view-icon"></i>
+            </button>
+          </div>
+        </div>
+        
+        <div class="table-row">
+          <div class="cell">TRX-12345682</div>
+          <div class="cell">
+            <div class="gateway-badge cash">
+              <i class="cash-icon-small"></i>
+              <span>Cash</span>
+            </div>
+          </div>
+          <div class="cell">Peter Njoroge</div>
+          <div class="cell">KSh 2,000</div>
+          <div class="cell">KSh 1,500</div>
+          <div class="cell">
+            <span class="discrepancy negative">KSh 500</span>
+          </div>
+          <div class="cell">
+            <span class="status-badge discrepancy">Discrepancy</span>
+          </div>
+          <div class="cell">08:30 AM</div>
+          <div class="cell actions-cell">
+            <button class="action-button small">
+              <i class="view-icon"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="pagination">
+        <button class="page-button">
+          <i class="prev-icon"></i>
+        </button>
+        <button class="page-button active">1</button>
+        <button class="page-button">2</button>
+        <button class="page-button">3</button>
+        <span class="page-ellipsis">...</span>
+        <button class="page-button">50</button>
+        <button class="page-button">
+          <i class="next-icon"></i>
+        </button>
+        <div class="page-size">
+          <span>Show:</span>
+          <select>
+            <option>10</option>
+            <option selected>20</option>
+            <option>50</option>
+            <option>100</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    
+    <div class="reconciliation-actions">
+      <div class="section-header">
+        <h3>Reconciliation Actions</h3>
+      </div>
+      <div class="actions-card">
+        <div class="action-buttons">
+          <button class="action-button large">
+            <i class="approve-icon"></i>
+            <span>Approve Reconciliation</span>
+          </button>
+          <button class="action-button large">
+            <i class="resolve-icon"></i>
+            <span>Resolve Discrepancies</span>
+          </button>
+          <button class="action-button large">
+            <i class="report-icon"></i>
+            <span>Generate Report</span>
+          </button>
+          <button class="action-button large">
+            <i class="export-icon"></i>
+            <span>Export to Accounting</span>
+          </button>
+        </div>
+        <div class="action-notes">
+          <div class="form-group">
+            <label>Reconciliation Notes</label>
+            <textarea placeholder="Enter notes about this reconciliation"></textarea>
+          </div>
+          <button class="save-button">
+            <i class="save-icon"></i>
+            <span>Save Notes</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Pricing and Plan Management -->
+<div class="wireframe pricing-plan-management">
+  <!-- Header -->
+  <div class="header">
+    <div class="logo-container">
+      <img src="images/burn-logo-small.png" alt="BURN Logo" />
+      <h1>PayGo Admin</h1>
+    </div>
+    <div class="header-actions">
+      <div class="search-bar">
+        <i class="search-icon"></i>
+        <input type="text" placeholder="Search..." />
+      </div>
+      <button class="notification-button">
+        <i class="notification-icon"></i>
+        <span class="badge">5</span>
+      </button>
+      <div class="admin-profile">
+        <img src="images/admin-avatar.png" alt="Admin Avatar" />
+        <span>Admin</span>
+        <i class="dropdown-icon"></i>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Sidebar Navigation -->
+  <div class="sidebar">
+    <!-- Sidebar navigation content (same as main dashboard) -->
+  </div>
+  
+  <!-- Main Content -->
+  <div class="main-content">
+    <div class="page-header">
+      <div class="breadcrumb">
+        <a href="#">Financial Management</a>
+        <i class="separator-icon"></i>
+        <span>Pricing & Plan Management</span>
+      </div>
+      <div class="header-actions">
+        <button class="add-button">
+          <i class="add-icon"></i>
+          <span>Create Plan</span>
+        </button>
+      </div>
+    </div>
+    
+    <div class="pricing-summary">
+      <div class="summary-card">
+        <div class="card-header">
+          <h3>Pricing Overview</h3>
+        </div>
+        <div class="pricing-stats">
+          <div class="stat-item">
+            <div class="stat-icon plans">
+              <i class="plans-icon"></i>
+            </div>
+            <div class="stat-data">
+              <h4>Active Plans</h4>
+              <span class="value">8</span>
+            </div>
+          </div>
+          
+          <div class="stat-item">
+            <div class="stat-icon customers">
+              <i class="customers-icon"></i>
+            </div>
+            <div class="stat-data">
+              <h4>Customers</h4>
+              <span class="value">12,458</span>
+            </div>
+          </div>
+          
+          <div class="stat-item">
+            <div class="stat-icon arpu">
+              <i class="arpu-icon"></i>
+            </div>
+            <div class="stat-data">
+              <h4>ARPU</h4>
+              <span class="value">KSh 257</span>
+            </div>
+          </div>
+          
+          <div class="stat-item">
+            <div class="stat-icon promotions">
+              <i class="promotions-icon"></i>
+            </div>
+            <div class="stat-data">
+              <h4>Active Promotions</h4>
+              <span class="value">3</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="plan-distribution">
+      <div class="section-header">
+        <h3>Plan Distribution</h3>
+      </div>
+      <div class="distribution-chart">
+        <img src="images/plan-distribution-chart.png" alt="Plan Distribution Chart" />
+      </div>
+      <div class="chart-legend">
+        <div class="legend-item">
+          <span class="color-indicator daily"></span>
+          <span>Daily Plan: 2,491 customers (20%)</span>
+        </div>
+        <div class="legend-item">
+          <span class="color-indicator weekly"></span>
+          <span>Weekly Plan: 3,737 customers (30%)</span>
+        </div>
+        <div class="legend-item">
+          <span class="color-indicator monthly"></span>
+          <span>Monthly Plan: 4,983 customers (40%)</span>
+        </div>
+        <div class="legend-item">
+          <span class="color-indicator pay-as-you-go"></span>
+          <span>Pay-as-you-go: 1,247 customers (10%)</span>
+        </div>
+      </div>
+    </div>
+    
+    <div class="pricing-plans">
+      <div class="section-header">
+        <h3>Pricing Plans</h3>
+        <div class="header-actions">
+          <div class="filter-controls">
+            <select class="filter-select">
+              <option>All Status</option>
+              <option>Active</option>
+              <option>Inactive</option>
+              <option>Draft</option>
+            </select>
+            <select class="filter-select">
+              <option>All Models</option>
+              <option>IC-2000</option>
+              <option>IC-1500</option>
+              <option>ES-1000</option>
+              <option>LPG-500</option>
+            </select>
+            <button class="filter-button">
+              <i class="filter-icon"></i>
+              <span>More Filters</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="plans-table">
+        <div class="table-header">
+          <div class="header-cell">Plan Name</div>
+          <div class="header-cell">Device Model</div>
+          <div class="header-cell">Payment Frequency</div>
+          <div class="header-cell">Price</div>
+          <div class="header-cell">Customers</div>
+          <div class="header-cell">Status</div>
+          <div class="header-cell">Last Updated</div>
+          <div class="header-cell">Actions</div>
+        </div>
+        
+        <div class="table-row">
+          <div class="cell plan-cell">
+            <div class="plan-info">
+              <h4>Premium Monthly</h4>
+              <p>Monthly payment for premium model</p>
+            </div>
+          </div>
+          <div class="cell">IC-2000</div>
+          <div class="cell">Monthly</div>
+          <div class="cell">KSh 1,500</div>
+          <div class="cell">2,245</div>
+          <div class="cell">
+            <span class="status-badge active">Active</span>
+          </div>
+          <div class="cell">Apr 15, 2025</div>
+          <div class="cell actions-cell">
+            <button class="action-button small">
+              <i class="view-icon"></i>
+            </button>
+            <button class="action-button small">
+              <i class="edit-icon"></i>
+            </button>
+            <button class="action-button small">
+              <i class="more-icon"></i>
+            </button>
+          </div>
+        </div>
+        
+        <div class="table-row">
+          <div class="cell plan-cell">
+            <div class="plan-info">
+              <h4>Premium Weekly</h4>
+              <p>Weekly payment for premium model</p>
+            </div>
+          </div>
+          <div class="cell">IC-2000</div>
+          <div class="cell">Weekly</div>
+          <div class="cell">KSh 400</div>
+          <div class="cell">1,875</div>
+          <div class="cell">
+            <span class="status-badge active">Active</span>
+          </div>
+          <div class="cell">Apr 15, 2025</div>
+          <div class="cell actions-cell">
+            <button class="action-button small">
+              <i class="view-icon"></i>
+            </button>
+            <button class="action-button small">
+              <i class="edit-icon"></i>
+            </button>
+            <button class="action-button small">
+              <i class="more-icon"></i>
+            </button>
+          </div>
+        </div>
+        
+        <div class="table-row">
+          <div class="cell plan-cell">
+            <div class="plan-info">
+              <h4>Standard Monthly</h4>
+              <p>Monthly payment for standard model</p>
+            </div>
+          </div>
+          <div class="cell">IC-1500</div>
+          <div class="cell">Monthly</div>
+          <div class="cell">KSh 1,200</div>
+          <div class="cell">1,845</div>
+          <div class="cell">
+            <span class="status-badge active">Active</span>
+          </div>
+          <div class="cell">Apr 15, 2025</div>
+          <div class="cell actions-cell">
+            <button class="action-button small">
+              <i class="view-icon"></i>
+            </button>
+            <button class="action-button small">
+              <i class="edit-icon"></i>
+            </button>
+            <button class="action-button small">
+              <i class="more-icon"></i>
+            </button>
+          </div>
+        </div>
+        
+        <div class="table-row">
+          <div class="cell plan-cell">
+            <div class="plan-info">
+              <h4>Basic Daily</h4>
+              <p>Daily payment for basic model</p>
+            </div>
+          </div>
+          <div class="cell">ES-1000</div>
+          <div class="cell">Daily</div>
+          <div class="cell">KSh 50</div>
+          <div class="cell">2,491</div>
+          <div class="cell">
+            <span class="status-badge active">Active</span>
+          </div>
+          <div class="cell">Apr 15, 2025</div>
+          <div class="cell actions-cell">
+            <button class="action-button small">
+              <i class="view-icon"></i>
+            </button>
+            <button class="action-button small">
+              <i class="edit-icon"></i>
+            </button>
+            <button class="action-button small">
+              <i class="more-icon"></i>
+            </button>
+          </div>
+        </div>
+        
+        <div class="table-row">
+          <div class="cell plan-cell">
+            <div class="plan-info">
+              <h4>Gas Pay-as-you-go</h4>
+              <p>Pay per use for gas model</p>
+            </div>
+          </div>
+          <div class="cell">LPG-500</div>
+          <div class="cell">Pay-as-you-go</div>
+          <div class="cell">KSh 10/hour</div>
+          <div class="cell">1,247</div>
+          <div class="cell">
+            <span class="status-badge active">Active</span>
+          </div>
+          <div class="cell">Apr 15, 2025</div>
+          <div class="cell actions-cell">
+            <button class="action-button small">
+              <i class="view-icon"></i>
+            </button>
+            <button class="action-button small">
+              <i class="edit-icon"></i>
+            </button>
+            <button class="action-button small">
+              <i class="more-icon"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="plan-details">
+      <div class="section-header">
+        <h3>Plan Details: Premium Monthly</h3>
+      </div>
+      <div class="details-card">
+        <div class="details-header">
+          <div class="plan-info">
+            <h4>Premium Monthly</h4>
+            <span class="status-badge active">Active</span>
+          </div>
+          <div class="plan-actions">
+            <button class="action-button">
+              <i class="edit-icon"></i>
+              <span>Edit Plan</span>
+            </button>
+            <button class="action-button">
+              <i class="duplicate-icon"></i>
+              <span>Duplicate</span>
+            </button>
+            <button class="action-button">
+              <i class="deactivate-icon"></i>
+              <span>Deactivate</span>
+            </button>
+          </div>
+        </div>
+        
+        <div class="details-content">
+          <div class="details-section">
+            <h4>Basic Information</h4>
+            <div class="info-grid">
+              <div class="info-item">
+                <span class="label">Plan Name</span>
+                <span class="value">Premium Monthly</span>
+              </div>
+              <div class="info-item">
+                <span class="label">Description</span>
+                <span class="value">Monthly payment plan for premium induction cooker</span>
+              </div>
+              <div class="info-item">
+                <span class="label">Device Model</span>
+                <span class="value">IC-2000 (Premium Induction Cooker)</span>
+              </div>
+              <div class="info-item">
+                <span class="label">Payment Frequency</span>
+                <span class="value">Monthly</span>
+              </div>
+              <div class="info-item">
+                <span class="label">Price</span>
+                <span class="value">KSh 1,500 per month</span>
+              </div>
+              <div class="info-item">
+                <span class="label">Total Contract Value</span>
+                <span class="value">KSh 18,000 (12 months)</span>
+              </div>
+              <div class="info-item">
+                <span class="label">Created By</span>
+                <span class="value">James Mwangi (Admin)</span>
+              </div>
+              <div class="info-item">
+                <span class="label">Last Updated</span>
+                <span class="value">Apr 15, 2025</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="details-section">
+            <h4>Payment Terms</h4>
+            <div class="info-grid">
+              <div class="info-item">
+                <span class="label">Initial Payment</span>
+                <span class="value">KSh 3,000</span>
+              </div>
+              <div class="info-item">
+                <span class="label">Regular Payment</span>
+                <span class="value">KSh 1,500 per month</span>
+              </div>
+              <div class="info-item">
+                <span class="label">Payment Due Date</span>
+                <span class="value">1st day of each month</span>
+              </div>
+              <div class="info-item">
+                <span class="label">Grace Period</span>
+                <span class="value">3 days</span>
+              </div>
+              <div class="info-item">
+                <span class="label">Late Payment Fee</span>
+                <span class="value">KSh 150</span>
+              </div>
+              <div class="info-item">
+                <span class="label">Early Payment Discount</span>
+                <span class="value">5% if paid 5 days before due date</span>
+              </div>
+              <div class="info-item">
+                <span class="label">Contract Duration</span>
+                <span class="value">12 months</span>
+              </div>
+              <div class="info-item">
+                <span class="label">Ownership Transfer</span>
+                <span class="value">Yes, after 12 months of payments</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="details-section">
+            <h4>Usage Terms</h4>
+            <div class="info-grid">
+              <div class="info-item">
+                <span class="label">Daily Usage Limit</span>
+                <span class="value">Unlimited</span>
+              </div>
+              <div class="info-item">
+                <span class="label">Lock Behavior</span>
+                <span class="value">Device locks after 3 days of non-payment</span>
+              </div>
+              <div class="info-item">
+                <span class="label">Maintenance Included</span>
+                <span class="value">Yes, for the duration of the contract</span>
+              </div>
+              <div class="info-item">
+                <span class="label">Replacement Policy</span>
+                <span class="value">Free replacement for manufacturing defects</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="details-section">
+            <h4>Customer Distribution</h4>
+            <div class="customer-chart">
+              <img src="images/plan-customer-distribution-chart.png" alt="Plan Customer Distribution Chart" />
+            </div>
+            <div class="customer-stats">
+              <div class="stat-item">
+                <span class="label">Total Customers</span>
+                <span class="value">2,245</span>
+              </div>
+              <div class="stat-item">
+                <span class="label">Active Customers</span>
+                <span class="value">2,150 (95.8%)</span>
+              </div>
+              <div class="stat-item">
+                <span class="label">Inactive Customers</span>
+                <span class="value">95 (4.2%)</span>
+              </div>
+              <div class="stat-item">
+                <span class="label">Average Payment Rate</span>
+                <span class="value">98.5%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,809 @@
+<!-- Login Screen -->
+<div class="wireframe login-screen">
+  <div class="login-container">
+    <div class="logo">
+      <img src="images/burn-logo.png" alt="BURN Logo" />
+    </div>
+    <h1>Administrative Dashboard</h1>
+    
+    <div class="login-form">
+      <div class="form-group">
+        <label>Email</label>
+        <input type="email" placeholder="Enter your email" />
+      </div>
+      
+      <div class="form-group">
+        <label>Password</label>
+        <div class="password-input">
+          <input type="password" placeholder="Enter your password" />
+          <button class="toggle-password">
+            <i class="eye-icon"></i>
+          </button>
+        </div>
+      </div>
+      
+      <div class="remember-me">
+        <input type="checkbox" id="remember" />
+        <label for="remember">Remember me</label>
+      </div>
+      
+      <button class="primary-button">Log In</button>
+      
+      <div class="forgot-password">
+        <a href="#">Forgot password?</a>
+      </div>
+    </div>
+    
+    <div class="security-notice">
+      <i class="security-icon"></i>
+      <p>This is a secure system. Unauthorized access is prohibited and may be subject to legal action.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Two-Factor Authentication -->
+<div class="wireframe two-factor">
+  <div class="auth-container">
+    <div class="logo">
+      <img src="images/burn-logo.png" alt="BURN Logo" />
+    </div>
+    
+    <h1>Two-Factor Authentication</h1>
+    <p>We've sent a verification code to your email address: admin@burnpaygo.com</p>
+    
+    <div class="otp-input">
+      <input type="text" maxlength="1" />
+      <input type="text" maxlength="1" />
+      <input type="text" maxlength="1" />
+      <input type="text" maxlength="1" />
+      <input type="text" maxlength="1" />
+      <input type="text" maxlength="1" />
+    </div>
+    
+    <div class="resend-code">
+      <p>Didn't receive code? <a href="#">Resend</a> in 00:45</p>
+    </div>
+    
+    <button class="primary-button">Verify</button>
+    
+    <div class="alternative-methods">
+      <p>Other verification methods</p>
+      <div class="methods-list">
+        <button class="method-option">
+          <i class="authenticator-icon"></i>
+          <span>Authenticator App</span>
+        </button>
+        <button class="method-option">
+          <i class="sms-icon"></i>
+          <span>SMS</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Main Dashboard -->
+<div class="wireframe main-dashboard">
+  <!-- Header -->
+  <div class="header">
+    <div class="logo-container">
+      <img src="images/burn-logo-small.png" alt="BURN Logo" />
+      <h1>PayGo Admin</h1>
+    </div>
+    <div class="header-actions">
+      <div class="search-bar">
+        <i class="search-icon"></i>
+        <input type="text" placeholder="Search..." />
+      </div>
+      <button class="notification-button">
+        <i class="notification-icon"></i>
+        <span class="badge">5</span>
+      </button>
+      <div class="admin-profile">
+        <img src="images/admin-avatar.png" alt="Admin Avatar" />
+        <span>Admin</span>
+        <i class="dropdown-icon"></i>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Sidebar Navigation -->
+  <div class="sidebar">
+    <nav class="main-nav">
+      <ul>
+        <li class="active">
+          <a href="#">
+            <i class="dashboard-icon"></i>
+            <span>Dashboard</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="users-icon"></i>
+            <span>User Management</span>
+            <i class="expand-icon"></i>
+          </a>
+          <ul class="submenu">
+            <li><a href="#">Customers</a></li>
+            <li><a href="#">Field Agents</a></li>
+            <li><a href="#">Administrators</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">
+            <i class="devices-icon"></i>
+            <span>Device Management</span>
+            <i class="expand-icon"></i>
+          </a>
+          <ul class="submenu">
+            <li><a href="#">Device Inventory</a></li>
+            <li><a href="#">Device Monitoring</a></li>
+            <li><a href="#">Firmware Management</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">
+            <i class="finance-icon"></i>
+            <span>Financial Management</span>
+            <i class="expand-icon"></i>
+          </a>
+          <ul class="submenu">
+            <li><a href="#">Revenue Tracking</a></li>
+            <li><a href="#">Payment Reconciliation</a></li>
+            <li><a href="#">Financial Reports</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">
+            <i class="carbon-icon"></i>
+            <span>Carbon Credits</span>
+            <i class="expand-icon"></i>
+          </a>
+          <ul class="submenu">
+            <li><a href="#">Carbon Dashboard</a></li>
+            <li><a href="#">Verification</a></li>
+            <li><a href="#">Monetization</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">
+            <i class="reports-icon"></i>
+            <span>Reports</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="settings-icon"></i>
+            <span>System Settings</span>
+            <i class="expand-icon"></i>
+          </a>
+          <ul class="submenu">
+            <li><a href="#">General Settings</a></li>
+            <li><a href="#">Integrations</a></li>
+            <li><a href="#">Notifications</a></li>
+            <li><a href="#">Security</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  
+  <!-- Main Content -->
+  <div class="main-content">
+    <div class="page-header">
+      <h2>Dashboard Overview</h2>
+      <div class="date-filter">
+        <button class="date-button">
+          <i class="calendar-icon"></i>
+          <span>Apr 1 - Apr 21, 2025</span>
+          <i class="dropdown-icon"></i>
+        </button>
+      </div>
+    </div>
+    
+    <!-- KPI Summary -->
+    <div class="kpi-summary">
+      <div class="kpi-card">
+        <div class="kpi-icon customers">
+          <i class="customers-icon"></i>
+        </div>
+        <div class="kpi-data">
+          <h3>Total Customers</h3>
+          <div class="kpi-value">
+            <span class="value">12,458</span>
+            <span class="trend positive">+215</span>
+          </div>
+          <div class="kpi-chart">
+            <img src="images/customer-growth-chart.png" alt="Customer Growth Chart" />
+          </div>
+        </div>
+      </div>
+      
+      <div class="kpi-card">
+        <div class="kpi-icon devices">
+          <i class="devices-icon"></i>
+        </div>
+        <div class="kpi-data">
+          <h3>Active Devices</h3>
+          <div class="kpi-value">
+            <span class="value">10,875</span>
+            <span class="trend positive">+182</span>
+          </div>
+          <div class="kpi-chart">
+            <img src="images/device-activation-chart.png" alt="Device Activation Chart" />
+          </div>
+        </div>
+      </div>
+      
+      <div class="kpi-card">
+        <div class="kpi-icon revenue">
+          <i class="revenue-icon"></i>
+        </div>
+        <div class="kpi-data">
+          <h3>Monthly Revenue</h3>
+          <div class="kpi-value">
+            <span class="value">KSh 3.2M</span>
+            <span class="trend positive">+8.5%</span>
+          </div>
+          <div class="kpi-chart">
+            <img src="images/revenue-chart.png" alt="Revenue Chart" />
+          </div>
+        </div>
+      </div>
+      
+      <div class="kpi-card">
+        <div class="kpi-icon carbon">
+          <i class="carbon-icon"></i>
+        </div>
+        <div class="kpi-data">
+          <h3>Carbon Saved</h3>
+          <div class="kpi-value">
+            <span class="value">125.8 tons</span>
+            <span class="trend positive">+12.3%</span>
+          </div>
+          <div class="kpi-chart">
+            <img src="images/carbon-savings-chart.png" alt="Carbon Savings Chart" />
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- System Health -->
+    <div class="system-health">
+      <div class="section-header">
+        <h3>System Health</h3>
+        <button class="view-all">View Details</button>
+      </div>
+      <div class="health-metrics">
+        <div class="health-card">
+          <div class="health-icon healthy">
+            <i class="check-icon"></i>
+          </div>
+          <div class="health-data">
+            <h4>Server Status</h4>
+            <span class="status">Operational</span>
+            <div class="health-chart">
+              <div class="uptime">
+                <span>Uptime: 99.98%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="health-card">
+          <div class="health-icon healthy">
+            <i class="check-icon"></i>
+          </div>
+          <div class="health-data">
+            <h4>Database</h4>
+            <span class="status">Operational</span>
+            <div class="health-chart">
+              <div class="performance">
+                <span>Response: 45ms</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="health-card">
+          <div class="health-icon warning">
+            <i class="warning-icon"></i>
+          </div>
+          <div class="health-data">
+            <h4>Payment Gateway</h4>
+            <span class="status">Degraded Performance</span>
+            <div class="health-chart">
+              <div class="performance degraded">
+                <span>Response: 1.2s</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="health-card">
+          <div class="health-icon healthy">
+            <i class="check-icon"></i>
+          </div>
+          <div class="health-data">
+            <h4>Device Connectivity</h4>
+            <span class="status">Operational</span>
+            <div class="health-chart">
+              <div class="connectivity">
+                <span>Connected: 98.5%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Recent Activity -->
+    <div class="recent-activity">
+      <div class="section-header">
+        <h3>Recent Activity</h3>
+        <button class="view-all">View All</button>
+      </div>
+      <div class="activity-list">
+        <div class="activity-item">
+          <div class="activity-icon user">
+            <i class="user-icon"></i>
+          </div>
+          <div class="activity-details">
+            <h4>New Customer Registration</h4>
+            <p>28 new customers registered today</p>
+            <span class="timestamp">15 minutes ago</span>
+          </div>
+          <button class="more-button">
+            <i class="more-icon"></i>
+          </button>
+        </div>
+        
+        <div class="activity-item">
+          <div class="activity-icon payment">
+            <i class="payment-icon"></i>
+          </div>
+          <div class="activity-details">
+            <h4>Payment Processing</h4>
+            <p>215 payments processed (KSh 158,500)</p>
+            <span class="timestamp">1 hour ago</span>
+          </div>
+          <button class="more-button">
+            <i class="more-icon"></i>
+          </button>
+        </div>
+        
+        <div class="activity-item">
+          <div class="activity-icon device">
+            <i class="device-icon"></i>
+          </div>
+          <div class="activity-details">
+            <h4>Device Activation</h4>
+            <p>15 new devices activated</p>
+            <span class="timestamp">3 hours ago</span>
+          </div>
+          <button class="more-button">
+            <i class="more-icon"></i>
+          </button>
+        </div>
+        
+        <div class="activity-item">
+          <div class="activity-icon alert">
+            <i class="alert-icon"></i>
+          </div>
+          <div class="activity-details">
+            <h4>System Alert</h4>
+            <p>Payment gateway experiencing delays</p>
+            <span class="timestamp">4 hours ago</span>
+          </div>
+          <button class="more-button">
+            <i class="more-icon"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Performance Metrics -->
+    <div class="performance-metrics">
+      <div class="metrics-header">
+        <h3>Performance Metrics</h3>
+        <div class="metrics-controls">
+          <button class="period-button active">Day</button>
+          <button class="period-button">Week</button>
+          <button class="period-button">Month</button>
+          <button class="period-button">Quarter</button>
+        </div>
+      </div>
+      
+      <div class="metrics-grid">
+        <div class="metric-chart">
+          <div class="chart-header">
+            <h4>Customer Acquisition</h4>
+            <div class="chart-legend">
+              <div class="legend-item">
+                <span class="color-indicator new"></span>
+                <span>New</span>
+              </div>
+              <div class="legend-item">
+                <span class="color-indicator target"></span>
+                <span>Target</span>
+              </div>
+            </div>
+          </div>
+          <div class="chart">
+            <img src="images/customer-acquisition-chart.png" alt="Customer Acquisition Chart" />
+          </div>
+        </div>
+        
+        <div class="metric-chart">
+          <div class="chart-header">
+            <h4>Revenue by Product</h4>
+            <div class="chart-legend">
+              <div class="legend-item">
+                <span class="color-indicator ic2000"></span>
+                <span>IC-2000</span>
+              </div>
+              <div class="legend-item">
+                <span class="color-indicator ic1500"></span>
+                <span>IC-1500</span>
+              </div>
+              <div class="legend-item">
+                <span class="color-indicator other"></span>
+                <span>Other</span>
+              </div>
+            </div>
+          </div>
+          <div class="chart">
+            <img src="images/revenue-by-product-chart.png" alt="Revenue by Product Chart" />
+          </div>
+        </div>
+        
+        <div class="metric-chart">
+          <div class="chart-header">
+            <h4>Device Activation Rate</h4>
+            <div class="chart-legend">
+              <div class="legend-item">
+                <span class="color-indicator activated"></span>
+                <span>Activated</span>
+              </div>
+              <div class="legend-item">
+                <span class="color-indicator pending"></span>
+                <span>Pending</span>
+              </div>
+            </div>
+          </div>
+          <div class="chart">
+            <img src="images/device-activation-rate-chart.png" alt="Device Activation Rate Chart" />
+          </div>
+        </div>
+        
+        <div class="metric-chart">
+          <div class="chart-header">
+            <h4>Payment Success Rate</h4>
+            <div class="chart-legend">
+              <div class="legend-item">
+                <span class="color-indicator success"></span>
+                <span>Success</span>
+              </div>
+              <div class="legend-item">
+                <span class="color-indicator failed"></span>
+                <span>Failed</span>
+              </div>
+            </div>
+          </div>
+          <div class="chart">
+            <img src="images/payment-success-rate-chart.png" alt="Payment Success Rate Chart" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- System Health Monitoring -->
+<div class="wireframe system-health-monitoring">
+  <!-- Header -->
+  <div class="header">
+    <div class="logo-container">
+      <img src="images/burn-logo-small.png" alt="BURN Logo" />
+      <h1>PayGo Admin</h1>
+    </div>
+    <div class="header-actions">
+      <div class="search-bar">
+        <i class="search-icon"></i>
+        <input type="text" placeholder="Search..." />
+      </div>
+      <button class="notification-button">
+        <i class="notification-icon"></i>
+        <span class="badge">5</span>
+      </button>
+      <div class="admin-profile">
+        <img src="images/admin-avatar.png" alt="Admin Avatar" />
+        <span>Admin</span>
+        <i class="dropdown-icon"></i>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Sidebar Navigation -->
+  <div class="sidebar">
+    <!-- Sidebar navigation content (same as main dashboard) -->
+  </div>
+  
+  <!-- Main Content -->
+  <div class="main-content">
+    <div class="page-header">
+      <h2>System Health Monitoring</h2>
+      <div class="header-actions">
+        <button class="refresh-button">
+          <i class="refresh-icon"></i>
+          <span>Refresh</span>
+        </button>
+        <div class="auto-refresh">
+          <span>Auto-refresh:</span>
+          <select>
+            <option>Off</option>
+            <option selected>30 seconds</option>
+            <option>1 minute</option>
+            <option>5 minutes</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    
+    <div class="system-status-summary">
+      <div class="status-card">
+        <div class="status-header">
+          <h3>Overall System Status</h3>
+          <span class="status-badge warning">Degraded Performance</span>
+        </div>
+        <div class="status-details">
+          <p>3 of 4 systems operational. Payment gateway experiencing delays.</p>
+          <div class="last-updated">
+            <span>Last updated: Apr 21, 2025, 11:45 AM</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="incident-summary">
+        <div class="incident-header">
+          <h3>Active Incidents</h3>
+          <span class="count">1</span>
+        </div>
+        <div class="incident-item">
+          <div class="incident-icon warning">
+            <i class="warning-icon"></i>
+          </div>
+          <div class="incident-details">
+            <h4>Payment Gateway Degraded Performance</h4>
+            <p>Increased response times affecting payment processing</p>
+            <div class="incident-meta">
+              <span class="time">Started: Apr 21, 2025, 07:30 AM</span>
+              <span class="status">Status: Investigating</span>
+            </div>
+          </div>
+          <button class="view-button">
+            <span>View</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    
+    <div class="system-components">
+      <div class="section-header">
+        <h3>System Components</h3>
+      </div>
+      
+      <div class="components-grid">
+        <div class="component-card">
+          <div class="component-header">
+            <h4>Application Servers</h4>
+            <span class="status-badge operational">Operational</span>
+          </div>
+          <div class="component-metrics">
+            <div class="metric-item">
+              <span class="label">Uptime</span>
+              <span class="value">99.98%</span>
+            </div>
+            <div class="metric-item">
+              <span class="label">Response Time</span>
+              <span class="value">85ms</span>
+            </div>
+            <div class="metric-item">
+              <span class="label">CPU Load</span>
+              <span class="value">42%</span>
+            </div>
+            <div class="metric-item">
+              <span class="label">Memory Usage</span>
+              <span class="value">3.8GB / 8GB</span>
+            </div>
+          </div>
+          <div class="component-chart">
+            <img src="images/server-performance-chart.png" alt="Server Performance Chart" />
+          </div>
+        </div>
+        
+        <div class="component-card">
+          <div class="component-header">
+            <h4>Database Servers</h4>
+            <span class="status-badge operational">Operational</span>
+          </div>
+          <div class="component-metrics">
+            <div class="metric-item">
+              <span class="label">Uptime</span>
+              <span class="value">99.99%</span>
+            </div>
+            <div class="metric-item">
+              <span class="label">Query Time</span>
+              <span class="value">45ms</span>
+            </div>
+            <div class="metric-item">
+              <span class="label">Connections</span>
+              <span class="value">1,245</span>
+            </div>
+            <div class="metric-item">
+              <span class="label">Storage</span>
+              <span class="value">1.2TB / 2TB</span>
+            </div>
+          </div>
+          <div class="component-chart">
+            <img src="images/database-performance-chart.png" alt="Database Performance Chart" />
+          </div>
+        </div>
+        
+        <div class="component-card">
+          <div class="component-header">
+            <h4>Payment Gateway</h4>
+            <span class="status-badge degraded">Degraded Performance</span>
+          </div>
+          <div class="component-metrics">
+            <div class="metric-item">
+              <span class="label">Uptime</span>
+              <span class="value">99.85%</span>
+            </div>
+            <div class="metric-item">
+              <span class="label">Response Time</span>
+              <span class="value warning">1.2s</span>
+            </div>
+            <div class="metric-item">
+              <span class="label">Success Rate</span>
+              <span class="value">98.2%</span>
+            </div>
+            <div class="metric-item">
+              <span class="label">Transactions</span>
+              <span class="value">8,542 / day</span>
+            </div>
+          </div>
+          <div class="component-chart">
+            <img src="images/payment-gateway-performance-chart.png" alt="Payment Gateway Performance Chart" />
+          </div>
+        </div>
+        
+        <div class="component-card">
+          <div class="component-header">
+            <h4>Device Connectivity</h4>
+            <span class="status-badge operational">Operational</span>
+          </div>
+          <div class="component-metrics">
+            <div class="metric-item">
+              <span class="label">Connected</span>
+              <span class="value">10,685</span>
+            </div>
+            <div class="metric-item">
+              <span class="label">Connection Rate</span>
+              <span class="value">98.5%</span>
+            </div>
+            <div class="metric-item">
+              <span class="label">Data Transfer</span>
+              <span class="value">245GB / day</span>
+            </div>
+            <div class="metric-item">
+              <span class="label">Latency</span>
+              <span class="value">320ms</span>
+            </div>
+          </div>
+          <div class="component-chart">
+            <img src="images/device-connectivity-chart.png" alt="Device Connectivity Chart" />
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="system-logs">
+      <div class="section-header">
+        <h3>System Logs</h3>
+        <div class="header-actions">
+          <select class="log-filter">
+            <option>All Logs</option>
+            <option>Error</option>
+            <option>Warning</option>
+            <option>Info</option>
+          </select>
+          <button class="export-button">
+            <i class="export-icon"></i>
+            <span>Export</span>
+          </button>
+        </div>
+      </div>
+      
+      <div class="logs-table">
+        <div class="table-header">
+          <div class="header-cell">Timestamp</div>
+          <div class="header-cell">Level</div>
+          <div class="header-cell">Component</div>
+          <div class="header-cell">Message</div>
+          <div class="header-cell">Actions</div>
+        </div>
+        
+        <div class="table-row">
+          <div class="cell">Apr 21, 2025, 11:30 AM</div>
+          <div class="cell">
+            <span class="log-level error">Error</span>
+          </div>
+          <div class="cell">Payment Gateway</div>
+          <div class="cell">Connection timeout to payment processor</div>
+          <div class="cell">
+            <button class="action-button small">
+              <i class="view-icon"></i>
+            </button>
+          </div>
+        </div>
+        
+        <div class="table-row">
+          <div class="cell">Apr 21, 2025, 11:15 AM</div>
+          <div class="cell">
+            <span class="log-level warning">Warning</span>
+          </div>
+          <div class="cell">Payment Gateway</div>
+          <div class="cell">Increased response time detected</div>
+          <div class="cell">
+            <button class="action-button small">
+              <i class="view-icon"></i>
+            </button>
+          </div>
+        </div>
+        
+        <div class="table-row">
+          <div class="cell">Apr 21, 2025, 10:45 AM</div>
+          <div class="cell">
+            <span class="log-level info">Info</span>
+          </div>
+          <div class="cell">Application Server</div>
+          <div class="cell">Scheduled backup completed successfully</div>
+          <div class="cell">
+            <button class="action-button small">
+              <i class="view-icon"></i>
+            </button>
+          </div>
+        </div>
+        
+        <div class="table-row">
+          <div class="cell">Apr 21, 2025, 10:30 AM</div>
+          <div class="cell">
+            <span class="log-level info">Info</span>
+          </div>
+          <div class="cell">Database</div>
+          <div class="cell">Optimization routine completed</div>
+          <div class="cell">
+            <button class="action-button small">
+              <i class="view-icon"></i>
+            </button>
+          </div>
+        </div>
+        
+        <div class="table-row">
+          <div class="cell">Apr 21, 2025, 09:15 AM</div>
+          <div class="cell">
+            <span class="log-level warning">Warning</span>
+          </div>
+          <div class="cell">Device Connectivity</div>
+          <div class="cell">Region KE-003 experiencing connectivity issues</div>
+          <div class="cell">
+            <button class="action-button small">
+              <i class="view-icon"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

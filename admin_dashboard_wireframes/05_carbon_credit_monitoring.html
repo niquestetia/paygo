@@ -1,0 +1,1352 @@
+<!-- Carbon Savings Dashboard -->
+<div class="wireframe carbon-savings-dashboard">
+  <!-- Header -->
+  <div class="header">
+    <div class="logo-container">
+      <img src="images/burn-logo-small.png" alt="BURN Logo" />
+      <h1>PayGo Admin</h1>
+    </div>
+    <div class="header-actions">
+      <div class="search-bar">
+        <i class="search-icon"></i>
+        <input type="text" placeholder="Search..." />
+      </div>
+      <button class="notification-button">
+        <i class="notification-icon"></i>
+        <span class="badge">5</span>
+      </button>
+      <div class="admin-profile">
+        <img src="images/admin-avatar.png" alt="Admin Avatar" />
+        <span>Admin</span>
+        <i class="dropdown-icon"></i>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Sidebar Navigation -->
+  <div class="sidebar">
+    <!-- Sidebar navigation content (same as main dashboard) -->
+  </div>
+  
+  <!-- Main Content -->
+  <div class="main-content">
+    <div class="page-header">
+      <h2>Carbon Credit Monitoring</h2>
+      <div class="header-actions">
+        <div class="date-filter">
+          <button class="date-button">
+            <i class="calendar-icon"></i>
+            <span>Apr 1 - Apr 21, 2025</span>
+            <i class="dropdown-icon"></i>
+          </button>
+        </div>
+        <button class="export-button">
+          <i class="export-icon"></i>
+          <span>Export</span>
+        </button>
+      </div>
+    </div>
+    
+    <div class="carbon-summary">
+      <div class="summary-card">
+        <div class="card-header">
+          <h3>Carbon Savings Overview</h3>
+          <div class="period-selector">
+            <button class="period-button">Day</button>
+            <button class="period-button">Week</button>
+            <button class="period-button active">Month</button>
+            <button class="period-button">Quarter</button>
+            <button class="period-button">Year</button>
+            <button class="period-button">All Time</button>
+          </div>
+        </div>
+        <div class="carbon-stats">
+          <div class="stat-item">
+            <div class="stat-icon total">
+              <i class="carbon-icon"></i>
+            </div>
+            <div class="stat-data">
+              <h4>Total Carbon Saved</h4>
+              <div class="stat-value">
+                <span class="value">125.8 tons</span>
+                <span class="trend positive">+12.3%</span>
+              </div>
+              <div class="stat-meta">
+                <span>vs. 112.0 tons last month</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="stat-item">
+            <div class="stat-icon verified">
+              <i class="verified-icon"></i>
+            </div>
+            <div class="stat-data">
+              <h4>Verified Credits</h4>
+              <div class="stat-value">
+                <span class="value">98.4 tons</span>
+                <span class="percentage">78.2%</span>
+              </div>
+              <div class="stat-meta">
+                <span>Last verification: Apr 15, 2025</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="stat-item">
+            <div class="stat-icon pending">
+              <i class="pending-icon"></i>
+            </div>
+            <div class="stat-data">
+              <h4>Pending Verification</h4>
+              <div class="stat-value">
+                <span class="value">27.4 tons</span>
+                <span class="percentage">21.8%</span>
+              </div>
+              <div class="stat-meta">
+                <span>Next verification: May 15, 2025</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="stat-item">
+            <div class="stat-icon value">
+              <i class="value-icon"></i>
+            </div>
+            <div class="stat-data">
+              <h4>Estimated Value</h4>
+              <div class="stat-value">
+                <span class="value">$3,774</span>
+                <span class="trend positive">+8.5%</span>
+              </div>
+              <div class="stat-meta">
+                <span>$30 per ton</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carbon-chart">
+          <img src="images/carbon-savings-trend-chart.png" alt="Carbon Savings Trend Chart" />
+        </div>
+      </div>
+    </div>
+    
+    <div class="carbon-breakdown">
+      <div class="section-header">
+        <h3>Carbon Savings Breakdown</h3>
+      </div>
+      <div class="breakdown-grid">
+        <div class="breakdown-chart">
+          <div class="chart-header">
+            <h4>By Device Model</h4>
+          </div>
+          <div class="chart">
+            <img src="images/carbon-by-device-chart.png" alt="Carbon by Device Chart" />
+          </div>
+          <div class="chart-legend">
+            <div class="legend-item">
+              <span class="color-indicator ic2000"></span>
+              <span>IC-2000: 56.6 tons (45%)</span>
+            </div>
+            <div class="legend-item">
+              <span class="color-indicator ic1500"></span>
+              <span>IC-1500: 37.7 tons (30%)</span>
+            </div>
+            <div class="legend-item">
+              <span class="color-indicator es1000"></span>
+              <span>ES-1000: 18.9 tons (15%)</span>
+            </div>
+            <div class="legend-item">
+              <span class="color-indicator lpg500"></span>
+              <span>LPG-500: 12.6 tons (10%)</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="breakdown-chart">
+          <div class="chart-header">
+            <h4>By Region</h4>
+          </div>
+          <div class="chart">
+            <img src="images/carbon-by-region-chart.png" alt="Carbon by Region Chart" />
+          </div>
+          <div class="chart-legend">
+            <div class="legend-item">
+              <span class="color-indicator nairobi"></span>
+              <span>Nairobi: 50.3 tons (40%)</span>
+            </div>
+            <div class="legend-item">
+              <span class="color-indicator mombasa"></span>
+              <span>Mombasa: 31.5 tons (25%)</span>
+            </div>
+            <div class="legend-item">
+              <span class="color-indicator kisumu"></span>
+              <span>Kisumu: 25.2 tons (20%)</span>
+            </div>
+            <div class="legend-item">
+              <span class="color-indicator other"></span>
+              <span>Other: 18.8 tons (15%)</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="breakdown-chart">
+          <div class="chart-header">
+            <h4>By Fuel Displacement</h4>
+          </div>
+          <div class="chart">
+            <img src="images/carbon-by-fuel-chart.png" alt="Carbon by Fuel Chart" />
+          </div>
+          <div class="chart-legend">
+            <div class="legend-item">
+              <span class="color-indicator charcoal"></span>
+              <span>Charcoal: 75.5 tons (60%)</span>
+            </div>
+            <div class="legend-item">
+              <span class="color-indicator wood"></span>
+              <span>Wood: 31.5 tons (25%)</span>
+            </div>
+            <div class="legend-item">
+              <span class="color-indicator kerosene"></span>
+              <span>Kerosene: 12.6 tons (10%)</span>
+            </div>
+            <div class="legend-item">
+              <span class="color-indicator other"></span>
+              <span>Other: 6.2 tons (5%)</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="breakdown-chart">
+          <div class="chart-header">
+            <h4>By Time Period</h4>
+          </div>
+          <div class="chart">
+            <img src="images/carbon-by-time-chart.png" alt="Carbon by Time Chart" />
+          </div>
+          <div class="chart-legend">
+            <div class="legend-item">
+              <span class="color-indicator q1"></span>
+              <span>Q1 2025: 345.2 tons (35%)</span>
+            </div>
+            <div class="legend-item">
+              <span class="color-indicator q4"></span>
+              <span>Q4 2024: 325.8 tons (33%)</span>
+            </div>
+            <div class="legend-item">
+              <span class="color-indicator q3"></span>
+              <span>Q3 2024: 197.5 tons (20%)</span>
+            </div>
+            <div class="legend-item">
+              <span class="color-indicator q2"></span>
+              <span>Q2 2024: 118.5 tons (12%)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="environmental-impact">
+      <div class="section-header">
+        <h3>Environmental Impact</h3>
+      </div>
+      <div class="impact-grid">
+        <div class="impact-card">
+          <div class="impact-icon trees">
+            <i class="trees-icon"></i>
+          </div>
+          <div class="impact-data">
+            <h4>Trees Saved</h4>
+            <div class="impact-value">
+              <span class="value">5,032</span>
+              <span class="trend positive">+12.3%</span>
+            </div>
+            <div class="impact-meta">
+              <span>Equivalent to 40 acres of forest</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="impact-card">
+          <div class="impact-icon water">
+            <i class="water-icon"></i>
+          </div>
+          <div class="impact-data">
+            <h4>Water Saved</h4>
+            <div class="impact-value">
+              <span class="value">2.5M liters</span>
+              <span class="trend positive">+8.7%</span>
+            </div>
+            <div class="impact-meta">
+              <span>Equivalent to 1 Olympic swimming pool</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="impact-card">
+          <div class="impact-icon air">
+            <i class="air-icon"></i>
+          </div>
+          <div class="impact-data">
+            <h4>Air Quality Improvement</h4>
+            <div class="impact-value">
+              <span class="value">125.8 tons</span>
+              <span class="trend positive">+12.3%</span>
+            </div>
+            <div class="impact-meta">
+              <span>Equivalent to removing 27 cars from roads</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="impact-card">
+          <div class="impact-icon health">
+            <i class="health-icon"></i>
+          </div>
+          <div class="impact-data">
+            <h4>Health Benefits</h4>
+            <div class="impact-value">
+              <span class="value">12,458 households</span>
+              <span class="trend positive">+1.8%</span>
+            </div>
+            <div class="impact-meta">
+              <span>Reduced indoor air pollution exposure</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Verification and Reporting -->
+<div class="wireframe verification-reporting">
+  <!-- Header -->
+  <div class="header">
+    <div class="logo-container">
+      <img src="images/burn-logo-small.png" alt="BURN Logo" />
+      <h1>PayGo Admin</h1>
+    </div>
+    <div class="header-actions">
+      <div class="search-bar">
+        <i class="search-icon"></i>
+        <input type="text" placeholder="Search..." />
+      </div>
+      <button class="notification-button">
+        <i class="notification-icon"></i>
+        <span class="badge">5</span>
+      </button>
+      <div class="admin-profile">
+        <img src="images/admin-avatar.png" alt="Admin Avatar" />
+        <span>Admin</span>
+        <i class="dropdown-icon"></i>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Sidebar Navigation -->
+  <div class="sidebar">
+    <!-- Sidebar navigation content (same as main dashboard) -->
+  </div>
+  
+  <!-- Main Content -->
+  <div class="main-content">
+    <div class="page-header">
+      <div class="breadcrumb">
+        <a href="#">Carbon Credits</a>
+        <i class="separator-icon"></i>
+        <span>Verification & Reporting</span>
+      </div>
+      <div class="header-actions">
+        <button class="add-button">
+          <i class="add-icon"></i>
+          <span>New Verification</span>
+        </button>
+        <button class="export-button">
+          <i class="export-icon"></i>
+          <span>Export</span>
+        </button>
+      </div>
+    </div>
+    
+    <div class="verification-summary">
+      <div class="summary-card">
+        <div class="card-header">
+          <h3>Verification Status</h3>
+        </div>
+        <div class="verification-stats">
+          <div class="stat-item">
+            <div class="stat-icon verified">
+              <i class="verified-icon"></i>
+            </div>
+            <div class="stat-data">
+              <h4>Verified Credits</h4>
+              <span class="value">98.4 tons</span>
+              <span class="percentage">78.2%</span>
+            </div>
+          </div>
+          
+          <div class="stat-item">
+            <div class="stat-icon pending">
+              <i class="pending-icon"></i>
+            </div>
+            <div class="stat-data">
+              <h4>Pending Verification</h4>
+              <span class="value">27.4 tons</span>
+              <span class="percentage">21.8%</span>
+            </div>
+          </div>
+          
+          <div class="stat-item">
+            <div class="stat-icon next">
+              <i class="next-icon"></i>
+            </div>
+            <div class="stat-data">
+              <h4>Next Verification</h4>
+              <span class="value">May 15, 2025</span>
+              <span class="countdown">24 days remaining</span>
+            </div>
+          </div>
+          
+          <div class="stat-item">
+            <div class="stat-icon standard">
+              <i class="standard-icon"></i>
+            </div>
+            <div class="stat-data">
+              <h4>Verification Standard</h4>
+              <span class="value">Gold Standard</span>
+              <span class="version">Version 3.1</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="verification-history">
+      <div class="section-header">
+        <h3>Verification History</h3>
+      </div>
+      <div class="history-table">
+        <div class="table-header">
+          <div class="header-cell">Verification ID</div>
+          <div class="header-cell">Period</div>
+          <div class="header-cell">Carbon Credits</div>
+          <div class="header-cell">Verifier</div>
+          <div class="header-cell">Standard</div>
+          <div class="header-cell">Status</div>
+          <div class="header-cell">Completion Date</div>
+          <div class="header-cell">Actions</div>
+        </div>
+        
+        <div class="table-row">
+          <div class="cell">VER-2025-Q1</div>
+          <div class="cell">Jan 1 - Mar 31, 2025</div>
+          <div class="cell">98.4 tons</div>
+          <div class="cell">Carbon Trust</div>
+          <div class="cell">Gold Standard</div>
+          <div class="cell">
+            <span class="status-badge completed">Completed</span>
+          </div>
+          <div class="cell">Apr 15, 2025</div>
+          <div class="cell actions-cell">
+            <button class="action-button small">
+              <i class="view-icon"></i>
+            </button>
+            <button class="action-button small">
+              <i class="download-icon"></i>
+            </button>
+            <button class="action-button small">
+              <i class="more-icon"></i>
+            </button>
+          </div>
+        </div>
+        
+        <div class="table-row">
+          <div class="cell">VER-2024-Q4</div>
+          <div class="cell">Oct 1 - Dec 31, 2024</div>
+          <div class="cell">85.2 tons</div>
+          <div class="cell">Carbon Trust</div>
+          <div class="cell">Gold Standard</div>
+          <div class="cell">
+            <span class="status-badge completed">Completed</span>
+          </div>
+          <div class="cell">Jan 15, 2025</div>
+          <div class="cell actions-cell">
+            <button class="action-button small">
+              <i class="view-icon"></i>
+            </button>
+            <button class="action-button small">
+              <i class="download-icon"></i>
+            </button>
+            <button class="action-button small">
+              <i class="more-icon"></i>
+            </button>
+          </div>
+        </div>
+        
+        <div class="table-row">
+          <div class="cell">VER-2024-Q3</div>
+          <div class="cell">Jul 1 - Sep 30, 2024</div>
+          <div class="cell">72.8 tons</div>
+          <div class="cell">Carbon Trust</div>
+          <div class="cell">Gold Standard</div>
+          <div class="cell">
+            <span class="status-badge completed">Completed</span>
+          </div>
+          <div class="cell">Oct 15, 2024</div>
+          <div class="cell actions-cell">
+            <button class="action-button small">
+              <i class="view-icon"></i>
+            </button>
+            <button class="action-button small">
+              <i class="download-icon"></i>
+            </button>
+            <button class="action-button small">
+              <i class="more-icon"></i>
+            </button>
+          </div>
+        </div>
+        
+        <div class="table-row">
+          <div class="cell">VER-2024-Q2</div>
+          <div class="cell">Apr 1 - Jun 30, 2024</div>
+          <div class="cell">65.3 tons</div>
+          <div class="cell">Carbon Trust</div>
+          <div class="cell">Gold Standard</div>
+          <div class="cell">
+            <span class="status-badge completed">Completed</span>
+          </div>
+          <div class="cell">Jul 15, 2024</div>
+          <div class="cell actions-cell">
+            <button class="action-button small">
+              <i class="view-icon"></i>
+            </button>
+            <button class="action-button small">
+              <i class="download-icon"></i>
+            </button>
+            <button class="action-button small">
+              <i class="more-icon"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="verification-details">
+      <div class="section-header">
+        <h3>Verification Details: VER-2025-Q1</h3>
+      </div>
+      <div class="details-card">
+        <div class="details-header">
+          <div class="verification-info">
+            <h4>Q1 2025 Verification</h4>
+            <span class="status-badge completed">Completed</span>
+          </div>
+          <div class="verification-actions">
+            <button class="action-button">
+              <i class="download-icon"></i>
+              <span>Download Certificate</span>
+            </button>
+            <button class="action-button">
+              <i class="download-icon"></i>
+              <span>Download Report</span>
+            </button>
+          </div>
+        </div>
+        
+        <div class="details-content">
+          <div class="details-section">
+            <h4>Basic Information</h4>
+            <div class="info-grid">
+              <div class="info-item">
+                <span class="label">Verification ID</span>
+                <span class="value">VER-2025-Q1</span>
+              </div>
+              <div class="info-item">
+                <span class="label">Period</span>
+                <span class="value">January 1 - March 31, 2025</span>
+              </div>
+              <div class="info-item">
+                <span class="label">Carbon Credits</span>
+                <span class="value">98.4 tons CO2e</span>
+              </div>
+              <div class="info-item">
+                <span class="label">Verification Standard</span>
+                <span class="value">Gold Standard Version 3.1</span>
+              </div>
+              <div class="info-item">
+                <span class="label">Verifier</span>
+                <span class="value">Carbon Trust</span>
+              </div>
+              <div class="info-item">
+                <span class="label">Auditor</span>
+                <span class="value">John Smith</span>
+              </div>
+              <div class="info-item">
+                <span class="label">Start Date</span>
+                <span class="value">Apr 1, 2025</span>
+              </div>
+              <div class="info-item">
+                <span class="label">Completion Date</span>
+                <span class="value">Apr 15, 2025</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="details-section">
+            <h4>Methodology</h4>
+            <div class="methodology-details">
+              <p>This verification follows the Gold Standard methodology for quantifying and monitoring greenhouse gas emission reductions from clean cooking solutions.</p>
+              <ul>
+                <li>Baseline: Traditional cooking methods (charcoal, wood, kerosene)</li>
+                <li>Project: Clean cooking devices (electric, induction, LPG)</li>
+                <li>Monitoring: IoT-enabled usage tracking and fuel displacement calculation</li>
+                <li>Calculation: Emission factors applied to fuel displacement data</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="details-section">
+            <h4>Verification Results</h4>
+            <div class="results-table">
+              <div class="table-header">
+                <div class="header-cell">Category</div>
+                <div class="header-cell">Claimed</div>
+                <div class="header-cell">Verified</div>
+                <div class="header-cell">Difference</div>
+              </div>
+              
+              <div class="table-row">
+                <div class="cell">Total Emission Reductions</div>
+                <div class="cell">102.5 tons</div>
+                <div class="cell">98.4 tons</div>
+                <div class="cell">-4.1 tons (-4.0%)</div>
+              </div>
+              
+              <div class="table-row">
+                <div class="cell">Charcoal Displacement</div>
+                <div class="cell">62.5 tons</div>
+                <div class="cell">60.2 tons</div>
+                <div class="cell">-2.3 tons (-3.7%)</div>
+              </div>
+              
+              <div class="table-row">
+                <div class="cell">Wood Displacement</div>
+                <div class="cell">25.6 tons</div>
+                <div class="cell">24.8 tons</div>
+                <div class="cell">-0.8 tons (-3.1%)</div>
+              </div>
+              
+              <div class="table-row">
+                <div class="cell">Kerosene Displacement</div>
+                <div class="cell">10.2 tons</div>
+                <div class="cell">9.8 tons</div>
+                <div class="cell">-0.4 tons (-3.9%)</div>
+              </div>
+              
+              <div class="table-row">
+                <div class="cell">Other Displacement</div>
+                <div class="cell">4.2 tons</div>
+                <div class="cell">3.6 tons</div>
+                <div class="cell">-0.6 tons (-14.3%)</div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="details-section">
+            <h4>Verification Findings</h4>
+            <div class="findings-list">
+              <div class="finding-item">
+                <div class="finding-header">
+                  <h5>Finding 1: Usage Data Discrepancy</h5>
+                  <span class="severity medium">Medium</span>
+                </div>
+                <div class="finding-details">
+                  <p>Some devices (approximately 3.2%) showed inconsistent usage patterns that could not be fully verified. These were excluded from the final calculation.</p>
+                </div>
+              </div>
+              
+              <div class="finding-item">
+                <div class="finding-header">
+                  <h5>Finding 2: Emission Factor Update</h5>
+                  <span class="severity low">Low</span>
+                </div>
+                <div class="finding-details">
+                  <p>Updated emission factors for charcoal production in Kenya resulted in a slight reduction in calculated emissions savings.</p>
+                </div>
+              </div>
+              
+              <div class="finding-item">
+                <div class="finding-header">
+                  <h5>Finding 3: Monitoring Improvement</h5>
+                  <span class="severity info">Info</span>
+                </div>
+                <div class="finding-details">
+                  <p>Recommendation to improve the monitoring system for devices in areas with weak connectivity to reduce data gaps.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="data-collection">
+      <div class="section-header">
+        <h3>Data Collection & Monitoring</h3>
+      </div>
+      <div class="data-card">
+        <div class="data-header">
+          <h4>Monitoring System Overview</h4>
+        </div>
+        <div class="data-content">
+          <div class="data-section">
+            <h5>Data Sources</h5>
+            <div class="data-sources">
+              <div class="source-item">
+                <div class="source-icon device">
+                  <i class="device-icon"></i>
+                </div>
+                <div class="source-info">
+                  <h6>Device Usage Data</h6>
+                  <p>Real-time usage data collected from IoT-enabled devices</p>
+                  <div class="source-meta">
+                    <span class="status active">Active</span>
+                    <span class="frequency">Every 6 hours</span>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="source-item">
+                <div class="source-icon survey">
+                  <i class="survey-icon"></i>
+                </div>
+                <div class="source-info">
+                  <h6>Customer Surveys</h6>
+                  <p>Periodic surveys to validate baseline fuel usage and household information</p>
+                  <div class="source-meta">
+                    <span class="status active">Active</span>
+                    <span class="frequency">Quarterly</span>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="source-item">
+                <div class="source-icon field">
+                  <i class="field-icon"></i>
+                </div>
+                <div class="source-info">
+                  <h6>Field Agent Reports</h6>
+                  <p>On-site verification and data collection by field agents</p>
+                  <div class="source-meta">
+                    <span class="status active">Active</span>
+                    <span class="frequency">Monthly</span>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="source-item">
+                <div class="source-icon satellite">
+                  <i class="satellite-icon"></i>
+                </div>
+                <div class="source-info">
+                  <h6>Satellite Data</h6>
+                  <p>Forest cover and biomass data to validate regional impacts</p>
+                  <div class="source-meta">
+                    <span class="status active">Active</span>
+                    <span class="frequency">Bi-annually</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="data-section">
+            <h5>Data Quality</h5>
+            <div class="quality-metrics">
+              <div class="metric-item">
+                <div class="metric-header">
+                  <h6>Completeness</h6>
+                  <span class="score">96.8%</span>
+                </div>
+                <div class="progress-bar">
+                  <div class="progress" style="width: 96.8%"></div>
+                </div>
+              </div>
+              
+              <div class="metric-item">
+                <div class="metric-header">
+                  <h6>Accuracy</h6>
+                  <span class="score">94.5%</span>
+                </div>
+                <div class="progress-bar">
+                  <div class="progress" style="width: 94.5%"></div>
+                </div>
+              </div>
+              
+              <div class="metric-item">
+                <div class="metric-header">
+                  <h6>Consistency</h6>
+                  <span class="score">97.2%</span>
+                </div>
+                <div class="progress-bar">
+                  <div class="progress" style="width: 97.2%"></div>
+                </div>
+              </div>
+              
+              <div class="metric-item">
+                <div class="metric-header">
+                  <h6>Timeliness</h6>
+                  <span class="score">98.9%</span>
+                </div>
+                <div class="progress-bar">
+                  <div class="progress" style="width: 98.9%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="data-section">
+            <h5>Monitoring Improvements</h5>
+            <div class="improvements-list">
+              <div class="improvement-item">
+                <div class="improvement-status">
+                  <span class="status-badge completed">Completed</span>
+                </div>
+                <div class="improvement-info">
+                  <h6>Enhanced Data Validation</h6>
+                  <p>Implemented automated data validation checks to identify anomalies in device usage patterns</p>
+                  <div class="improvement-meta">
+                    <span class="date">Completed: Mar 15, 2025</span>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="improvement-item">
+                <div class="improvement-status">
+                  <span class="status-badge in-progress">In Progress</span>
+                </div>
+                <div class="improvement-info">
+                  <h6>Offline Data Collection</h6>
+                  <p>Developing improved offline data collection mechanisms for devices in areas with weak connectivity</p>
+                  <div class="improvement-meta">
+                    <span class="date">Target: Jun 30, 2025</span>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="improvement-item">
+                <div class="improvement-status">
+                  <span class="status-badge planned">Planned</span>
+                </div>
+                <div class="improvement-info">
+                  <h6>Machine Learning Analysis</h6>
+                  <p>Implementing ML algorithms to improve accuracy of fuel displacement calculations based on usage patterns</p>
+                  <div class="improvement-meta">
+                    <span class="date">Target: Q3 2025</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Carbon Credit Monetization -->
+<div class="wireframe carbon-monetization">
+  <!-- Header -->
+  <div class="header">
+    <div class="logo-container">
+      <img src="images/burn-logo-small.png" alt="BURN Logo" />
+      <h1>PayGo Admin</h1>
+    </div>
+    <div class="header-actions">
+      <div class="search-bar">
+        <i class="search-icon"></i>
+        <input type="text" placeholder="Search..." />
+      </div>
+      <button class="notification-button">
+        <i class="notification-icon"></i>
+        <span class="badge">5</span>
+      </button>
+      <div class="admin-profile">
+        <img src="images/admin-avatar.png" alt="Admin Avatar" />
+        <span>Admin</span>
+        <i class="dropdown-icon"></i>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Sidebar Navigation -->
+  <div class="sidebar">
+    <!-- Sidebar navigation content (same as main dashboard) -->
+  </div>
+  
+  <!-- Main Content -->
+  <div class="main-content">
+    <div class="page-header">
+      <div class="breadcrumb">
+        <a href="#">Carbon Credits</a>
+        <i class="separator-icon"></i>
+        <span>Carbon Credit Monetization</span>
+      </div>
+      <div class="header-actions">
+        <button class="add-button">
+          <i class="add-icon"></i>
+          <span>New Transaction</span>
+        </button>
+        <button class="export-button">
+          <i class="export-icon"></i>
+          <span>Export</span>
+        </button>
+      </div>
+    </div>
+    
+    <div class="monetization-summary">
+      <div class="summary-card">
+        <div class="card-header">
+          <h3>Monetization Overview</h3>
+        </div>
+        <div class="monetization-stats">
+          <div class="stat-item">
+            <div class="stat-icon available">
+              <i class="available-icon"></i>
+            </div>
+            <div class="stat-data">
+              <h4>Available Credits</h4>
+              <div class="stat-value">
+                <span class="value">98.4 tons</span>
+                <span class="trend positive">+15.5%</span>
+              </div>
+              <div class="stat-meta">
+                <span>Last verification: Apr 15, 2025</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="stat-item">
+            <div class="stat-icon sold">
+              <i class="sold-icon"></i>
+            </div>
+            <div class="stat-data">
+              <h4>Sold Credits</h4>
+              <div class="stat-value">
+                <span class="value">321.7 tons</span>
+                <span class="trend positive">+24.8%</span>
+              </div>
+              <div class="stat-meta">
+                <span>All-time total</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="stat-item">
+            <div class="stat-icon revenue">
+              <i class="revenue-icon"></i>
+            </div>
+            <div class="stat-data">
+              <h4>Total Revenue</h4>
+              <div class="stat-value">
+                <span class="value">$9,651</span>
+                <span class="trend positive">+32.5%</span>
+              </div>
+              <div class="stat-meta">
+                <span>All-time total</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="stat-item">
+            <div class="stat-icon price">
+              <i class="price-icon"></i>
+            </div>
+            <div class="stat-data">
+              <h4>Current Price</h4>
+              <div class="stat-value">
+                <span class="value">$30 per ton</span>
+                <span class="trend positive">+$2</span>
+              </div>
+              <div class="stat-meta">
+                <span>Market average</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="market-trends">
+      <div class="section-header">
+        <h3>Market Trends</h3>
+      </div>
+      <div class="trends-grid">
+        <div class="trend-chart">
+          <div class="chart-header">
+            <h4>Carbon Credit Price</h4>
+          </div>
+          <div class="chart">
+            <img src="images/carbon-price-chart.png" alt="Carbon Price Chart" />
+          </div>
+          <div class="chart-footer">
+            <div class="price-range">
+              <span class="min">$25</span>
+              <span class="current">$30</span>
+              <span class="max">$35</span>
+            </div>
+            <div class="time-range">
+              <span>Last 12 months</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="trend-chart">
+          <div class="chart-header">
+            <h4>Transaction Volume</h4>
+          </div>
+          <div class="chart">
+            <img src="images/carbon-volume-chart.png" alt="Carbon Volume Chart" />
+          </div>
+          <div class="chart-footer">
+            <div class="volume-stats">
+              <span class="total">321.7 tons</span>
+              <span class="average">26.8 tons/month</span>
+            </div>
+            <div class="time-range">
+              <span>Last 12 months</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="trend-chart">
+          <div class="chart-header">
+            <h4>Revenue</h4>
+          </div>
+          <div class="chart">
+            <img src="images/carbon-revenue-chart.png" alt="Carbon Revenue Chart" />
+          </div>
+          <div class="chart-footer">
+            <div class="revenue-stats">
+              <span class="total">$9,651</span>
+              <span class="average">$804/month</span>
+            </div>
+            <div class="time-range">
+              <span>Last 12 months</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="trend-chart">
+          <div class="chart-header">
+            <h4>Buyer Distribution</h4>
+          </div>
+          <div class="chart">
+            <img src="images/carbon-buyer-chart.png" alt="Carbon Buyer Chart" />
+          </div>
+          <div class="chart-legend">
+            <div class="legend-item">
+              <span class="color-indicator corporate"></span>
+              <span>Corporate: 65%</span>
+            </div>
+            <div class="legend-item">
+              <span class="color-indicator government"></span>
+              <span>Government: 20%</span>
+            </div>
+            <div class="legend-item">
+              <span class="color-indicator ngo"></span>
+              <span>NGO: 10%</span>
+            </div>
+            <div class="legend-item">
+              <span class="color-indicator individual"></span>
+              <span>Individual: 5%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="transaction-history">
+      <div class="section-header">
+        <h3>Transaction History</h3>
+      </div>
+      <div class="history-table">
+        <div class="table-header">
+          <div class="header-cell">Transaction ID</div>
+          <div class="header-cell">Date</div>
+          <div class="header-cell">Buyer</div>
+          <div class="header-cell">Credits</div>
+          <div class="header-cell">Price</div>
+          <div class="header-cell">Total Value</div>
+          <div class="header-cell">Status</div>
+          <div class="header-cell">Actions</div>
+        </div>
+        
+        <div class="table-row">
+          <div class="cell">TRX-C-2025-042</div>
+          <div class="cell">Apr 18, 2025</div>
+          <div class="cell">EcoTech Solutions</div>
+          <div class="cell">25.0 tons</div>
+          <div class="cell">$30 per ton</div>
+          <div class="cell">$750</div>
+          <div class="cell">
+            <span class="status-badge completed">Completed</span>
+          </div>
+          <div class="cell actions-cell">
+            <button class="action-button small">
+              <i class="view-icon"></i>
+            </button>
+            <button class="action-button small">
+              <i class="download-icon"></i>
+            </button>
+            <button class="action-button small">
+              <i class="more-icon"></i>
+            </button>
+          </div>
+        </div>
+        
+        <div class="table-row">
+          <div class="cell">TRX-C-2025-041</div>
+          <div class="cell">Apr 10, 2025</div>
+          <div class="cell">Green Planet Fund</div>
+          <div class="cell">50.0 tons</div>
+          <div class="cell">$30 per ton</div>
+          <div class="cell">$1,500</div>
+          <div class="cell">
+            <span class="status-badge completed">Completed</span>
+          </div>
+          <div class="cell actions-cell">
+            <button class="action-button small">
+              <i class="view-icon"></i>
+            </button>
+            <button class="action-button small">
+              <i class="download-icon"></i>
+            </button>
+            <button class="action-button small">
+              <i class="more-icon"></i>
+            </button>
+          </div>
+        </div>
+        
+        <div class="table-row">
+          <div class="cell">TRX-C-2025-040</div>
+          <div class="cell">Mar 25, 2025</div>
+          <div class="cell">Sustainable Futures</div>
+          <div class="cell">35.0 tons</div>
+          <div class="cell">$28 per ton</div>
+          <div class="cell">$980</div>
+          <div class="cell">
+            <span class="status-badge completed">Completed</span>
+          </div>
+          <div class="cell actions-cell">
+            <button class="action-button small">
+              <i class="view-icon"></i>
+            </button>
+            <button class="action-button small">
+              <i class="download-icon"></i>
+            </button>
+            <button class="action-button small">
+              <i class="more-icon"></i>
+            </button>
+          </div>
+        </div>
+        
+        <div class="table-row">
+          <div class="cell">TRX-C-2025-039</div>
+          <div class="cell">Mar 15, 2025</div>
+          <div class="cell">Carbon Neutral Corp</div>
+          <div class="cell">75.0 tons</div>
+          <div class="cell">$28 per ton</div>
+          <div class="cell">$2,100</div>
+          <div class="cell">
+            <span class="status-badge completed">Completed</span>
+          </div>
+          <div class="cell actions-cell">
+            <button class="action-button small">
+              <i class="view-icon"></i>
+            </button>
+            <button class="action-button small">
+              <i class="download-icon"></i>
+            </button>
+            <button class="action-button small">
+              <i class="more-icon"></i>
+            </button>
+          </div>
+        </div>
+        
+        <div class="table-row">
+          <div class="cell">TRX-C-2025-038</div>
+          <div class="cell">Feb 28, 2025</div>
+          <div class="cell">CleanAir Initiative</div>
+          <div class="cell">40.0 tons</div>
+          <div class="cell">$28 per ton</div>
+          <div class="cell">$1,120</div>
+          <div class="cell">
+            <span class="status-badge completed">Completed</span>
+          </div>
+          <div class="cell actions-cell">
+            <button class="action-button small">
+              <i class="view-icon"></i>
+            </button>
+            <button class="action-button small">
+              <i class="download-icon"></i>
+            </button>
+            <button class="action-button small">
+              <i class="more-icon"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="pagination">
+        <button class="page-button">
+          <i class="prev-icon"></i>
+        </button>
+        <button class="page-button active">1</button>
+        <button class="page-button">2</button>
+        <button class="page-button">3</button>
+        <span class="page-ellipsis">...</span>
+        <button class="page-button">10</button>
+        <button class="page-button">
+          <i class="next-icon"></i>
+        </button>
+        <div class="page-size">
+          <span>Show:</span>
+          <select>
+            <option>10</option>
+            <option selected>20</option>
+            <option>50</option>
+            <option>100</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    
+    <div class="buyer-management">
+      <div class="section-header">
+        <h3>Buyer Management</h3>
+        <button class="add-button">
+          <i class="add-icon"></i>
+          <span>Add Buyer</span>
+        </button>
+      </div>
+      <div class="buyers-table">
+        <div class="table-header">
+          <div class="header-cell">Buyer Name</div>
+          <div class="header-cell">Type</div>
+          <div class="header-cell">Contact</div>
+          <div class="header-cell">Total Purchases</div>
+          <div class="header-cell">Last Purchase</div>
+          <div class="header-cell">Status</div>
+          <div class="header-cell">Actions</div>
+        </div>
+        
+        <div class="table-row">
+          <div class="cell buyer-cell">
+            <div class="buyer-logo">
+              <img src="images/ecotech-logo.png" alt="EcoTech Solutions" />
+            </div>
+            <div class="buyer-info">
+              <h4>EcoTech Solutions</h4>
+              <p>Technology company with carbon neutrality goals</p>
+            </div>
+          </div>
+          <div class="cell">Corporate</div>
+          <div class="cell">
+            <div class="contact-info">
+              <p>Sarah Johnson</p>
+              <p>sarah@ecotech.com</p>
+            </div>
+          </div>
+          <div class="cell">75.0 tons</div>
+          <div class="cell">Apr 18, 2025</div>
+          <div class="cell">
+            <span class="status-badge active">Active</span>
+          </div>
+          <div class="cell actions-cell">
+            <button class="action-button small">
+              <i class="view-icon"></i>
+            </button>
+            <button class="action-button small">
+              <i class="edit-icon"></i>
+            </button>
+            <button class="action-button small">
+              <i class="more-icon"></i>
+            </button>
+          </div>
+        </div>
+        
+        <div class="table-row">
+          <div class="cell buyer-cell">
+            <div class="buyer-logo">
+              <img src="images/green-planet-logo.png" alt="Green Planet Fund" />
+            </div>
+            <div class="buyer-info">
+              <h4>Green Planet Fund</h4>
+              <p>Environmental investment fund</p>
+            </div>
+          </div>
+          <div class="cell">NGO</div>
+          <div class="cell">
+            <div class="contact-info">
+              <p>Michael Chen</p>
+              <p>michael@greenplanet.org</p>
+            </div>
+          </div>
+          <div class="cell">125.0 tons</div>
+          <div class="cell">Apr 10, 2025</div>
+          <div class="cell">
+            <span class="status-badge active">Active</span>
+          </div>
+          <div class="cell actions-cell">
+            <button class="action-button small">
+              <i class="view-icon"></i>
+            </button>
+            <button class="action-button small">
+              <i class="edit-icon"></i>
+            </button>
+            <button class="action-button small">
+              <i class="more-icon"></i>
+            </button>
+          </div>
+        </div>
+        
+        <div class="table-row">
+          <div class="cell buyer-cell">
+            <div class="buyer-logo">
+              <img src="images/sustainable-futures-logo.png" alt="Sustainable Futures" />
+            </div>
+            <div class="buyer-info">
+              <h4>Sustainable Futures</h4>
+              <p>Sustainability consulting firm</p>
+            </div>
+          </div>
+          <div class="cell">Corporate</div>
+          <div class="cell">
+            <div class="contact-info">
+              <p>David Nguyen</p>
+              <p>david@sustainablefutures.com</p>
+            </div>
+          </div>
+          <div class="cell">85.0 tons</div>
+          <div class="cell">Mar 25, 2025</div>
+          <div class="cell">
+            <span class="status-badge active">Active</span>
+          </div>
+          <div class="cell actions-cell">
+            <button class="action-button small">
+              <i class="view-icon"></i>
+            </button>
+            <button class="action-button small">
+              <i class="edit-icon"></i>
+            </button>
+            <button class="action-button small">
+              <i class="more-icon"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

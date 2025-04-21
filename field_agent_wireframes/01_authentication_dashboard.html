@@ -1,0 +1,586 @@
+<!-- Login Screen -->
+<div class="wireframe login-screen">
+  <div class="login-container">
+    <div class="logo">
+      <img src="images/burn-logo.png" alt="BURN Logo" />
+    </div>
+    <h1>Field Agent Portal</h1>
+    
+    <div class="login-form">
+      <div class="form-group">
+        <label>Agent ID</label>
+        <input type="text" placeholder="Enter your Agent ID" />
+      </div>
+      
+      <div class="form-group">
+        <label>Password</label>
+        <div class="password-input">
+          <input type="password" placeholder="Enter your password" />
+          <button class="toggle-password">
+            <i class="eye-icon"></i>
+          </button>
+        </div>
+      </div>
+      
+      <div class="remember-me">
+        <input type="checkbox" id="remember" />
+        <label for="remember">Remember me</label>
+      </div>
+      
+      <button class="primary-button">Log In</button>
+      
+      <div class="forgot-password">
+        <a href="#">Forgot password?</a>
+      </div>
+    </div>
+    
+    <div class="offline-notice">
+      <i class="info-icon"></i>
+      <p>You can log in offline if you've previously logged in on this device</p>
+    </div>
+  </div>
+</div>
+
+<!-- Two-Factor Authentication -->
+<div class="wireframe two-factor">
+  <div class="auth-container">
+    <div class="back-button">
+      <i class="back-icon"></i>
+    </div>
+    
+    <h1>Verify Your Identity</h1>
+    <p>We've sent a 6-digit code to +254 712 345 678</p>
+    
+    <div class="otp-input">
+      <input type="text" maxlength="1" />
+      <input type="text" maxlength="1" />
+      <input type="text" maxlength="1" />
+      <input type="text" maxlength="1" />
+      <input type="text" maxlength="1" />
+      <input type="text" maxlength="1" />
+    </div>
+    
+    <div class="resend-code">
+      <p>Didn't receive code? <a href="#">Resend</a> in 00:45</p>
+    </div>
+    
+    <button class="primary-button">Verify</button>
+    
+    <div class="alternative-methods">
+      <p>Other verification methods</p>
+      <div class="methods-list">
+        <button class="method-option">
+          <i class="call-icon"></i>
+          <span>Call me</span>
+        </button>
+        <button class="method-option">
+          <i class="offline-icon"></i>
+          <span>Use offline code</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Main Dashboard -->
+<div class="wireframe main-dashboard">
+  <!-- Header -->
+  <div class="header">
+    <div class="menu-toggle">
+      <i class="menu-icon"></i>
+    </div>
+    <div class="page-title">
+      <h1>Dashboard</h1>
+    </div>
+    <div class="header-actions">
+      <button class="sync-button">
+        <i class="sync-icon"></i>
+        <span>Last sync: 10:45 AM</span>
+      </button>
+      <button class="notification-button">
+        <i class="notification-icon"></i>
+        <span class="badge">3</span>
+      </button>
+      <div class="agent-profile">
+        <img src="images/agent-avatar.png" alt="Agent Avatar" />
+        <span>John D.</span>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Sidebar Navigation -->
+  <div class="sidebar">
+    <div class="agent-info">
+      <img src="images/agent-avatar.png" alt="Agent Avatar" />
+      <div class="info">
+        <h3>John Doe</h3>
+        <p>Field Agent</p>
+        <span class="status online">Online</span>
+      </div>
+    </div>
+    
+    <nav class="main-nav">
+      <ul>
+        <li class="active">
+          <a href="#">
+            <i class="dashboard-icon"></i>
+            <span>Dashboard</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="customers-icon"></i>
+            <span>Customers</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="devices-icon"></i>
+            <span>Devices</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="payments-icon"></i>
+            <span>Payments</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="inventory-icon"></i>
+            <span>Inventory</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="routes-icon"></i>
+            <span>Routes</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="reports-icon"></i>
+            <span>Reports</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="settings-icon"></i>
+            <span>Settings</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    
+    <div class="offline-data">
+      <i class="storage-icon"></i>
+      <div class="info">
+        <p>Offline Data</p>
+        <div class="progress-bar">
+          <div class="progress" style="width: 65%"></div>
+        </div>
+        <span>65% (324 MB)</span>
+      </div>
+    </div>
+    
+    <div class="logout">
+      <a href="#">
+        <i class="logout-icon"></i>
+        <span>Log Out</span>
+      </a>
+    </div>
+  </div>
+  
+  <!-- Main Content -->
+  <div class="main-content">
+    <!-- Date and Location -->
+    <div class="context-bar">
+      <div class="date-location">
+        <div class="date">
+          <i class="calendar-icon"></i>
+          <span>Monday, April 21, 2025</span>
+        </div>
+        <div class="location">
+          <i class="location-icon"></i>
+          <span>Nairobi Region</span>
+        </div>
+      </div>
+      <div class="quick-actions">
+        <button class="action-button">
+          <i class="add-customer-icon"></i>
+          <span>New Customer</span>
+        </button>
+        <button class="action-button">
+          <i class="collect-payment-icon"></i>
+          <span>Collect Payment</span>
+        </button>
+        <button class="action-button">
+          <i class="register-device-icon"></i>
+          <span>Register Device</span>
+        </button>
+      </div>
+    </div>
+    
+    <!-- Performance Metrics -->
+    <div class="metrics-section">
+      <h2>Today's Performance</h2>
+      <div class="metrics-grid">
+        <div class="metric-card">
+          <div class="metric-icon customers">
+            <i class="customers-icon"></i>
+          </div>
+          <div class="metric-data">
+            <h3>New Customers</h3>
+            <div class="metric-value">
+              <span class="value">5</span>
+              <span class="trend positive">+2</span>
+            </div>
+            <p>Daily Target: 8</p>
+            <div class="progress-bar">
+              <div class="progress" style="width: 62.5%"></div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="metric-card">
+          <div class="metric-icon payments">
+            <i class="payments-icon"></i>
+          </div>
+          <div class="metric-data">
+            <h3>Payments Collected</h3>
+            <div class="metric-value">
+              <span class="value">KSh 12,500</span>
+              <span class="trend positive">+4,200</span>
+            </div>
+            <p>Daily Target: KSh 15,000</p>
+            <div class="progress-bar">
+              <div class="progress" style="width: 83.3%"></div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="metric-card">
+          <div class="metric-icon devices">
+            <i class="devices-icon"></i>
+          </div>
+          <div class="metric-data">
+            <h3>Devices Registered</h3>
+            <div class="metric-value">
+              <span class="value">3</span>
+              <span class="trend negative">-1</span>
+            </div>
+            <p>Daily Target: 5</p>
+            <div class="progress-bar">
+              <div class="progress" style="width: 60%"></div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="metric-card">
+          <div class="metric-icon visits">
+            <i class="visits-icon"></i>
+          </div>
+          <div class="metric-data">
+            <h3>Customer Visits</h3>
+            <div class="metric-value">
+              <span class="value">8</span>
+              <span class="trend positive">+2</span>
+            </div>
+            <p>Daily Target: 12</p>
+            <div class="progress-bar">
+              <div class="progress" style="width: 66.7%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Today's Schedule -->
+    <div class="schedule-section">
+      <div class="section-header">
+        <h2>Today's Schedule</h2>
+        <button class="view-all">View All</button>
+      </div>
+      <div class="schedule-list">
+        <div class="schedule-item completed">
+          <div class="time">
+            <span>09:00 AM</span>
+          </div>
+          <div class="status-indicator">
+            <div class="indicator-line"></div>
+            <div class="indicator-dot"></div>
+          </div>
+          <div class="schedule-card">
+            <div class="schedule-header">
+              <h3>Customer Visit - Sarah Kamau</h3>
+              <span class="status">Completed</span>
+            </div>
+            <div class="schedule-details">
+              <p><i class="location-pin-icon"></i> 123 Moi Avenue, Nairobi</p>
+              <p><i class="task-icon"></i> Payment Collection</p>
+            </div>
+            <div class="schedule-actions">
+              <button class="action-button small">
+                <i class="details-icon"></i>
+                <span>Details</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="schedule-item current">
+          <div class="time">
+            <span>11:30 AM</span>
+          </div>
+          <div class="status-indicator">
+            <div class="indicator-line"></div>
+            <div class="indicator-dot"></div>
+          </div>
+          <div class="schedule-card">
+            <div class="schedule-header">
+              <h3>New Customer Registration</h3>
+              <span class="status">In Progress</span>
+            </div>
+            <div class="schedule-details">
+              <p><i class="location-pin-icon"></i> 45 Kimathi Street, Nairobi</p>
+              <p><i class="task-icon"></i> Registration & Device Setup</p>
+            </div>
+            <div class="schedule-actions">
+              <button class="action-button small">
+                <i class="navigate-icon"></i>
+                <span>Navigate</span>
+              </button>
+              <button class="action-button small">
+                <i class="start-icon"></i>
+                <span>Start</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="schedule-item">
+          <div class="time">
+            <span>02:00 PM</span>
+          </div>
+          <div class="status-indicator">
+            <div class="indicator-line"></div>
+            <div class="indicator-dot"></div>
+          </div>
+          <div class="schedule-card">
+            <div class="schedule-header">
+              <h3>Device Maintenance - John Omondi</h3>
+              <span class="status">Upcoming</span>
+            </div>
+            <div class="schedule-details">
+              <p><i class="location-pin-icon"></i> 78 Kenyatta Avenue, Nairobi</p>
+              <p><i class="task-icon"></i> Troubleshooting & Repair</p>
+            </div>
+            <div class="schedule-actions">
+              <button class="action-button small">
+                <i class="navigate-icon"></i>
+                <span>Navigate</span>
+              </button>
+              <button class="action-button small">
+                <i class="reschedule-icon"></i>
+                <span>Reschedule</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="schedule-item">
+          <div class="time">
+            <span>04:30 PM</span>
+          </div>
+          <div class="status-indicator">
+            <div class="indicator-line"></div>
+            <div class="indicator-dot"></div>
+          </div>
+          <div class="schedule-card">
+            <div class="schedule-header">
+              <h3>Inventory Pickup</h3>
+              <span class="status">Upcoming</span>
+            </div>
+            <div class="schedule-details">
+              <p><i class="location-pin-icon"></i> BURN Distribution Center</p>
+              <p><i class="task-icon"></i> Collect 5 New Devices</p>
+            </div>
+            <div class="schedule-actions">
+              <button class="action-button small">
+                <i class="navigate-icon"></i>
+                <span>Navigate</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Activity Feed -->
+    <div class="activity-section">
+      <div class="section-header">
+        <h2>Recent Activity</h2>
+        <button class="view-all">View All</button>
+      </div>
+      <div class="activity-list">
+        <div class="activity-item">
+          <div class="activity-icon payment">
+            <i class="payment-icon"></i>
+          </div>
+          <div class="activity-details">
+            <h3>Payment Collected</h3>
+            <p>KSh 3,500 from Sarah Kamau</p>
+            <span class="timestamp">10:15 AM</span>
+          </div>
+          <button class="more-button">
+            <i class="more-icon"></i>
+          </button>
+        </div>
+        
+        <div class="activity-item">
+          <div class="activity-icon customer">
+            <i class="customer-icon"></i>
+          </div>
+          <div class="activity-details">
+            <h3>New Customer Registered</h3>
+            <p>James Mwangi in Westlands</p>
+            <span class="timestamp">09:45 AM</span>
+          </div>
+          <button class="more-button">
+            <i class="more-icon"></i>
+          </button>
+        </div>
+        
+        <div class="activity-item">
+          <div class="activity-icon device">
+            <i class="device-icon"></i>
+          </div>
+          <div class="activity-details">
+            <h3>Device Activated</h3>
+            <p>Serial: BRN87654321</p>
+            <span class="timestamp">09:30 AM</span>
+          </div>
+          <button class="more-button">
+            <i class="more-icon"></i>
+          </button>
+        </div>
+        
+        <div class="activity-item">
+          <div class="activity-icon support">
+            <i class="support-icon"></i>
+          </div>
+          <div class="activity-details">
+            <h3>Support Ticket Resolved</h3>
+            <p>Ticket #45678 - Connection Issue</p>
+            <span class="timestamp">Yesterday, 04:15 PM</span>
+          </div>
+          <button class="more-button">
+            <i class="more-icon"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Notifications Panel -->
+<div class="wireframe notifications-panel">
+  <div class="panel-header">
+    <h2>Notifications</h2>
+    <div class="header-actions">
+      <button class="mark-all-read">Mark all as read</button>
+      <button class="close-panel">
+        <i class="close-icon"></i>
+      </button>
+    </div>
+  </div>
+  
+  <div class="notifications-filter">
+    <button class="filter-button active">All</button>
+    <button class="filter-button">Alerts</button>
+    <button class="filter-button">Tasks</button>
+    <button class="filter-button">Updates</button>
+  </div>
+  
+  <div class="notifications-list">
+    <div class="notification-item unread">
+      <div class="notification-icon alert">
+        <i class="alert-icon"></i>
+      </div>
+      <div class="notification-content">
+        <h3>Low Inventory Alert</h3>
+        <p>You have only 2 devices remaining in your inventory.</p>
+        <span class="notification-time">15 minutes ago</span>
+      </div>
+      <div class="notification-actions">
+        <button class="action-button small">
+          <span>View</span>
+        </button>
+      </div>
+    </div>
+    
+    <div class="notification-item unread">
+      <div class="notification-icon task">
+        <i class="task-icon"></i>
+      </div>
+      <div class="notification-content">
+        <h3>New Task Assigned</h3>
+        <p>Customer follow-up required for James Mwangi.</p>
+        <span class="notification-time">1 hour ago</span>
+      </div>
+      <div class="notification-actions">
+        <button class="action-button small">
+          <span>Accept</span>
+        </button>
+      </div>
+    </div>
+    
+    <div class="notification-item unread">
+      <div class="notification-icon update">
+        <i class="update-icon"></i>
+      </div>
+      <div class="notification-content">
+        <h3>App Update Available</h3>
+        <p>Version 2.3.5 is now available with new features.</p>
+        <span class="notification-time">3 hours ago</span>
+      </div>
+      <div class="notification-actions">
+        <button class="action-button small">
+          <span>Update</span>
+        </button>
+      </div>
+    </div>
+    
+    <div class="notification-item">
+      <div class="notification-icon achievement">
+        <i class="achievement-icon"></i>
+      </div>
+      <div class="notification-content">
+        <h3>Target Achieved!</h3>
+        <p>You've reached your weekly customer acquisition target.</p>
+        <span class="notification-time">Yesterday</span>
+      </div>
+      <div class="notification-actions">
+        <button class="action-button small">
+          <span>View</span>
+        </button>
+      </div>
+    </div>
+    
+    <div class="notification-item">
+      <div class="notification-icon payment">
+        <i class="payment-icon"></i>
+      </div>
+      <div class="notification-content">
+        <h3>Commission Processed</h3>
+        <p>Your commission of KSh 12,500 has been processed.</p>
+        <span class="notification-time">2 days ago</span>
+      </div>
+      <div class="notification-actions">
+        <button class="action-button small">
+          <span>Details</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
